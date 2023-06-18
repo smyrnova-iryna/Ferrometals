@@ -325,22 +325,26 @@ const dataRu = {
              details: "Подробнее",
              transportingAndNearMachineEquipmentAndMachinesForWoodworking: 
                {product: "Транспортирующее и околостаночное оборудование и станки для деревообработки",
-               path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
+        //        path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
+        path: "FerroMetals_Wooden_pellets_EN.pdf", 
                title: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf"
                },
                equipmentForWasteProcessing: 
                {product: "Оборудование для переработки отходов",
-               path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
+        //        path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
+        path: "FerroMetals_Wooden_pellets_EN.pdf", 
                title: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf"
                },
                roundWoodAccountingScanner: 
                {product: "Сканер учета круглого леса",
-               path: "FerroMetals_Round_wood_accounting_scanner_EN.pdf", 
+        //        path: "FerroMetals_Round_wood_accounting_scanner_EN.pdf", 
+        path: "FerroMetals_Wooden_pellets_EN.pdf", 
                title: "FerroMetals_Round_wood_accounting_scanner_EN.pdf"
                },
                woodenPellets: 
                {product: "Древесные пеллеты",
-               path: "FerroMetals_Wooden_pellets_RU.pdf", 
+        //        path: "FerroMetals_Wooden_pellets_RU.pdf", 
+        path: "FerroMetals_Wooden_pellets_EN.pdf", 
                title: "FerroMetals_Wooden_pellets_RU.pdf"
                }
              },

@@ -286,17 +286,20 @@ const dataPl = {
            details: "Details",
            transportingAndNearMachineEquipmentAndMachinesForWoodworking: 
              {product: "Sprzęt transportowy i obwodowy i maszyny do obróbki drewna",
-             path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_PL.pdf", 
+        //      path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_PL.pdf",
+        path: "FerroMetals_Wooden_pellets_EN.pdf",  
              title: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_PL.pdf"
              },
              equipmentForWasteProcessing: 
              {product: "Sprzęt do przetwarzania odpadów",
-             path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_PL.pdf", 
+        //      path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_PL.pdf", 
+        path: "FerroMetals_Wooden_pellets_EN.pdf", 
              title: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_PL.pdf"
              },
              roundWoodAccountingScanner: 
              {product: "Skaner do inwentaryzacji drewna okrągłego",
-             path: "FerroMetals_Round_wood_accounting_scanner_PL.pdf", 
+        //      path: "FerroMetals_Round_wood_accounting_scanner_PL.pdf", 
+        path: "FerroMetals_Wooden_pellets_EN.pdf", 
              title: "FerroMetals_Round_wood_accounting_scanner_PL.pdf"
              },
              woodenPellets: 
