@@ -1,0 +1,132 @@
+.Contacts-Main-Container {
+    height: 100vh;
+    background-image: url(../img/background_image.png);
+    background-position-x: right;
+    background-size: cover;
+    background-position-y: -65px;
+}
+
+.Contacts-Inner-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--dark-main-color);
+    padding-left: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 550px;
+    height: 520px;
+}
+
+.Contacts-inner-container-heading {
+    text-align: left;
+    font-size: 140%;
+    font-weight: 700; 
+    width: max-content
+}
+
+.Contacts-text-container {
+    width: 480px;
+    font-size: 120%;
+}
+
+.Contacts-Items-Container {
+    margin-left: -30px;
+}
+
+.Contacts-item {
+    justify-content: left;
+    color: var(--dark-main-color);
+    text-decoration: none;
+    text-align: left;
+    font-size: 120%;
+}
+
+.Contacts-inner-container-text {
+    text-align: left;
+    width: 450px;
+    font-size: 140%;
+    font-weight: 540;
+}
+
+.Contacts-feedback-form-main-container {
+    height: 60vh;
+    width: 80vh;
+    position: absolute;
+    top: 18vh;
+    right: 20vh;
+}
+
+.Contacts-feedback-form-container {
+    background: none;
+    min-width: 47%;
+    font-size: 120%;
+    font-weight: 500;
+    text-align: center;
+    color: var(--main-background-color);
+}
+
+.Contacts-container-heading {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.Contacts-container-description {
+    margin-bottom: 2%;
+}
+
+.Contacts-feedback-form-input, .Contacts-feedback-form-text-input {
+    margin-bottom: 3%;
+    font-size: large;
+    padding: 3%;
+}
+
+.Contacts-feedback-form-input {
+   max-width: 42%;
+}
+
+.Contacts-feedback-form-text-input {
+    align-items: stretch;
+    height: 100px;
+}
+
+.Contacts-feedback-form-input-container {
+    margin: 0  7%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+     
+}
+
+.Contacts-feedback-form-input-container-without-text-form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Contacts-feedback-form-button {
+    font-family: var(--main-font);
+    padding: 1.5% 2%;
+    background: linear-gradient( to right, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--main-background-color);
+    -webkit-box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
+    -moz-box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
+    box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
+    cursor: pointer;
+}
+
+.Contacts-feedback-form-button:hover {
+    background: linear-gradient( to left, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
+}
+
+
+
+
+

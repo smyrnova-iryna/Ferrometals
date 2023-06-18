@@ -1,0 +1,21 @@
+
+.Catalog-container {
+    margin-top: 10%;
+    text-align: justify;
+    font-style: italic;
+    font-size: 120%;
+    margin-bottom: 1%;
+}
+
+.Catalog-Caption {
+    width: 100%;
+    height: 15%;
+    background: linear-gradient( to left, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
+    color: var(--main-background-color);
+    font-size: 110%;
+    font-weight: 400;
+    padding: 1%;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
