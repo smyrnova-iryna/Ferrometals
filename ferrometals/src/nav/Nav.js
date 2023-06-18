@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import { HashLink } from 'react-router-hash-link';
 
 
 const Nav = ({data, changeHeaderBackground, navigateToTheTop, linkScroll}) => {
