@@ -46,7 +46,8 @@ const FirstPage = ({data, handleToggle, navigateToTheTop}) => {
                 <ul className='First-Page-List'>
                     {data.home.firstPage.info.map( el =>
                             <li key={el} className='First-Page_List-Item'>
-                                 <p className='First-Page-List-Item-Extra-Container'> <img className='First-Page-List-Gear-Icon' alt="Icon" src={require("../img/gear.png")}></img> <span className='First-Page-List-Item-Text'>{el}</span></p>
+                                 <p className='First-Page-List-Item-Extra-Container'>  <span className='First-Page-List-Item-Text'>{el}</span></p>
+                                 {/* <img className='First-Page-List-Gear-Icon' alt="Icon" src={require("../img/gear.png")}></img> */}
                             </li>
                     )}
                 </ul>

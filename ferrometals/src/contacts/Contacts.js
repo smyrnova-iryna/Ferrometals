@@ -1,9 +1,6 @@
 import { useState, useRef  } from "react";
 import "./contacts.css";
 import emailjs from '@emailjs/browser';
-import CallIcon from '@mui/icons-material/Call';
-import EmailIcon from '@mui/icons-material/Email'
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Contacts = ({data}) => {
     
@@ -106,11 +103,15 @@ const Contacts = ({data}) => {
                             <h4 className="Contacts-inner-container-heading">{data.contacts.address.heading}</h4>
                         <div className="Contacts-inner-content-container Contacts-Items-Container">
                             <div className="Contacts-text-container"><p className="Contacts-item">
-                                <LocationOnIcon className='Contacts-item' />{data.contacts.address.text}</p></div>
+                                {/* <LocationOnIcon className='Contacts-item' /> */}
+                                    <img className="Contacts-icon" alt="Icon" src={require(`../img/contacts_location_icon.png`)}></img>
+                                    {data.contacts.address.text}</p></div>
                             <div><p className="Contacts-item"><a className="Contacts-item" href={fullPhoneNumber}>
-                                        <CallIcon className='Contacts-item' />{data.header.phoneNumber}</a></p></div>
+                                    <img className="Contacts-icon" alt="Icon" src={require(`../img/contacts_call_icon.png`)}></img>
+                                    {data.header.phoneNumber}</a></p></div>
                             <div><p className="Contacts-item"><a className="Contacts-item" href={fullEmail}>
-                                        <EmailIcon className='Contacts-item' />{data.header.email}</a></p></div>
+                                    <img className="Contacts-icon" alt="Icon" src={require(`../img/contacts_email_icon.png`)}></img>
+                                    {data.header.email}</a></p></div>
                     </div>
                 </div>
                 <div className="Contacts-inner-content-container">

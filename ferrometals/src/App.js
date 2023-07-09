@@ -7,7 +7,6 @@ import TransportingAndNearMachineEquipmentAndMachinesForWoodworking from
 './products/transporting_and_near_machine_equipment_and_machines_for_woodworking/Transporting_and_near_machine_equipment_and_machines_for_woodworking';
 import EquipmentForWasteProcessing from './products/equipment_for_waste_processing/Equipment_for_waste_processing';
 import RoundWoodAccountingScanner from './products/round_wood_accounting_scanner/Round_wood_accounting_scanner';
-import WoodenPellets from './products/wooden_pellets/Wooden_pellets';
 import Gallery from './gallery/Gallery';
 import VideoGallery from './gallery/video/VideoGallery';
 import PhotoGallery from './gallery/photo/PhotoGallery';
@@ -75,7 +74,6 @@ setHeaderBackground={setHeaderBackground} changeHeaderBackground={changeHeaderBa
         element={<TransportingAndNearMachineEquipmentAndMachinesForWoodworking data={data} />} />
         <Route path={data.menuPaths.equipmentForWasteProcessing} element={<EquipmentForWasteProcessing data={data} />} />
         <Route path={data.menuPaths.roundWoodAccountingScanner} element={<RoundWoodAccountingScanner data={data} />} />
-        <Route path={data.menuPaths.woodenPellets} element={<WoodenPellets data={data} />} />
         <Route path={data.menuPaths.gallery} element={<Gallery data={data} linkScroll={linkScroll} />} />
         <Route path={data.menuPaths.video} element={<VideoGallery data={data} />} />
         <Route path={data.menuPaths.photo} element={<PhotoGallery data={data} />} />

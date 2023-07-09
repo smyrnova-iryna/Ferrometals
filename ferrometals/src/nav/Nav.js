@@ -28,9 +28,6 @@ const Nav = ({data, changeHeaderBackground, navigateToTheTop, linkScroll}) => {
                     <br/>
                     <Link className='Dropdown-link' to={data.menuPaths.roundWoodAccountingScanner} onClick={linkScroll}>
                         {data.menuItems.roundWoodAccountingScanner}</Link>
-                    <br/>
-                    <Link className='Dropdown-link' to={data.menuPaths.woodenPellets} onClick={linkScroll}>
-                        {data.menuItems.woodenPellets}</Link>
                 </div>
             </div>
             <Link className='Nav-menu-item' to={data.menuPaths.catalog} onClick={linkScroll}>{data.menuItems.catalog}</Link>

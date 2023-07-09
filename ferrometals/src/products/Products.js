@@ -19,8 +19,14 @@ const Products = ({data, linkScroll}) => {
         src={require(`../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[0].picture}`)}></img>
         <button className="Main-Products-Inner-Button">{data.equipmentForWasteProcessing.mainHeader}<ArrowForwardIosIcon /></button>
       </Link>
+      <Link className="Main-Products-Inner-Link" to={data.menuPaths.roundWoodAccountingScanner} 
+      onClick={linkScroll}>
+        <img className="Main-Products-Inner-Image" alt={data.roundWoodAccountingScanner.mainHeader}
+        src={require(`../data/picture/picture_products/${data.roundWoodAccountingScanner.pictures[0].picture}`)}></img>
+        <button className="Main-Products-Inner-Button">{data.roundWoodAccountingScanner.mainHeader}<ArrowForwardIosIcon /></button>
+      </Link>
     </div>
-    <div className="Main-Products-Inner-Container">
+    {/* <div className="Main-Products-Inner-Container">
       <Link className="Main-Products-Inner-Link" to={data.menuPaths.roundWoodAccountingScanner} 
       onClick={linkScroll}>
         <img className="Main-Products-Inner-Image" alt={data.roundWoodAccountingScanner.mainHeader}
@@ -33,7 +39,7 @@ const Products = ({data, linkScroll}) => {
         src={require(`../data/photo/photo_wooden_pellets/${data.woodenPellets.photos[4].photo}`)}></img>
         <button className="Main-Products-Inner-Button">{data.woodenPellets.mainHeader}<ArrowForwardIosIcon /></button>
       </Link>
-    </div>
+    </div> */}
    </section>
  )
 }

@@ -236,7 +236,7 @@ h1 {
 }
 
 .First-Page-List {
-    list-style-type: none;
+    list-style-type: disc;
 }
 
 .About-List-Gear-Icon {
@@ -374,7 +374,8 @@ h1 {
 }
 
 .About-Product-Options-Container {
-    width: 24%;
+    width: 30%;
+    padding: 0 5%;
     height: 40vh;
     display: flex;
     flex-direction: column;

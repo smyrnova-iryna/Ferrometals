@@ -7,7 +7,7 @@
     align-items: center;
     background-image: url(../img/single_gear_background.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     /* justify-content: center; */
 }
 
@@ -25,12 +25,13 @@
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 5vh;
+    margin-top: 9vh;
 }
 
 .Main-Products-Inner-Link {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     height: 100%; 
     align-items: center;
     justify-content: space-around; 
