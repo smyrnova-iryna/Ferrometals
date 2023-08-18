@@ -3,17 +3,9 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 
 
 const Nav = ({data, changeHeaderBackground, navigateToTheTop, linkScroll}) => {
-    
-    // const navigateToTheTop = () => {
-    //     window.scrollTo({top: 0})
-    // }
-
-    // const linkScroll = () => {
-    //     changeHeaderBackground();
-    //     window.scrollTo({top: 0})
-    // }
+   
     return (
-        <nav className='Header-nav-container'>
+        <nav className="Header-nav-container">
             <Link className='Nav-menu-item' to={data.menuPaths.home} onClick={navigateToTheTop}>{data.menuItems.home}</Link>
             <Link className='Nav-menu-item' to={data.menuPaths.about} onClick={navigateToTheTop}>{data.menuItems.about}</Link>
             <div className="w3-dropdown-hover">
@@ -28,6 +20,11 @@ const Nav = ({data, changeHeaderBackground, navigateToTheTop, linkScroll}) => {
                     <br/>
                     <Link className='Dropdown-link' to={data.menuPaths.roundWoodAccountingScanner} onClick={linkScroll}>
                         {data.menuItems.roundWoodAccountingScanner}</Link>
+                    <br/>
+                    <Link className='Dropdown-link' to={data.menuPaths.polymerCoatingLines} onClick={linkScroll}>
+                        {data.menuItems.polymerCoatingLines}</Link>
+                    <br/>
+                    <Link className='Dropdown-link' to={data.menuPaths.palletEquipment} onClick={linkScroll}>{data.menuItems.palletEquipment}</Link>
                 </div>
             </div>
             <Link className='Nav-menu-item' to={data.menuPaths.catalog} onClick={linkScroll}>{data.menuItems.catalog}</Link>

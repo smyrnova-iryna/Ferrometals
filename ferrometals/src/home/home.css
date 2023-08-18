@@ -12,21 +12,25 @@
 }
 
 .First-Page-Main-Container {
-    height: 100vh;
-    background-image: url(../img/background_image.png);
-    background-position-x: right;
-    background-size: cover;
-    background-position-y: -65px;
+    min-height: 100vh;
+    
     /* position: relative; */
+}
+
+.First-Page-Button-Container-Adaptive {
+    display: none;
+}
+
+.First-Page-Picture-Container {
+    background-image: url(../img/background_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .First-Page-Background-Container {
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
-    /* margin-left: 20%;
-    margin-bottom: 10vh; */
     height: 100vh;
-    width: 100%;
     position: relative;
 }
 
@@ -55,7 +59,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 17vh;
+    height: 22vh;
     padding: 0 10% 0 0;
     background: linear-gradient(90deg, rgba(20,172,147,255) 46%, rgba(13,94,114,255) 90%);
     display: flex;
@@ -86,17 +90,31 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    padding: 1%;
 }
 
 .FirstPage-Title-Button:hover, .FirstPage-Title-Link:hover {
     background: linear-gradient( to left, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
 }
 
-.First-Page-Logo-Container {
+.First-Page-Logo-Extra-Container {
+    padding: 2%;
     position: absolute;
-    /* width: 30%; */
     top: 0;
     left: 0;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%
+}
+
+.First-Page-Logo-Container {
+    /* position: absolute; */
+    padding-left: 40px;
+    /* width: 30%; */
+    /* top: 0;
+    left: 0; */
     /* height: 34vw; */
     z-index: 90;
     display: flex;
@@ -104,92 +122,33 @@
     /* justify-content: space-around; */
     align-items: center;
     text-align: center;
-    width: 550px;
-    height: 520px;
     color: var(--main-background-color);
     /* background-color: blue; */
-}
-
-.First-Page-Logo {
-    margin: 30px 0 -1px 0;
-    width: 230px
 }
 
 .First-Page-Logo-Description {
     font-size: 150%;
     font-weight: 800;
-    padding: 15px 90px 0 90px;
+    /* padding: 15px 90px 0 90px; */
 }
 
 .First-Page-List-Container {
     position: absolute;
-    top: 523px;
     z-index: 90; 
-    width: 500px;
-    height: 220px;
     padding: 15px 10px 30px 50px;
+    display: flex;
+    align-items: center;
 }
 
 .First-Page_List-Item {
     color: var(--main-background-color);
-    font-size: 145%;
+    font-size: 135%;
     font-weight: 800;
 }
 
 .First-Page-List-Item-Text {
-    margin-left: 10px;
     line-height: normal;
 }
-
-.First-Page-List-Item-Extra-Container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-}
-
-.First-Page-List-Gear-Icon {
-    height: 23px;
-}
-
-/* svg {
-    width: 800px;
-} */
-
-
-/* .FirstPage-Main-Container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100vh;
-}
-
-.FirstPage-Title-Container {
-    width: 37%;
-}
-
-h1 {
-    font-size: 600%;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--main-background-color);
-    /* //background: -webkit-linear-gradient(rgb(137, 136, 136), rgb(253, 248, 248)); */
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-    /* text-shadow: 
-    2px 2px 2px #333, 
-    0 2px 2px #333, 
-    -2px 0 2px #333, 
-    0 -2px 2px #333;
-}
-
-.FirstPage-Icon {
-    background: -webkit-linear-gradient(#eee, #333); */
-    /* background-clip: border-box; */
-    /* -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
-} */
 
 .FirstPage-Description {
     /* text-shadow: 1px 1px 0 #444; */
@@ -239,16 +198,15 @@ h1 {
     list-style-type: disc;
 }
 
+/* ABOUT STYLES!/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 .About-List-Gear-Icon {
     height: 30px;
 }
 
 .About-Main-Container {
-    /* padding: 15vh; */
     color: var(--main-background-color);
-    background-color: rgba(51,52,63,225);
-    /* background-size: cover; */
-    /* padding-top: 7%; */
+    background-color: rgba(42,41,48,0.99);
 }
 
 
@@ -289,6 +247,10 @@ h1 {
 
 .Bottom-Block-Part {
     background-position-y: bottom;
+}
+
+.About-Photo-Main-Container {
+    background-color: var(--details-color); 
 }
 
 .About-Picture-Container, .About-Photo-Container {
@@ -358,30 +320,21 @@ h1 {
     background-color: var(--main-background-color);
 }
 
-.About-Slide-Container {
-    /* background-image: url(../data/picture/picture_products/stepfeeder.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
-    height: 50vh;
-    width: 60%;
-    /* border: 3px solid var(--details-color) */
-}
-
 .Options-Main-Container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .About-Product-Options-Container {
-    width: 30%;
-    padding: 0 5%;
+    width: 50%;
     height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border-right: 3px solid var(--details-color)
+    /* border-right: 3px solid var(--details-color); */
 }
 
 .About-Last-Container {
@@ -432,8 +385,117 @@ h1 {
 .Footer-Background-Block {
     height: 20vh;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
 }
 
+.About-Text-Adaptive-Container {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* ABOUT ADAPTIVE PART/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1240px) {
+    .Options-Main-Container, .Bottom-Block-Part {
+        flex-direction: column;
+        gap: 5vw
+    }
+    /* .About-Text-Adaptive-Container {
+    } */
+    
+}
+
+.About-Product-Options-Container {
+    border: none;
+    min-height: 400px;
+    max-width: 40%;
+}
+
+.Single-Product-Option {
+    justify-content: center;
+}
+
+@media screen and (max-width: 930px) {
+    .About-Product-Options-Container {
+        min-height: 230px;
+        max-width: 48%;
+    } 
+}
+
+@media screen and (max-width: 680px) {
+    .About-Text-Adaptive-Container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }  
+    .About-Product-Options-Container {
+        min-width: 60vw;
+    }
+    /* .Single-Product-Option {
+        margin-left: 0;
+    } */
+}
+
+@media screen and (max-width: 550px) {
+   .About-Product-Arrow-Icon {
+    max-height: 10px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+    .About-Product-Options-Container {
+        max-height: 130px;
+        min-width: 80vw
+    }
+    .About-Product-Options-Inner-Container {
+        /* background-color: pink; */
+        padding: 0 20px 20px 20px;
+    }
+}
+
+   /* @media screen and (max-width: 400px) {
+        .About-Product-Options-Container {
+            min-width: 90vw;
+        }
+        .About-Product-Options-Button {
+            max-width: 40vw;
+        }
+    } */
+
+    @media screen and (max-width: 800px) {
+        .About-Text-Container {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 15%;
+        }
+        .About-Photo-Container, .About-Picture-Container {
+            padding: 7%;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .About-Text-Container {
+            font-size: 60%;
+        }
+        .About-Photo-Container, .About-Picture-Container {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px
+        }
+        .About-Picture {
+            min-width: 30vw;
+        }
+        .About-Photo-Main-Container {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            min-height: 300px;
+        }
+        .About-List-Item-Marker {
+            min-width: 20px;
+        }
+    }
 

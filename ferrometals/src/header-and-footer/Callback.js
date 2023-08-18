@@ -7,7 +7,7 @@ import "../products/products.css";
 import CallbackButton from './CallbackButton';
 import emailjs from '@emailjs/browser';
 
-export default function Callback ({data, open, handleClose, handleToggle, classname}) {
+export default function Callback ({data, open, handleClose, handleToggle, classname, iconUrl}) {
 
     const [nameValue, setNameValue] = useState("");
 
@@ -63,7 +63,7 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
 
   return (
     <div>
-      <CallbackButton data={data} handleToggle={handleToggle} classname={classname} />
+      <CallbackButton data={data} handleToggle={handleToggle} classname={classname} iconUrl={iconUrl} />
       <Backdrop
         sx={{ color: '#fff', zIndex: "100" }}
         open={open} 
@@ -79,7 +79,7 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
           <input name="user_phone_number" className='Callback-textfield' onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} value={phoneNumberValue} placeholder={data.header.callback.phoneText}></input>
         </form>
         <button className='Callback-inner-button Callback-submit-button'  onClick={sendCallbackEmail}><span>{data.header.callback.buttonText}</span>
-        <ArrowForwardIosIcon /> </button>
+        <ArrowForwardIosIcon className='Callback-inner-button-icon' /> </button>
         <p className='Callback-text'>{data.header.callback.dataMessage}</p>
        </div>
       </Backdrop>

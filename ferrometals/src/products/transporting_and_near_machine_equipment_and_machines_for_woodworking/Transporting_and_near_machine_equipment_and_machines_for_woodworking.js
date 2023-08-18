@@ -39,7 +39,7 @@ const TransportingAndNearMachineEquipmentAndMachinesForWoodworking = ({data}) =>
                 <div className="Product-Item-Container" key={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[1].idGlobal}>
                         <h5 className="Product-Item-Heading">{data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[1].header}</h5>
                         <div className="Product-Content-Container" style={{backgroundColor: "var(--details-color)"}}>
-                            <img className="Product-Image" src={require(`../../data/picture/picture_products/${data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[2].picture}`)} alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[1].captionText} />
+                            <img className="Product-Image" src={require(`../../data/picture/picture_products/${data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[1].picture}`)} alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[1].captionText} />
                             <div className="Product-Description-Container">
                                 {data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[1].idGlobal].parameters.map((localItem) => 
                                     <p key={localItem.id} className="Product-Description">
@@ -122,7 +122,7 @@ const TransportingAndNearMachineEquipmentAndMachinesForWoodworking = ({data}) =>
                 </div>
                 <div className="Product-Item-Container" key={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[7].idGlobal}>
                         <h5 className="Product-Item-Heading">{data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[7].header}</h5>
-                        <div className="Product-Content-Container" style={{backgroundColor: "var(--details-color)"}}>>
+                        <div className="Product-Content-Container" style={{backgroundColor: "var(--details-color)"}}>
                             <img className="Product-Image" src={require(`../../data/picture/picture_products/${data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[7].picture}`)} alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[7].captionText} />
                             <div className="Product-Description-Container">
                                 {data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[7].idGlobal].parameters.map((localItem) => 
@@ -140,7 +140,8 @@ const TransportingAndNearMachineEquipmentAndMachinesForWoodworking = ({data}) =>
                 <h4 className="Product-Options-Title">{data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.product}</h4>
                 <img className="Product-Options-Image" alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.mainHeader}
                 src={require(`../../data/picture/picture_products/${data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[0].picture}`)}></img>
-                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.path}`)} 
+                {/* <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.path}`)}  */}
+                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerCoatingLines.path}`)} 
                 download={data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.title}>{data.booklets.title}</a>
             </div>
             {/* <div className="About-Text-Container">

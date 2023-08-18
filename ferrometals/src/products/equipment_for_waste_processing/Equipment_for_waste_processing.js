@@ -20,10 +20,10 @@ const EquipmentForWasteProcessing = ({data}) => {
                             </div>
                         </div>
                         <h5 className="Product-Item-Heading">{data.equipmentForWasteProcessing.pictures[1].header}</h5>
-                        <div className="Product-Content-Container" style={{backgroundColor: "var(--details-color)"}}>
+                        <div className="Product-Content-Container Product-Double-Content-Container" style={{backgroundColor: "var(--details-color)"}}>
                             <div className="Pellets-Images-Container">
-                                <img className="Product-Image Pellet-Image" src={require(`../../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[1].picture}`)} alt={data.equipmentForWasteProcessing.pictures[1].captionText} />
-                                <img className="Product-Image Pellet-Image" src={require(`../../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[2].picture}`)} alt={data.equipmentForWasteProcessing.pictures[2].captionText} />
+                                <img className="Product-Image Pellet-Image Product-Double-Image" src={require(`../../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[1].picture}`)} alt={data.equipmentForWasteProcessing.pictures[1].captionText} />
+                                <img className="Product-Image Pellet-Image Product-Double-Image" src={require(`../../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[2].picture}`)} alt={data.equipmentForWasteProcessing.pictures[2].captionText} />
                             </div>
                             <div className="Product-Description-Container">
                                 {data.equipmentForWasteProcessing.pictures[data.equipmentForWasteProcessing.pictures[1].idGlobal].parameters.map((localItem) => 
@@ -37,11 +37,12 @@ const EquipmentForWasteProcessing = ({data}) => {
                     </div>
             </article>
             <div className="Product-Options-Container">
-                <h4 className="Product-Options-Title">{data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.product}</h4>
-                <img className="Product-Options-Image" alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.mainHeader}
+                <h4 className="Product-Options-Title">{data.booklets.equipmentForWasteProcessing.product}</h4>
+                <img className="Product-Options-Image" alt={data.equipmentForWasteProcessing.mainHeader}
                 src={require(`../../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[0].picture}`)}></img>
-                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.path}`)} 
-                        download={data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.title}>{data.booklets.title}</a>
+                {/* <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.equipmentForWasteProcessing.path}`)}  */}
+                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerCoatingLines.path}`)} //Замінити
+                        download={data.booklets.equipmentForWasteProcessing.title}>{data.booklets.title}</a>
             </div>
 
         </section>

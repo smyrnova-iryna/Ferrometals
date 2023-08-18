@@ -7,39 +7,56 @@ const Products = ({data, linkScroll}) => {
    <section className="Standart-Section Main-Products-Container">
     <h2 className="Main-Products-Title">{data.products.title}</h2>
     <div className="Main-Products-Inner-Container">
-      <Link className="Main-Products-Inner-Link" to={data.menuPaths.transportingAndNearMachineEquipmentAndMachinesForWoodworking} 
-      onClick={linkScroll}>
-        <img className="Main-Products-Inner-Image" alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.mainHeader}
+      <Link className="Main-Products-Inner-Link" 
+      to={data.menuPaths.transportingAndNearMachineEquipmentAndMachinesForWoodworking} onClick={linkScroll}>
+        <img className="Main-Products-Inner-Image" 
+        alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.mainHeader}
         src={require(`../data/picture/picture_products/${data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[0].picture}`)}></img>
-        <button className="Main-Products-Inner-Button">{data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.mainHeader}<ArrowForwardIosIcon /></button>
+        <button className="Main-Products-Inner-Button">
+        {data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.mainHeader}<ArrowForwardIosIcon />
+        </button>
       </Link>
       <Link className="Main-Products-Inner-Link" to={data.menuPaths.equipmentForWasteProcessing} 
       onClick={linkScroll}>
         <img className="Main-Products-Inner-Image" alt={data.equipmentForWasteProcessing.mainHeader}
         src={require(`../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[0].picture}`)}></img>
-        <button className="Main-Products-Inner-Button">{data.equipmentForWasteProcessing.mainHeader}<ArrowForwardIosIcon /></button>
-      </Link>
-      <Link className="Main-Products-Inner-Link" to={data.menuPaths.roundWoodAccountingScanner} 
-      onClick={linkScroll}>
-        <img className="Main-Products-Inner-Image" alt={data.roundWoodAccountingScanner.mainHeader}
-        src={require(`../data/picture/picture_products/${data.roundWoodAccountingScanner.pictures[0].picture}`)}></img>
-        <button className="Main-Products-Inner-Button">{data.roundWoodAccountingScanner.mainHeader}<ArrowForwardIosIcon /></button>
+        <button className="Main-Products-Inner-Button">{data.equipmentForWasteProcessing.mainHeader}<ArrowForwardIosIcon />
+        </button>
       </Link>
     </div>
-    {/* <div className="Main-Products-Inner-Container">
+    <div className="Main-Products-Inner-Container">
       <Link className="Main-Products-Inner-Link" to={data.menuPaths.roundWoodAccountingScanner} 
       onClick={linkScroll}>
         <img className="Main-Products-Inner-Image" alt={data.roundWoodAccountingScanner.mainHeader}
         src={require(`../data/picture/picture_products/${data.roundWoodAccountingScanner.pictures[0].picture}`)}></img>
-        <button className="Main-Products-Inner-Button">{data.roundWoodAccountingScanner.mainHeader}<ArrowForwardIosIcon /></button>
+        <button className="Main-Products-Inner-Button">{data.roundWoodAccountingScanner.mainHeader}<ArrowForwardIosIcon />
+        </button>
       </Link>
-      <Link className="Main-Products-Inner-Link" to={data.menuPaths.woodenPellets} 
+      <Link className="Main-Products-Inner-Link" to={data.menuPaths.polymerCoatingLines} 
       onClick={linkScroll}>
-        <img className="Main-Products-Inner-Image" alt={data.woodenPellets.mainHeader}
-        src={require(`../data/photo/photo_wooden_pellets/${data.woodenPellets.photos[4].photo}`)}></img>
-        <button className="Main-Products-Inner-Button">{data.woodenPellets.mainHeader}<ArrowForwardIosIcon /></button>
+        <img className="Main-Products-Inner-Image" alt={data.polymerCoatingLines.mainHeader}
+        src={require(`../data/picture/picture_products/${data.polymerCoatingLines.pictures[0].picture}`)}></img>
+        <button className="Main-Products-Inner-Button">{data.polymerCoatingLines.mainHeader}<ArrowForwardIosIcon />
+        </button>
       </Link>
-    </div> */}
+      {/* <Link className="Main-Products-Inner-Link" to={data.menuPaths.palletEquipment} 
+      onClick={linkScroll}>
+        <img className="Main-Products-Inner-Image" alt={data.palletEquipment.mainHeader}
+        src={require(`../data/picture/picture_products/${data.palletEquipment.pictures[0].picture}`)}></img>
+        <button className="Main-Products-Inner-Button">{data.palletEquipment.mainHeader}<ArrowForwardIosIcon />
+        </button>
+      </Link> */}
+    </div>
+    <div className="Main-Products-Inner-Container">
+      <Link className="Main-Products-Inner-Link" to={data.menuPaths.palletEquipment} 
+      onClick={linkScroll}>
+        <img className="Main-Products-Inner-Image" alt={data.palletEquipment.mainHeader}
+        src={require(`../data/picture/picture_products/${data.palletEquipment.pictures[0].picture}`)}></img>
+        <button className="Main-Products-Inner-Button">{data.palletEquipment.mainHeader}<ArrowForwardIosIcon />
+        </button>
+      </Link>
+    </div>
+
    </section>
  )
 }

@@ -54,7 +54,7 @@
 .Main-Products-Inner-Button {
     display: flex;
     align-items: center;
-    height: 12vh;
+    min-height: 70px;
     width: 100%;
     justify-content: center;
     cursor: pointer;
@@ -141,12 +141,6 @@
 
 .Product-Image {
     width: 30%;
-    /* border: 3px solid var(--details-color); */
-    /* box-shadow: 
-    2px 0 2px #333, 
-    0 2px 2px #333,
-    0px 0px 0px #333, 
-    0 0px 0px #333,  */
 }
 
 .Product-Image-Container {
@@ -325,4 +319,208 @@
 
 .Product-Info-Container {
     color: var(--main-background-color);
+}
+
+.Scaner-Svg {
+    width: 80px;
+    height: 80px;
+}
+
+.Scaner-Second-Svg {
+    max-width: 80px;
+}
+
+/* PRODUCTS ADAPTIVE /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 1200px){
+    .Main-Products-Inner-Button {
+        min-height: 120px;
+    }
+    .Main-Products-Inner-Image {
+        max-width: 20vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Main-Products-Inner-Container {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        padding-top: 0;
+    }
+    .Main-Products-Inner-Link {
+        width: 85vw;
+        min-height: 300px;
+    }
+    .Main-Products-Inner-Image {
+        min-width: 70vw;
+    }
+    .Main-Products-Title {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .Product-Heading {
+        font-size: 200%;
+        margin: 2% 5%;
+    }
+    .Product-Options-Title {
+        text-align: center;
+    }
+    .Product-Description {
+        font-size: 90%;
+    }
+    .Product-Description-Container {
+        width: 45vw
+    }
+    .Product-First-Info-Container {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .Scaner-Decorated-Left-Text-Container {
+        margin: 30px 2vw;
+    }
+    .Scaner-Decorated-Right-Text-Container {
+        margin: 30px 3vw
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .Product-Content-Container {
+        margin: 2%;
+        padding: 2%;
+        justify-content: space-between;
+        gap: 2%
+    }
+    .Product-Description-Container {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .Product-Content-Container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    .Product-Inner-Container {
+        gap: 40px
+    }
+    .Product-Image {
+        min-height: 200px;
+    }
+    .Product-Double-Image {
+        height: 200px;
+    }
+    .Pellets-Images-Container {
+        width: 70%;
+    }
+    .Product-Double-Content-Container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .Product-Options-Button {
+        min-width: 40vw
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Product-Description-Container {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .Product-Heading {
+        font-size: 140%;
+        margin-top: 5%;
+    }
+    .Product-Item-Heading, .Product-Options-Title {
+        font-size: 110%;
+    }
+    .Product-Description {
+        font-size: 90%;
+    }
+    .Product-Image {
+        width: 200px
+    }
+    .Main-Products-Inner-Link {
+        padding: 0 20px 20px 20px ;
+
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .Product-Description {
+        font-size: 70%;
+    }
+    .Product-Options-Button {
+        min-width: 60vw
+    }
+    .Pellets-Images-Container {
+        width: 100%;
+    }
+    .Scaner-Description-Adaptive {
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .Product-Description {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Scaner-Svg {
+        min-width: 15vw;
+        min-block-size: 17vw;
+    }
+    .Scaner-Second-Svg {
+        min-width: 15vw;
+    }
+}
+
+@media screen and (max-width: 657px) {
+    .Scaner-Svg {
+        margin-left: 10px;
+        margin-top: 5px;
+
+    }
+    .Product-First-Info-Container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .Scaner-Second-Svg {
+        align-self: flex-start;
+        margin-top: 15px;
+    }
+    .Scaner-Decorated-Right-Text, .Scaner-Decorated-Left-Text {
+        text-align: left;
+    }
+    .Product-Info-Container {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .Scaner-Image {
+        min-width: 250px;
+        margin-bottom: 3vw;
+    }
+    .Product-First-Info-Container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Scaner-Description-Name {
+        max-width: 50%;
+    }
+    .Scaner-Description-Value {
+        max-width: 30%;
+        text-align: right;
+    }
 }

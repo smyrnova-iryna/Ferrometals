@@ -317,29 +317,178 @@
 //  ОБОРУДОВАНИЯ ДЛЯ РАЗЛИЧНЫХ
 //  ОТРАСЛЕЙ ПРОМЫШЛЕННОСТИ
 
+// +++++++++++++++++======================================+++++++++++++++++++++++++++++++++++
+// +++++++++++++++++======================================+++++++++++++++++++++++++++++++++++
+// +++++++++++++++++======================================+++++++++++++++++++++++++++++++++++
+
+// станок линейный для нарезки бобышек 
+// (колодок) для поддона.
+
+// Длина отреза регулируется перемещением упора, ограничивающего ход 
+// пневмоцилиндра механизма шаговой подачи заготовки к пиле. Данная регулировка
+// выполняется с помощью винтовой передачи. Вращая рукоятку оператор может задать 
+// любой требуемый размер в диапазоне 50 – 170 мм. Для контроля размера имеется шкала с 
+// делением 1 мм. Пильный узел имеет конструкцию позволяющую быструю замену пилы. 
+// Для замены пилы необходимо открыть верхний кожух (фиксируется пневмоупором в 
+// открытом положении) и открутить торцевую гайку шпинделя. Направление резьбы 
+// обеспечивает самозажим при вращении шпинделя. 
+
+// - Сечение бруса максимальное 150 х 150 мм (возможно иное по требованию заказчика)
+// - длина бруса максимальная 2000 мм
+// - производительность 1 шт/с
+// - мощность привода пилы 4 кВт
+// - мощность привода подачи заготовок 0,75 кВт
+// - зажим заготовки пневматический
+// - номинальное давление в пневмолинии 5 бар
+
+// ==============================================================================
+
+// полуавтоматическую линию для сборки 
+// деревянных поддонов.
+
+// Ручная укладка заготовок в кондуктор
+// Автоматическая сборка и штабелирование (с переворотом) готовых поддонов.
+// Термомаркеров для выжига тавра 6шт.
+// Обрезка углов поддона.
+
+// Переналаживаемый кондуктор для сборки 
+// следующих типов паллет:
+// 1200х800х145 (EUR)
+// 1200х1000х145 (FIN)
+// 1200х1200х145 (US)
+// Производительность:
+// 80 шт/ч
+// Общая мощность 12 кВт
+// Масса 2500 кг
+
+// ==============================================================================
+
+// станок автоматического выжигание клейма 
+// на бобышке.
+
+// - мощность термомаркера: 1000 Вт
+// - производительность: 30 шт/мин
+// - привод подачи заготовок: пневматический
+// - номинальное давление: 5 бар
+
+// ==============================================================================
+
+// станок линейный для нарезки деревянных 
+// бобышек (колодок) для поддонов.
+
+// - Сечение бруса максимальное 150 х 150 мм
+// - длина бруса максимальная 2000 мм
+// - производительность 1 шт/с
+// - мощность привода пилы 4 кВт
+// - мощность привода подачи заготовок 0,75 кВт
+// - зажим заготовки пневматический
+// - номинальное давление в пневмолинии 5 бар
+
+// ==============================================================================
+
+// станок карусельного типа для нарезки 
+// бобышек (колодок), которые используются в конструировании деревянных поддонов.
+ 
+// - Сечение бруса максимальное 150 х 150 мм
+// - длина бруса максимальная 2000 мм
+// - количество брусьев в карамельной кассете 6шт (4шт)
+// - производительность 2 шт/с
+// - общая мощность 5.2 кВт
+
+// ==============================================================================
+
+// автоматический 
+// станок для сбивки деревянных бобышек (колодок) с доской для поддонов.
+
+// Количество пистолетов, шт 3
+// Количество гвоздей на каждый блок 2-3 (в линию или по диагонали). 
+// Длина доски 600 - 1200. Кассетная подача заготовок. 
+// Производительность по готовым узлам 20 шт/мин
+
+// ==============================================================================
+
+// универсальный 
+// кондуктор для сбивки поддонов.
+
+// - Перенастройка под другой размер занимает не больше 10 мин.
+// - Диапазон разм. поддонов: мини - 700 x 700 мм - макси: 1350 x 1550 мм
+// - Диапазон разм. шашек: мини - 60x70x70 мм - макси: 120x145x120 мм
+// - Пневматический зажим (6 пневмоцилиндров) для шашек и досок
+// - Пневматическое (4 пневмоцилиндра) извлечение поддонов
+// - Легкий ручной переворот поддона (делается оператором)
+// - Оснащен подвесами для 2-х гвоздезабивных инструментов (инструменты и
+// балансиры не включены в стоимость)
+// - Средняя производительность: от 180 до 250 поддонов/день
+
+// ==============================================================================
+
+// станок для обрезки углов деревянных 
+// поддонов. Может быть встроен в линию полуавтоматической сборки поддонов.
+
+// - Размеры обрабатываемых поддонов: 600х600 – 1200х1200
+// - количество пильных узлов, шт 4
+// - диаметр пильного диска, мм 300
+// - частота вращения пилы, об\мин 3000
+// - мощность двигателя привода пилы, кВт 4х1,5
+// - общая установленная мощность, кВт 6
+// - номинальное давление в пневмо-системе, бар 6
+// - длительность цикла обрезки, с 2,5
+
+// ==============================================================================
+
+// станок для обрезки углов деревянных 
+// поддонов.
+
+// - Размеры обрабатываемых поддонов: 600х600 – 1200х1200
+// - количество пильных узлов, шт 2
+// - диаметр пильного диска, мм 300
+// - частота вращения пилы, об\мин 3000
+// - мощность двигателя привода пилы, кВт 2х1,5
+// - общая установленная мощность, кВт 3
+// - номинальное давление в пневмо-системе, бар 6
+
+// ==============================================================================
+
+// устройство для переворота деревянных 
+// поддонов.
+
+// - размеры поддонов, мм 600х600 – 1200х1200
+// - производительность шт/мин 12 
+// - общая мощность приводов, кВт 1,1
+// - номинальное давление в пневмо-системе, бар 6
+
+// ==============================================================================
+
 const dataRu = {
-    MUIFont: "'Open Sans', sans-serif",
+    MUIFont: "'Roboto', sans-serif",
     MUIButtonBorder: {En: 4, Ru: 7, Lt: 4, Pl: 4},
     booklets:
              {title: "Скачать буклет", 
              details: "Подробнее",
              transportingAndNearMachineEquipmentAndMachinesForWoodworking: 
                {product: "Транспортирующее и околостаночное оборудование и станки для деревообработки",
-        //        path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
-        path: "FerroMetals_Wooden_pellets_EN.pdf", 
+               path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
                title: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf"
                },
-               equipmentForWasteProcessing: 
+             equipmentForWasteProcessing: 
                {product: "Оборудование для переработки отходов",
-        //        path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
-        path: "FerroMetals_Wooden_pellets_EN.pdf", 
+               path: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf", 
                title: "FerroMetals_Transporting_and_near_machine_equipment_and_machines_for_woodworking_Equipment_for_waste_processing_RU.pdf"
                },
-               roundWoodAccountingScanner: 
+             roundWoodAccountingScanner: 
                {product: "Сканер учета круглого леса",
-        //        path: "FerroMetals_Round_wood_accounting_scanner_EN.pdf", 
-        path: "FerroMetals_Wooden_pellets_EN.pdf", 
+               path: "FerroMetals_Round_wood_accounting_scanner_EN.pdf", 
                title: "FerroMetals_Round_wood_accounting_scanner_EN.pdf"
+               },
+             polymerCoatingLines: 
+               {product: "Линии полимерного покрытия",
+               path: "FerroMetals_Polymer_coating_lines_RU.pdf", 
+               title: "FerroMetals_Polymer_coating_lines_RU.pdf"
+               },
+             palletEquipment: 
+               {product: "Паллетное оборудование",
+               path: "FerroMetals_Polymer_coating_lines_EN.pdf", 
+               title: "FerroMetals_Polymer_coating_lines_EN.pdf"
                }
              },
     header: 
@@ -364,7 +513,8 @@ const dataRu = {
             "/products/transporting_and_near_machine_equipment_and_machines_for_woodworking", 
             equipmentForWasteProcessing: "/products/equipment_for_waste_processing",
             roundWoodAccountingScanner: "/products/round_wood_accounting_scanner",
-            woodenPellets: "/products/wooden_pellets", 
+            polymerCoatingLines: "/products/polymer_coating_lines",
+            palletEquipment: "/products/pallet_equipment",
             gallery: "/gallery", 
             photo: "/gallery/photo", 
             video: "/gallery/video", 
@@ -381,7 +531,8 @@ const dataRu = {
             "Транспортирующее и околостаночное оборудование и станки для деревообработки",
             equipmentForWasteProcessing: "Оборудование для переработки отходов", 
             roundWoodAccountingScanner: "Сканер учета круглого леса",
-            woodenPellets: "Древесные пеллеты",
+            polymerCoatingLines: "Линии полимерного покрытия",
+            palletEquipment: "Паллетное оборудование",
             gallery: "Галерея", 
             photo: "Фото", 
             video: "Видео", 
@@ -393,7 +544,7 @@ const dataRu = {
                     button: "Получить консультацию", 
                     link: "Каталог проектов", 
                     info: ["Деревообрабатывающие линии;", "Транспортирующее оборудование и станки;",  
-                    "Комплексная механизация и автоматизация;", "Пеллетное и брикетное оборудование для переработки отходов."
+                    "Комплексная механизация и автоматизация;", "Линии полимерного покрытия."
                     ]},
         },
     about: 
@@ -424,7 +575,7 @@ const dataRu = {
           photos: [
                    ['photo_about.jpg', 'photo_about2.jpg', 'photo_about3.jpg'], 
                    ['photo_about4.jpg', 'photo_about5.jpg', 'photo_about6.jpg'], 
-                   'photo_about7.jpg'],
+                   ['photo_about7.jpg', 'photo_about8.jpg', 'photo_about9.jpg']],
           altText: "Оборудование",
           },
     products: {title: "Продукция"},
@@ -1083,6 +1234,419 @@ const dataRu = {
                         }
                         ]
                 },
+    polymerCoatingLines: 
+                {mainHeader: "Линии полимерного покрытия",
+                mainPictures: 
+                        [{idMain: 0, 
+                        header: '', 
+                        picture: 'round_wood_accounting_scanner.png',
+                        captionText: 'Линии полимерного покрытия'}
+                        ],
+                captionText: 'Линии полимерного покрытия',
+                mainText: [`FerroMetals является официальным дилером Falcon Scan в Европейском Союзе`,
+                `Сканер учета круглого леса Falcon Scan SRW
+                предназначен для работы в качестве автоматического
+                средства измерения параметров бревен и может
+                применяться как самостоятельно, так и в составе
+                автоматизированных систем управления сортировочными
+                и раскряжевочными линиями, систем учета сырья на всех
+                участках предприятия, систем адаптивного управления
+                лесоперерабатывающим оборудованием. Соответствует
+                ГОСТ 52117-2003 , ГОСТ 2708-75`,
+                `Пары линеек Излучатель-Приемник образуют измерительный
+                створ. Микроконтроллер управляет включением в определенном
+                порядке излучателей, благодаря чему в створе измерения
+                образуется очень плотная сеть лучей. При отсутствии бревна в
+                створе измерения измеритель работает в режиме сканирования
+                контрольной зоны в поисках бревна. В момент попадания в створ
+                измерения любого объекта измеритель переходит в режим
+                измерения. При движущемся транспортере через определенные
+                интервалы происходят следующие измерения. Благодаря тому, что
+                на каждое измерение затрачивается очень небольшое время -
+                несколько миллисекунд - становится возможным обмерять бревно,
+                например, длиной 6 метров при скорости транспортера в 1 м/с более
+                чем в 500 точках`,
+                `Во время установки и ввода в эксплуатацию требуется стабильное подключение к Интернету
+                (Wi-Fi или LAN) и компьютер с Windows 7 или новее с доступом к Интернету. 
+                Настройка оборудование и обучение персонала осуществляется удаленно (онлайн)`
+                ],
+                pictures: 
+                        [{idGlobal: 0, 
+                        header: '', 
+                        picture: 'round_wood_accounting_scanner2.png',
+                        captionText: 'Линии полимерного покрытия',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Максимальный измеряемый диаметр, мм',
+                                parameterValue: '780, 1150'},
+                                {id: 1,
+                                parameterName: 'Минимальный измеряемый диаметр, мм',
+                                parameterValue: '60'},
+                                {id: 2,
+                                parameterName: 'Максимальное расстояние между передатчиком и приемником, мм',
+                                parameterValue: '1500'},
+                                {id: 3,
+                                parameterName: 'Точность измерения диаметра, мм',
+                                parameterValue: '+- 1'},
+                                {id: 4,
+                                parameterName: 'Количество измерений в секунду, измерений',
+                                parameterValue: '250'},
+                                {id: 5,
+                                parameterName: 'Погрешность измерения длины, мм:',
+                                parameterValue: ''},
+                                {id: 6,
+                                parameterName: '- при скорости 3 м/с',
+                                parameterValue: '+-15'},
+                                {id: 7,
+                                parameterName: '- при скорости 0.5 м/с',
+                                parameterValue: '+-1.5'},
+                                {id: 8,
+                                parameterName: 'Возможность установки без разрыва цепи подачи бревна',
+                                parameterValue: 'да'},
+                                {id: 9,
+                                parameterName: 'Максимальная длина бревна',
+                                parameterValue: 'не ограничено'},
+                                {id: 10,
+                                parameterName: 'Минимальная длина бревна, мм',
+                                parameterValue: '100'},
+                                {id: 11,
+                                parameterName: 'Напряжение питания (переменный ток), В',
+                                parameterValue: '100 - 240'},
+                                {id: 12,
+                                parameterName: 'Потребляемая мощность, Вт',
+                                parameterValue: '15'},
+                                {id: 13,
+                                parameterName: 'Интерфейс управления',
+                                parameterValue: 'Сенсорный экран, 7 дюймов'},
+                                {id: 14,
+                                parameterName: 'Поддержка языков',
+                                parameterValue: 'русский, английский'},
+                                {id: 15,
+                                parameterName: 'Поддержка протоколов выгрузки:',
+                                parameterValue: ''},
+                                {id: 16,
+                                parameterName: '- локальная сеть',
+                                parameterValue: 'WIFI, Ethernet (кабель)'},
+                                {id: 17,
+                                parameterName: '- интернет',
+                                parameterValue: 'WIFI, Ethernet (кабель)'},
+                                {id: 18,
+                                parameterName: 'Выгрузка параметров в таблицу (на каждое бревно): диаметр, длина, объем, дата/время, номер бревна, сотрудник',
+                                parameterValue: 'SQL (из SQL можно выгрузить в EXCEL)'},
+                                {id: 19,
+                                parameterName: 'Удаленная поддержка, настройка и обновление программы сканера',
+                                parameterValue: 'да'},
+                                {id: 20,
+                                parameterName: 'Объем внутренней памяти у сканера, гб',
+                                parameterValue: '32'},
+                                {id: 21,
+                                parameterName: 'Разрешающая способность энкодера, имп/об',
+                                parameterValue: '4000'},
+                                {id: 22,
+                                parameterName: 'Материал корпуса:',
+                                parameterValue: ''},
+                                {id: 23,
+                                parameterName: '- у датчиков',
+                                parameterValue: 'алюминий'},
+                                {id: 24,
+                                parameterName: '- у модуля с экраном управления',
+                                parameterValue: 'пластик'},
+                                {id: 25,
+                                parameterName: 'Порты для подключения',
+                                parameterValue: 'USB, RJ45, GX12, GX16, GX20'},
+                                {id: 26,
+                                parameterName: 'Температурный диапазон эксплуатации, С',
+                                parameterValue: '-40 - +50'}]
+                        }
+                        ]
+                },
+    palletEquipment:
+                {mainHeader: "Паллетное оборудование",
+                pictures: 
+                        [{idGlobal: 0, 
+                        header: 'Cтанок линейный для нарезки бобышек (колодок) для поддона', 
+                        picture: 'linear_machine_for_cutting_bosses_(blocks)_for_a_pallet.png', 
+                        captionText: 'Cтанок линейный для нарезки бобышек (колодок) для поддона',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Сечение бруса максимальное, мм',
+                                parameterValue: '150 х 150'},
+                                {id: 1,
+                                parameterName: '(возможно иное по требованию заказчика)',
+                                parameterValue: ''},
+                                {id: 2,
+                                parameterName: 'Длина бруса максимальная, мм',
+                                parameterValue: '2000'},
+                                {id: 3,
+                                parameterName: 'Производительность, шт/с',
+                                parameterValue: '1'},
+                                {id: 4,
+                                parameterName: 'Мощность привода пилы, кВт',
+                                parameterValue: '4'},
+                                {id: 5,
+                                parameterName: 'Мощность привода подачи заготовок, кВт',
+                                parameterValue: '0.75'},
+                                {id: 6,
+                                parameterName: 'Зажим заготовки',
+                                parameterValue: 'пневматический'},
+                                {id: 7,
+                                parameterName: 'Номинальное давление в пневмолинии, бар',
+                                parameterValue: '5'},
+                                {id: 8, //Первое предложение странно сформулировано. Ошибка?
+                                parameterName: 'Длина отреза регулируется перемещением упора, ограничивающего ход пневмоцилиндра механизма шаговой подачи заготовки к пиле. Данная регулировка выполняется с помощью винтовой передачи. Вращая рукоятку, оператор может задать любой требуемый размер в диапазоне 50 – 170 мм. Для контроля размера имеется шкала с делением 1 мм.',
+                                parameterValue: ''},
+                                {id: 9,
+                                parameterName: 'Пильный узел имеет конструкцию, позволяющую быструю замену пилы. Для замены пилы необходимо открыть верхний кожух (фиксируется пневмоупором в открытом положении) и открутить торцевую гайку шпинделя.',
+                                parameterValue: ''},
+                                {id: 10,
+                                parameterName: 'Направление резьбы обеспечивает самозажим при вращении шпинделя',
+                                parameterValue: ''}]
+                        },
+                        {idGlobal: 1, 
+                        header: 'Полуавтоматическая линия для сборки деревянных поддонов', 
+                        picture: 'semi_automatic_wooden_pallet_assembly_line.png', 
+                        captionText: 'Полуавтоматическая линия для сборки деревянных поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Переналаживаемый кондуктор для сборки следующих типов паллет:',
+                                parameterValue: '1200 х 800 х 145 (EUR)'},
+                                {id: 1,
+                                parameterName: '',
+                                parameterValue: '1200 х 1000 х 145 (FIN)'},
+                                {id: 2,
+                                parameterName: '',
+                                parameterValue: '1200 х 1200 х 145 (US)'},
+                                {id: 3,
+                                parameterName: 'Производительность, шт/ч',
+                                parameterValue: '80'},
+                                {id: 4,
+                                parameterName: 'Общая мощность, кВт',
+                                parameterValue: '12'},
+                                {id: 5,
+                                parameterName: 'Масса, кг',
+                                parameterValue: '2500'},
+                                {id: 6,
+                                parameterName: 'Термомаркеров для выжига тавра, шт',
+                                parameterValue: '6'},
+                                {id: 7,
+                                parameterName: 'Автоматическая сборка и штабелирование (с переворотом) готовых поддонов',
+                                parameterValue: ''},
+                                {id: 8,
+                                parameterName: 'Ручная укладка заготовок в кондуктор',
+                                parameterValue: ''},
+                                {id: 9,
+                                parameterName: 'Обрезка углов поддона',
+                                parameterValue: ''}]
+                        },
+                        {idGlobal: 2, 
+                        header: 'Станок автоматического выжигание клейма на бобышке', 
+                        picture: 'machine_for_automatic_burning_of_the_brand_on_the_boss.png', 
+                        captionText: 'Станок автоматического выжигание клейма на бобышке',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Мощность термомаркера, Вт',
+                                parameterValue: '1000'},
+                                {id: 1,
+                                parameterName: 'Производительность, шт/мин',
+                                parameterValue: '30'},
+                                {id: 2,
+                                parameterName: 'Привод подачи заготовок',
+                                parameterValue: 'пневматический'},
+                                {id: 3,
+                                parameterName: 'Номинальное давление, бар',
+                                parameterValue: '5'}]
+                        },
+                        {idGlobal: 3, 
+                        header: 'Станок линейный для нарезки деревянных бобышек (колодок) для поддонов', 
+                        picture: 'linear_machine_for_cutting_wooden_bosses_(blocks)_for_pallets.png', 
+                        captionText: 'Станок линейный для нарезки деревянных бобышек (колодок) для поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Сечение бруса максимальное, мм',
+                                parameterValue: '150 х 150'},
+                                {id: 1,
+                                parameterName: 'Длина бруса максимальная, мм',
+                                parameterValue: '2000'},
+                                {id: 2,
+                                parameterName: 'Производительность, шт/с',
+                                parameterValue: '1'},
+                                {id: 3,
+                                parameterName: 'Мощность привода пилы, кВт',
+                                parameterValue: '4'},
+                                {id: 4,
+                                parameterName: 'Мощность привода подачи заготовок, кВт',
+                                parameterValue: '0.75'},
+                                {id: 5,
+                                parameterName: 'Зажим заготовки',
+                                parameterValue: 'пневматический'},
+                                {id: 6,
+                                parameterName: 'Номинальное давление в пневмолинии, бар',
+                                parameterValue: '5'}]
+                        },
+                        {idGlobal: 4, 
+                        header: 'Станок карусельного типа для нарезки бобышек (колодок), которые используются в конструировании деревянных поддонов', 
+                        picture: 'measuring_and_transportation_system.png', 
+                        captionText: 'Станок карусельного типа для нарезки бобышек (колодок), которые используются в конструировании деревянных поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Сечение бруса максимальное, мм',
+                                parameterValue: '150 х 150'},
+                                {id: 1,
+                                parameterName: 'Длина бруса максимальная, мм',
+                                parameterValue: '2000'},
+                                {id: 2,
+                                parameterName: 'Количество брусьев в карамельной кассете, шт',
+                                parameterValue: '6 (4)'},
+                                {id: 3,
+                                parameterName: 'Производительность, шт/с',
+                                parameterValue: '2'},
+                                {id: 4,
+                                parameterName: 'Общая мощность, кВт',
+                                parameterValue: '5.2'}]
+                        },
+                        {idGlobal: 5, 
+                        header: 'Автоматический станок для сбивки деревянных бобышек (колодок) с доской для поддонов',
+                        picture: 'chip_and_bark_conveyor.png',
+                        captionText: 'Автоматический станок для сбивки деревянных бобышек (колодок) с доской для поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Количество пистолетов, шт',
+                                parameterValue: '3'},
+                                {id: 1,
+                                parameterName: 'Количество гвоздей на каждый блок (в линию или по диагонали), шт',
+                                parameterValue: '2-3'},
+                                {id: 2,
+                                parameterName: 'Длина доски, мм',
+                                parameterValue: '600 - 1200'},
+                                {id: 3,
+                                parameterName: 'Производительность по готовым узлам, шт/мин',
+                                parameterValue: '20'},
+                                {id: 4,
+                                parameterName: 'Кассетная подача заготовок',
+                                parameterValue: ''}]
+                        },
+                        {idGlobal: 6, 
+                        header: 'Универсальный кондуктор для сбивки поддонов', 
+                        picture: 'the_automatic_centering_device.png',
+                        captionText: 'Универсальный кондуктор для сбивки поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Перенастройка под другой размер, мин',
+                                parameterValue: 'не больше 10'},
+                                {id: 1,
+                                parameterName: 'Диапазон размеров поддонов:',
+                                parameterValue: ''},
+                                {id: 2,
+                                parameterName: 'минимальный, мм',
+                                parameterValue: '700 x 700'},
+                                {id: 3,
+                                parameterName: 'максимальный, мм',
+                                parameterValue: '1350 x 1550'},
+                                {id: 4,
+                                parameterName: 'Диапазон размеров шашек:',
+                                parameterValue: ''},
+                                {id: 5,
+                                parameterName: 'минимальный, мм',
+                                parameterValue: '60 x 70 x 70'},
+                                {id: 6,
+                                parameterName: 'максимальный, мм',
+                                parameterValue: '120 x 145 x 120'},
+                                {id: 7,
+                                parameterName: 'Пневматический зажим для шашек и досок (6 пневмоцилиндров)',
+                                parameterValue: ''},
+                                {id: 8,
+                                parameterName: 'Пневматическое извлечение поддонов (4 пневмоцилиндра)',
+                                parameterValue: ''},
+                                {id: 9,
+                                parameterName: 'Легкий ручной переворот поддона (делается оператором)',
+                                parameterValue: ''},
+                                {id: 10,
+                                parameterName: 'Оснащен подвесами для 2-х гвоздезабивных инструментов (инструменты и балансиры не включены в стоимость)',
+                                parameterValue: ''},
+                                {id: 11,
+                                parameterName: 'Средняя производительность, поддонов/день',
+                                parameterValue: '180 - 250'}]
+                        },
+                        {idGlobal: 7, 
+                        header: 'Станок для обрезки углов деревянных поддонов', 
+                        picture: 'rollway_drive_with_screw_discharge.png',
+                        captionText: 'Станок для обрезки углов деревянных поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Может быть встроен в линию полуавтоматической сборки поддонов',
+                                parameterValue: ''},
+                                {id: 1,
+                                parameterName: 'Размеры обрабатываемых поддонов, мм',
+                                parameterValue: '600 х 600 – 1200 х 1200'},
+                                {id: 2,
+                                parameterName: 'Количество пильных узлов, шт',
+                                parameterValue: '4'},
+                                {id: 3,
+                                parameterName: 'Диаметр пильного диска, мм',
+                                parameterValue: '300'},
+                                {id: 4,
+                                parameterName: 'Частота вращения пилы, об/мин',
+                                parameterValue: '3000'},
+                                {id: 5,
+                                parameterName: 'Мощность двигателя привода пилы, кВт',
+                                parameterValue: '4 х 1.5'},
+                                {id: 6,
+                                parameterName: 'Общая установленная мощность, кВт',
+                                parameterValue: '6'},
+                                {id: 7,
+                                parameterName: 'Номинальное давление в пневмосистеме, бар',
+                                parameterValue: '6'},
+                                {id: 8,
+                                parameterName: 'Длительность цикла обрезки, с',
+                                parameterValue: '2.5'}]
+                        },
+                        {idGlobal: 8, 
+                        header: 'Станок для обрезки углов деревянных поддонов',
+                        picture: 'the_belt_conveyor.png',
+                        captionText: 'Станок для обрезки углов деревянных поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Размеры обрабатываемых поддонов',
+                                parameterValue: '600 х 600 – 1200 х 1200'},
+                                {id: 1,
+                                parameterName: 'Количество пильных узлов, шт',
+                                parameterValue: '2'},
+                                {id: 2,
+                                parameterName: 'Диаметр пильного диска, мм',
+                                parameterValue: '300'},
+                                {id: 3,
+                                parameterName: 'Частота вращения пилы, об/мин',
+                                parameterValue: '3000'},
+                                {id: 4,
+                                parameterName: 'Мощность двигателя привода пилы, кВт',
+                                parameterValue: '2 х 1.5'},
+                                {id: 5,
+                                parameterName: 'Общая установленная мощность, кВт',
+                                parameterValue: '3'},
+                                {id: 6,
+                                parameterName: 'Номинальное давление в пневмосистеме, бар',
+                                parameterValue: '6'}]
+                        }, 
+                        {idGlobal: 9, 
+                        header: 'Устройство для переворота деревянных поддонов', 
+                        picture: 'machine_for_cross_section_milling_SCMM125.png', 
+                        captionText: 'Устройство для переворота деревянных поддонов',
+                        parameters: 
+                                [{id: 0,
+                                parameterName: 'Размеры поддонов, мм',
+                                parameterValue: '600 х 600 – 1200 х 1200'},
+                                {id: 1,
+                                parameterName: 'Производительность, шт/мин',
+                                parameterValue: '12'},
+                                {id: 2,
+                                parameterName: 'Общая мощность приводов, кВт',
+                                parameterValue: '1.1'},
+                                {id: 3,
+                                parameterName: 'Номинальное давление в пневмосистеме, бар',
+                                parameterValue: '6'}]
+                        }
+                        ]
+                },    
     catalog:
             {title: "Каталог",
             photos:
@@ -1102,36 +1666,24 @@ const dataRu = {
                    photo: 'сross_section_chain_conveyor_for_boards.jpg', 
                    captionText: 'Поперечный цепной транспортер бруса'},
                    {id: 5, 
-                   photo: 'tumbling_barrel.jpg', 
-                   captionText: 'Галтовочный барабан'},
-                   {id: 6, 
                    photo: 'veneer_conveying_system_with_automatic_step_discharge.jpg', 
                    captionText: 'Система транспортирования шпона с автоматическим ступенчатым сбросом'},
-                   {id: 7, 
-                   photo: 'step_feeder.jpg', 
-                   captionText: 'Степфидер'},
-                   {id: 8, 
-                   photo: 'automated_warehouse_for_storage_of_fabric_bases.jpg', 
-                   captionText: 'Автоматизированный склад хранения тканых основ'},
-                   {id: 9, 
+                   {id: 6, 
                    photo: 'reconstruction_of_the_roundwood_feeding_table_for_MDF_workshop.jpg', 
                    captionText: 'Реконструкция стола подачи круглого леса в цех МДФ'},
-                   {id: 10, 
+                   {id: 7, 
                    photo: 'wear_resistant_screens.jpg', 
                    captionText: 'Сита износостойкие'},
-                   {id: 11, 
+                   {id: 8, 
                    photo: 'wear_resistant_screens2.jpg', 
                    captionText: 'Сита износостойкие'},
-                   {id: 12, 
+                   {id: 9, 
                    photo: 'roller_conveyor_with_screw_ejector.jpg', 
                    captionText: 'Роликовый конвейер с винтовым сбрасывателем'},
-                   {id: 13, 
+                   {id: 10, 
                    photo: 'kross_chain_conveyor.jpg', 
                    captionText: 'Горизонтальный цепной транспортер'},
-                   {id: 14, 
-                   photo: 'knives_for_chipper_MS_MASHCINENBAU_THK_650_200.jpg', 
-                   captionText: 'Ножи рубительной машины MS MASHCINENBAU THK-650/200'},
-                   {id: 15,
+                   {id: 11,
                    photo: 'scraper_conveyor_for_waste_disposal.jpg',
                    captionText: 'Скребковый конвейер удаления отходов'},
                    ]
@@ -1140,9 +1692,8 @@ const dataRu = {
             {title: "Галерея", 
             photoTitle: "Фотогалерея", 
             videoTitle: "Видеогалерея", 
-            photoPath: 'participation_in_the_exhibition_Poland2.jpg', 
-            videoPath: "conveyer.mp4",
-        //     "automated_machine_for_straight_milling.mp4", 
+            photoPath: 'participation_in_the_exhibition_Poland3.jpg', 
+            videoPath: "automated_machine_for_straight_milling.mp4",
             photoAltText: "Ваш браузер не поддерживает фото", 
             videoAltText: "Ваш браузер не поддерживает видео"},
     photoGallery:
@@ -1158,33 +1709,27 @@ const dataRu = {
                         photo: 'participation_in_the_exhibition_Poland3.jpg', 
                         captionText: 'Участие в выставке, Польша'},
                         {id: 3, 
-                        photo: 'participation_in_the_exhibition_Poland4.jpg', 
-                        captionText: 'Участие в выставке, Польша'},
-                        {id: 4, 
-                        photo: 'participation_in_the_exhibition_Poland5.jpg', 
-                        captionText: 'Участие в выставке, Польша'},
-                        {id: 5, 
                         photo: 'pallet_board_stacker_elements.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'},
-                        {id: 6, 
+                        {id: 4, 
                         photo: 'pallet_board_stacker_elements2.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'},
-                        {id: 7, 
+                        {id: 5, 
                         photo: 'pallet_board_stacker_elements3.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'},
-                        {id: 8, 
+                        {id: 6, 
                         photo: 'pallet_board_stacker_elements4.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'},
-                        {id: 9, 
+                        {id: 7, 
                         photo: 'pallet_board_stacker_elements5.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'},
-                        {id: 10, 
+                        {id: 8, 
                         photo: 'pallet_board_stacker_elements6.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'},
-                        {id: 11, 
+                        {id: 9, 
                         photo: 'pallet_board_stacker_elements7.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'},
-                        {id: 12, 
+                        {id: 10, 
                         photo: 'pallet_board_stacker_elements8.jpg', 
                         captionText: 'Элементы укладчика паллетных досок'}
                         ]
@@ -1194,49 +1739,58 @@ const dataRu = {
                 videoNotSupportMessage: "Ваш браузер не поддерживает видео",
                 videos: 
                         [
-                        // {id: 0, 
-                        // videoRecord: 'pallet_board_stacker.mp4', 
-                        // captionText: 'Укладчик паллетных досок'},
-                        // {id: 1, 
-                        // videoRecord: 'automated_machine_for_straight_milling.mp4', 
-                        // captionText: 'Автоматический станок для прямолинейного фрезерования SCMM125'},
+                        {id: 0, 
+                        videoRecord: 'pallet_board_stacker.mp4', 
+                        captionText: 'Укладчик паллетных досок'},
+                        {id: 1, 
+                        videoRecord: 'automated_machine_for_straight_milling.mp4', 
+                        captionText: 'Автоматический станок для прямолинейного фрезерования SCMM125'}
+                        // ,
                         // {id: 2, 
                         // videoRecord: 'painting_line.mp4', 
                         // captionText: 'Линия покраски'},
-                        {id: 3, 
-                        videoRecord: 'conveyer.mp4', 
-                        captionText: 'Конвейер'},
+                        // {id: 3, 
+                        // videoRecord: 'participation_in_the_exhibition_Poland.mp4', 
+                        // captionText: 'Участие в выставке, Польша'},
                         // {id: 4, 
+                        // videoRecord: 'conveyer.mp4', 
+                        // captionText: 'Конвейер'},
+                        // {id: 5, 
                         // videoRecord: 'pass-through_machine_for_milling_longitudinal_grooves_in_a_pallet_board.mp4', 
                         // captionText: 'Станок проходного типа для фрезерования продольных пазов в паллетной доске'},
-                        // {id: 5, 
+                        // {id: 6, 
                         // videoRecord: 'pass-through_machine_for_milling_transverse_grooves_in_a_pallet_board.mp4', 
                         // captionText: 'Станок проходного типа для фрезерования поперечных пазов в паллетной доске'},
-                        // {id: 6, 
+                        // {id: 7, 
                         // videoRecord: 'cross_cutting.mp4', 
                         // captionText: 'Поперечная фрезеровка'},
-                        {id: 7, 
-                        videoRecord: 'cross_cutting_before_painting.mp4',
-                        captionText: 'Поперечная фрезеровка до покраски'},
                         // {id: 8, 
+                        // videoRecord: 'cross_cutting_before_painting.mp4',
+                        // captionText: 'Поперечная фрезеровка до покраски'},
+                        // {id: 9, 
                         // videoRecord: 'overpass.mp4',
                         // captionText: 'Эстакада'},
-                        // {id: 9, 
+                        // {id: 10, 
                         // videoRecord: 'overpass_and_uncoupler.mp4',
                         // captionText: 'Эстакада и разобщитель'},
-                        // {id: 10, 
+                        // {id: 11, 
                         // videoRecord: 'Krafter_line_modernization.mp4',
                         // captionText: 'Модернизация линии Krafter'},
-                        // {id: 11, 
-                        // videoRecord: 'log_conveyer.mp4',
-                        // captionText: 'Бревнотаска'}
-                        // ,
                         // {id: 12, 
+                        // videoRecord: 'log_conveyer.mp4',
+                        // captionText: 'Бревнотаска'},
+                        // {id: 13, 
                         // videoRecord: 'pallet_board_stacker_element.mp4',
                         // captionText: 'Элемент укладчика паллетных досок'},
-                        // {id: 13, 
+                        // {id: 14, 
                         // videoRecord: 'pallet_board_stacker_element2.mp4',
-                        // captionText: 'Элемент укладчика паллетных досок'}
+                        // captionText: 'Элемент укладчика паллетных досок'},
+                        // {id: 15, 
+                        // videoRecord: 'noname.mp4',
+                        // captionText: ''},
+                        // {id: 16, 
+                        // videoRecord: 'noname2.mp4',
+                        // captionText: ''}
                 ]
                 },
     contacts: 
@@ -1245,12 +1799,13 @@ const dataRu = {
                     text: `Лайсвес пр. 60-1107,
     LT-05120 Вильнюс, Литва`, 
                     detailsHeading: "Наши реквизиты:", 
-                    details: `АО Šiaulių bankas
-    ул. Тильжес 149, LT-76348 Шяуляй, Литва
-    SWIFT-код: CBSBLT26
-    IBAN: LT837180300036467769`}, 
+                    details: `Paysera LT, UAB
+    Пилайтес пр. 16, Вильнюс, LT-04352, Литва
+    SWIFT-код: EVIULT2VXXX
+    IBAN: LT173500010015992602`}, 
                     feedback: 
-                            {heading: "Форма обратной связи", 
+                            {adaptiveButtonText: "Обратная связь",
+                            heading: "Форма обратной связи", 
                             description: "Мы свяжемся с Вами как можно скорее!", 
                             nameInputText: "Имя", 
                             phoneInputText: "Номер телефона", 

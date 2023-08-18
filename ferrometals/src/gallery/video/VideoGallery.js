@@ -8,9 +8,9 @@ const VideoGallery = ({data}) => {
         <article className="Video-Gallery-Inner-Container">
             {data.videoGallery.videos.map((item) => 
                 <figure key={item.id} className="Video-Container">
-                    <video className="Video" src={require(`../../data/video/${item.videoRecord}`)} controls preload="true" type="video/mp4">
+                    <video className="Video Video-Adaptive" src={require(`../../data/video/${item.videoRecord}`)} controls preload="true" type="video/mp4">
                     {data.videoGallery.videoNotSupportMessage}</video>
-                    <figcaption className="Video-Caption">{item.captionText}</figcaption>
+                    <figcaption className="Video-Caption Video-Adaptive-Caption">{item.captionText}</figcaption>
                 </figure>
             )}
         </article>

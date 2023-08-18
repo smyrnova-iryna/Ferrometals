@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    /* max-width: 100%;
+    overflow: hidden; */
 }
 
 /* :root {
@@ -28,10 +30,13 @@
     --third-details-color: #9b9c9d;
     --menu-hover-color: rgba(96, 182, 228, 0.852);
     --footer-dark-color: rgba(1,1,1,248);
-    --main-font: "Century Gothic", 'Open Sans', sans-serif;
-    /* --main-font: 'Open Sans', sans-serif; */
+    --main-font: "Roboto", 'Open Sans', sans-serif;
     --main-font-size: 90%;
   } 
+
+/* html {
+    overflow-y: visible;
+} */
 
 body {
     margin: 0;
@@ -46,17 +51,18 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     /* background-blend-mode: multiply, darken; */
-     overflow-x: hidden;
+    overflow-x: hidden;
 
 }
 
 /*Header styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.App-header{
+.App-header, .Top-Scroll-Container{
     position: fixed; 
     top: 0; 
     left: 0; 
     width: 100%;
+    /* width: 100vw; */
     max-height: 20vh;
     background: none;
     padding: 0 1% 1% 3%;
@@ -68,11 +74,32 @@ body {
     z-index: 100;
 } 
 
+.Top-Scroll-Container {
+    z-index: 100;
+    top: 85vh; 
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    background-color: var(--second-details-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    cursor: pointer;
+    border: 3px solid var(--details-color);
+    color: var(--details-color);
+}
+
+.Top-Scroll-Container:hover {
+    background-color: var(--details-color);
+    border: 3px solid var(--second-details-color); 
+    color: var(--second-details-color) 
+}
+
 .Header-logo-container {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     width: 45%;
-    margin-top: 1%
 }
 
 .Header-logo {
@@ -105,28 +132,20 @@ body {
     align-items: center;
 }
 
-.Header-contacts {
+.Header-contacts, .Header-contacts-link {
     display: flex;
     align-items: center;
     text-shadow: 4px 5px 4px rgba(0,0,0,0.68);
-}
-.Header-Icon {
-    margin-right: -10px;
+    text-decoration: none;
 }
 
-.Header-Mail-Icon {
-    margin-bottom: -4%;
-}
-
-.Header-Callback-Icon {
-    margin-right: -8px;
-}
 
 .Link-Extra-Container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    min-width: max-content;
 }
 
 .Header-language-buttons-container {
@@ -134,6 +153,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-left: 3%;
+    /* min-height: 10vh; */
 }
 
 .Header-language-button {
@@ -205,12 +225,12 @@ body {
 
 
 /*Callback styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
- 
+
 .Callback-button {
     border: none;
     background-color: inherit;
     font-family: var(--main-font);
-    font-weight: 800;
+    font-weight: 600;
     text-shadow: 4px 5px 4px rgba(0,0,0,0.68);
 }
   
@@ -308,10 +328,13 @@ body {
 
  /* Top Scroll styles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.Top-Scroll-Container {
-    position: absolute;
-    top: 500%;
-    right: 2.5%;
+/* .Top-Scroll-Container { */
+    /* position: absolute; */
+    /* position: sticky;
+    bottom: 0; */
+    /* right: 0; */
+    /* top: 500%; */
+    /* right: 2.5%;
     background-color: var(--second-details-color);
     display: flex;
     align-items: center;
@@ -320,8 +343,8 @@ body {
     cursor: pointer;
     border: 3px solid var(--details-color);
     color: var(--details-color);
-    /* opacity: 0.7; */
-}
+    z-index: 101; */
+/* } */
 
 /* End of Top Scroll styles /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -341,17 +364,19 @@ body {
     align-items: center;
     /* background: linear-gradient(rgba(55,55,66,250), rgba(1,1,1,248)); */
     /* background-color: var(--main-dark-color); */
-    background: linear-gradient(rgba(51,52,63,0.0005), var(--footer-dark-color));
+    background: linear-gradient(rgba(42,41,48,0.99), var(--footer-dark-color));
+    /* background: linear-gradient(rgba(51,52,63,0.0005), var(--footer-dark-color)); */
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     padding: 3vh 4vh 3vh 2vh;
+    margin-top: -2px;
     /* background-color: rgba(0,69,100,0.005); */
     
 } 
 
-.App-Footer-Background { 
+/* .App-Footer-Background { 
     background-size: cover;
     background-position-y: bottom;
     margin-left: -2px;
@@ -359,7 +384,7 @@ body {
     padding: 0;
     width: 102%;
     height: 20%;
-}
+} */
 
 .Footer-Single-Gear-Background {
     background-image: url(./img/single_gear_background.png);
@@ -373,17 +398,27 @@ body {
 .Footer-Nameplate {
     margin-right: 19%;
     margin-left: 6%;
-    /* width: 20%; */
-    /* justify-self: flex-start; */
 }
 
 .Footer-Container {
-    width: 65%;
+    /* width: 65%; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     gap: 7%;
+    align-items: center;
+    
+    
+}
+
+.Footer-Adaptive-Extra-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7vw;
+    /* background-color: pink; */
+    width: 90%
 }
 
 .Footer-Info-Container , .Footer-Links-Container {
@@ -392,30 +427,36 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1vh;
-    max-width: 20%;
+    max-width: 80%;
     text-align: left;
 }
 
 .Footer-Info-Container {
-    max-width: 27%;
+    max-width: 50%;
+    
 }
-
 
 .Footer-Links-Container {
     gap: 3vh;
+    min-width: 30%;
 
 }
 
 .Footer-Info, .Footer-Callback, .Footer-Copyright,  .Footer-Link {
-    font-size: 110%;
+    font-size: 90%;
     font-weight: 500;
     text-decoration: none;
+}
+
+.Footer-Callback-Adaptive {
+    margin-left: 4px;
 }
 
 .Footer-Link {
     color: var(--details-color); 
     font-weight: 600;
     text-transform: uppercase;
+    min-width: 100%;
 
 }
 
@@ -440,7 +481,7 @@ body {
 .Footer-Info {
     display: flex;
     flex-direction: row;
-    gap: 5%
+    gap: 7%;
 }
 
 .Footer-Icon {
@@ -449,7 +490,7 @@ body {
 
 .Footer-Callback {
     color: var(--details-color);
-    font-weight: 400;
+    font-weight: 400; 
 }
 
 .Darken-Footer {
@@ -473,6 +514,10 @@ body {
 .Address-text {
     white-space: pre-wrap;
     text-align: justify;
+}
+
+.Footer-Callback-Icon {
+    margin-right: 4px;
 }
 
 /* @media(max-width: 420px) {
@@ -521,3 +566,533 @@ body {
     border-left: 30px solid #B1BA5C;
     border-bottom: 50px solid transparent;
     }
+
+    .Header-common-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    /* Burger menu part////////////////////////////////////////////////////////////////////////////////////////////// */
+    
+    .Burger-Menu-Button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: var(--details-color);
+        color: var(--main-background-color);
+        cursor: pointer;
+        border: none;
+        padding: 15%;
+    }
+
+    .Burger-Menu-Button-Container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .Burger-Menu-Button:hover {
+        background-color: var(--main-background-color);
+        color: var(--details-color);
+    }
+    
+    .Burger-Menu-Container {
+        background: linear-gradient( to right, rgba(13,173,147,0.93) 30%, rgba(0,69,100,0.93) 90%);
+        padding: 5%;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .Burger-Menu-Close-Button {
+        align-self: flex-end;
+        max-width: max-content;
+        background: none;
+        border: none;
+        color: var(--main-background-color);
+    }
+
+    .Burger-Menu-Close-Button:hover {
+        color: var(--main-dark-color);
+        cursor: pointer;
+    }
+
+    .Burger-Menu-link {
+        color: var(--main-background-color);
+    }
+
+    .Burger-Menu-Dropdown-link {
+        color: var(--main-background-color);
+        margin-left: 2%;
+    }
+
+    .Burger-Menu-Dropdown-link:hover, .Burger-Menu-link:hover {
+        color: var(--main-dark-color);
+    }
+
+    /* Adaptive part ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    @media only screen and (max-height: 725px) {
+        .App-header{
+            min-height: 160px
+        }
+    }
+    
+    @media only screen and (max-width: 1290px) {
+        .Header-main-container {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            padding-top: 2vh;
+        }
+        .Header-contacts-container {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .navBurgerMenuContainer {
+            margin-left: 3vh; 
+            align-self: center;
+            color: var(--main-background-color);
+        }
+        .Header-nav-container {
+            visibility: hidden; 
+            width: 0.01px 
+        }
+        .Header-common-container {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    @media only screen and (min-width: 1290px) {
+        .navBurgerMenuContainer {
+            visibility: hidden; 
+            width: 0.01px      
+        }
+    }
+
+
+    /* Adaptive ratio part////////////////////////////////////////////////////////////////////////////////////// */
+    @media screen and (max-aspect-ratio: 8/10.9) {
+        .Header-language-button {
+            width: 30px;
+            height: 25px;
+        } 
+    }
+
+    @media screen and (max-height: 650px) and (min-aspect-ratio: 6.97/6.39) {
+        .FirstPage-Title-Button, .FirstPage-Title-Link {
+            font-size: 100%;
+        }  
+        .First-Page-Logo-Description {
+            font-size: 100%
+        }
+        .First-Page-List-Item-Text {
+            font-size: 70%
+        }
+        @media screen and (max-height: 680px) {
+            .Header-language-button {
+                width: 30px;
+                height: 25px;
+            } 
+        }  
+        @media screen and (max-height: 480px) {
+            .First-Page-Logo-Description {
+                font-size: 60%
+            }
+            .First-Page-List-Item-Text {
+                font-size: 50%;
+            } 
+            .First-Page-List {
+                list-style-type: none;
+            }
+            .First-Page-List-Container {
+                padding: 0 0 0 5px;
+            }
+            
+        }
+        @media screen and (max-width: 1060px){
+            .FirstPage-Title-Button, .FirstPage-Title-Link {
+                font-size: 50%
+            }
+        }
+    } 
+
+/* Adaptive for mobile styles ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    @media screen and (max-aspect-ratio: 7.2/10.9), (max-width: 500px) {
+        * {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        .First-Page-Logo-Extra-Container {
+            width: 100%!important;
+            height: 100%!important;
+            background: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%);
+            padding: 25% 11% 0 0;
+        }
+
+        .First-Page-Main-Container {
+            min-height: none;
+        }
+
+        .First-Page-Logo-Text {
+            max-width: 200px!important;
+        }
+
+        .First-Page-Logo-Description {
+            height: 30vh!important;;
+            width: 90vw;
+            font-size: 110%;
+            padding-top: 5%;
+            
+        }
+
+        .First-Page-List-Container  {
+            width: 100vw!important;
+            height: 40vh!important;
+            position: unset;
+            padding: 10% 5%;
+            background: linear-gradient(90deg, rgba(48,48,49,255) 30%, rgba(138,137,136,255) 90%);
+        }
+
+        .First-Page-List {
+            width: 100%;
+            height: 100%;
+            font-size: 90%;
+            line-height: 1;
+            list-style-position: inside;
+            list-style-type: disc;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .First-Page_List-Item {
+            padding-top: 10px;
+        }
+
+        .First-Page-List-Item-Text {
+            margin-left: 20px;
+            margin-top: -15px;
+        }
+
+        .First-Page-Button-Container {
+            display: none;
+        }
+
+        .First-Page-Button-Container-Adaptive {
+            display: block;
+            height: 30vh;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(20,172,147,255) 46%, rgba(13,94,114,255) 90%);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .FirstPage-Title-Button, .FirstPage-Title-Link {
+            width: 45vw!important;
+        }
+
+        .First-Page-Svg, .Header-logo {
+            visibility: hidden;
+        }
+
+        /* .Top-Scroll-Container {
+            visibility: hidden;
+            top: 0
+        } */
+        .App-header {
+            min-height: 170px; 
+        }
+        .First-Page-Picture-Container {
+            width: 100% !important;
+            height: 100vh !important;
+            margin: 0!important;
+        }
+       
+        .Header-main-container, .Header-common-container, .Header-info-container {
+            align-items: flex-start!important;
+            justify-content: flex-start!important;
+        }
+        .Header-info-container {
+            margin: 0;
+            padding: 0;
+            min-width: 180px;
+            min-height: 100px;
+        } 
+        .Header-main-container {
+            padding: 6px 0 0 0;
+        }
+        .Header-contacts-container {
+            width: 100%;
+            gap: 1%;   
+        }
+        .Header-contacts-link {
+            min-width: 180px;
+            min-height: 60px;
+        }
+        .Callback-button {
+            display: flex;
+            align-items: center;
+            padding-left: 8%;
+            min-width: 180px;
+            min-height: 60px;
+        }
+        .Header-common-container {
+            min-height: 30px;
+        }
+        .Callback-container {
+            width: 90%;
+        }
+        .Callback-submit-button {
+          width: 100%;
+          margin: 0;
+        }
+        .Footer-Icon {
+            min-width: 20px;
+        }
+        .Callback-button-container {
+            min-width: max-content;   
+    }
+    
+    .Footer-Info-Adaptive {
+        width: 100%;
+    }
+
+    .Contacts-Inner-Container {
+        /* background-color: pink; */
+        width: 100vw!important;
+        height: 70vh!important;
+        padding: 110px 0 0 0;
+        margin: 0;
+        color: var(--main-background-color)
+        
+    } 
+
+    .Contacts-Items-Container {
+        /* background-color: violet; */
+        min-height: 80px;
+        margin-left: 5px;
+
+    }
+
+    .Contacts-item {
+        /* background-color: burlywood; */
+        max-width: 240px;
+        font-size: 150%;
+    }
+
+    .Contacts-inner-container-heading {
+        /* background-color: aquamarine; */
+        margin-left: 8px;
+        font-size: 160%;
+        font-weight: 700;
+    }
+
+    .Contacts-inner-container-text {
+        /* background-color: blueviolet; */
+        font-size: 150%;
+        min-height: 80px;
+        margin-left: 5px;
+        margin-right: 15px;
+        width: 240px;
+    }
+   
+
+    .Contacts-feedback-form-adaptive-button-container {
+        background: linear-gradient(90deg, rgba(48,48,49,255) 30%, rgba(138,137,136,255) 90%);
+        width: 100%!important;
+        height: 30vh!important;
+    }
+
+    .Contacts-Main-Container {
+        background-image: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%), url(./img/background_image.png);
+    }
+        
+    @media screen and (max-width: 300px) {
+        .Footer-Info-Adaptive {
+            font-size: 70%;
+        }
+    }
+}
+
+    /* End Adaptive for mobile styles ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    @media screen and (max-aspect-ratio: 13/8) { 
+        .First-Page-Button-Container {
+            padding-right: 2%;
+            gap: 2%
+        }
+    }
+    
+    @media screen and (max-aspect-ratio: 13.3/9.3) {
+        .First-Page-Button-Container {
+            padding-top: 1.5%;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+            gap: 10%;
+        }
+        .FirstPage-Title-Button, .FirstPage-Title-Link {
+            height: 26%;
+            width: 22%;
+            font-size: 80%;
+        }
+    }
+
+    @media screen and (max-aspect-ratio: 9.53/9.1) {
+        .FirstPage-Title-Button, .FirstPage-Title-Link {
+            height: 28%;
+            width: 17%;
+            font-size: 100%;
+        }
+    }
+
+    @media screen and (max-aspect-ratio: 5.88/5.36) {
+        .Header-contacts, .Callback-button {
+            font-size: 90%;
+        }
+    }
+
+    @media screen and (max-aspect-ratio: 6.4/9.21) {
+        .FirstPage-Title-Button, .FirstPage-Title-Link {
+            height: 30%;
+            width: 17%;
+            font-size: 80%;
+        }
+    }
+
+    @media screen and (max-height: 910px) and (max-width: 818px) and (min-aspect-ratio: 6.02/9.1) {
+        .First-Page-Logo-Description {
+            font-size: 60%;
+        }
+        .First-Page-List-Item-Text {
+            font-size: 50%
+        } 
+        .FirstPage-Title-Button, .FirstPage-Title-Link {
+            font-size: 50%;
+        }   
+    } 
+
+    /* Adaptive footer styles ///////////////////////////////////////////////////////////////////////////////////////////////// */
+    @media screen and (max-width: 1365px) {
+        .Footer-Nameplate {
+            margin: 0 3%
+        }
+    }
+    @media screen and (max-width: 1215px) {
+        .Footer-Nameplate {
+            margin: 0 1%
+        }
+        .Footer-Link, .Footer-Info-Container {
+            font-size: 70%;
+        }
+    }
+    @media screen and (max-width: 780px) {
+        .Footer-Nameplate {
+            visibility: hidden;
+            width: 1px;
+            margin: 0
+        }
+        .Footer-Container {
+            width: 100vw;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .Footer-Container {
+            flex-direction: column;
+            gap: 3vh;
+            justify-content: flex-start;
+        }
+        .Top-Adaptive-Container {
+            flex-direction: row-reverse;
+        }
+        .Footer-Adaptive-Extra-Container {
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+        .Footer-Info-Container {
+            min-width: 50%;
+        }
+    }
+
+    @media screen and (max-height: 500px) {
+        .Top-Block-Part {
+            /* padding-top: 25%; */
+            padding-top: 200px;
+        }
+    }
+
+    /* @media screen and (max-width: 800px) {
+        .Footer-Link {
+            
+        }
+    } */
+    
+    /* About adaptive part////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+   
+    /* @media screen and (max-width: 1460px) {
+        .About-Product-Options-Container {
+
+        }
+    } */
+
+   
+
+    /* @media screen and (max-width: 1000px) {
+        .Options-Main-Container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 7vh
+        }
+        .About-Product-Options-Container {
+            min-width: 300px;
+        }
+    } */
+    
+ 
+
+ 
+@media screen and (max-height: 650px) {
+    .Standart-Section {
+        padding-top: 150px;
+        padding-bottom: 80px;
+        background-color: var(--main-dark-color);
+    }
+    .Header-logo-container {
+        visibility: hidden;
+    }
+}
+
+/* TOP SCROLL ADAPTIVE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-height: 450px) {   
+    .Top-Scroll-Container {
+        top: 65vh; 
+        /* left: 90vw; */
+    }
+}
+
+
+@media screen and (max-width: 600px) {   
+    .Top-Scroll-Container {
+        left: 85vw;
+        width: 25px;
+        height: 25px;
+    }
+}
+
