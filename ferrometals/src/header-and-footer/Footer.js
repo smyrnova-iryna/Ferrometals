@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 import CallbackButton from './CallbackButton';
 import Button from '@mui/material/Button';
 import { useState, useEffect } from 'react';
@@ -10,21 +10,21 @@ const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
 
     const [currentFooterColor, setCurrentFooterColor] = useState("");
 
-    const [currentFooterBackground, setCurrentFooterBackground] = useState("")
+    // const [currentFooterBackground, setCurrentFooterBackground] = useState("")
 
     const currentPath = window.location.pathname;
 
     useEffect(() => {
         if(currentPath === "/contacts" || currentPath === "/") {
             setCurrentFooterColor("Darken-Footer");
-            setCurrentFooterBackground("")
+            // setCurrentFooterBackground("")
             
         } else if (currentPath === "/about" || currentPath === "/products" || currentPath === "/gallery") {
             setCurrentFooterColor("");
-            setCurrentFooterBackground("Footer-Single-Gear-Background")
+            // setCurrentFooterBackground("Footer-Single-Gear-Background")
         } else {
             setCurrentFooterColor("");
-            setCurrentFooterBackground("Footer-Double-Gears-Background")
+            // setCurrentFooterBackground("Footer-Double-Gears-Background")
         }
       }, [currentPath])
 
