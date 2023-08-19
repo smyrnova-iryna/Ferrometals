@@ -1339,9 +1339,9 @@ const dataPl = {
                                 parameterValue: '5.2'}]
                         },
                         {idGlobal: 5, 
-                        header: 'Автоматический станок для сбивки деревянных бобышек (колодок) с доской для поддонов',
-                        picture: 'chip_and_bark_conveyor.png',
-                        captionText: 'Автоматический станок для сбивки деревянных бобышек (колодок) с доской для поддонов',
+                        header: 'Automatic machine for knocking wooden bosses (blocks) with a board for pallets',
+                        picture: 'automatic_machine_for_knocking_wooden_bosses_(blocks)_with_a_board_for_pallets.png',
+                        captionText: 'Automatic machine for knocking wooden bosses (blocks) with a board for pallets',
                         parameters: 
                                 [{id: 0,
                                 parameterName: 'Количество пистолетов, шт',
@@ -1360,9 +1360,9 @@ const dataPl = {
                                 parameterValue: ''}]
                         },
                         {idGlobal: 6, 
-                        header: 'Универсальный кондуктор для сбивки поддонов', 
-                        picture: 'the_automatic_centering_device.png',
-                        captionText: 'Универсальный кондуктор для сбивки поддонов',
+                        header: 'Universal conductor for knocking pallets', 
+                        picture: 'universal_conductor_for_knocking_pallets.png',
+                        captionText: 'Universal conductor for knocking pallets',
                         parameters: 
                                 [{id: 0,
                                 parameterName: 'Перенастройка под другой размер, мин',
@@ -1402,9 +1402,9 @@ const dataPl = {
                                 parameterValue: '180 - 250'}]
                         },
                         {idGlobal: 7, 
-                        header: 'Станок для обрезки углов деревянных поддонов', 
-                        picture: 'rollway_drive_with_screw_discharge.png',
-                        captionText: 'Станок для обрезки углов деревянных поддонов',
+                        header: 'Corner trimming machine for wooden pallets', 
+                        picture: 'corner_trimming_machine_for_wooden_pallets.png',
+                        captionText: 'Corner trimming machine for wooden pallets',
                         parameters: 
                                 [{id: 0,
                                 parameterName: 'Может быть встроен в линию полуавтоматической сборки поддонов',
@@ -1435,9 +1435,9 @@ const dataPl = {
                                 parameterValue: '2.5'}]
                         },
                         {idGlobal: 8, 
-                        header: 'Станок для обрезки углов деревянных поддонов',
-                        picture: 'the_belt_conveyor.png',
-                        captionText: 'Станок для обрезки углов деревянных поддонов',
+                        header: 'Corner trimming machine for wooden pallets',
+                        picture: 'corner_trimming_machine_for_wooden_pallets2.png',
+                        captionText: 'Corner trimming machine for wooden pallets',
                         parameters: 
                                 [{id: 0,
                                 parameterName: 'Размеры обрабатываемых поддонов',
@@ -1462,9 +1462,9 @@ const dataPl = {
                                 parameterValue: '6'}]
                         }, 
                         {idGlobal: 9, 
-                        header: 'Устройство для переворота деревянных поддонов', 
-                        picture: 'machine_for_cross_section_milling_SCMM125.png', 
-                        captionText: 'Устройство для переворота деревянных поддонов',
+                        header: 'Wooden pallet turner', 
+                        picture: 'wooden_pallet_turner.png', 
+                        captionText: 'Wooden pallet turner',
                         parameters: 
                                 [{id: 0,
                                 parameterName: 'Размеры поддонов, мм',

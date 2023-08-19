@@ -127,7 +127,8 @@ const PalletEquipment = ({data}) => {
                             </div>
                         </div>
                 </div>
-                <div className="Product-Item-Container" key={data.palletEquipment.pictures[7].idGlobal}>
+                
+                 <div className="Product-Item-Container" key={data.palletEquipment.pictures[7].idGlobal}>
                         <h5 className="Product-Item-Heading">{data.palletEquipment.pictures[7].header}</h5>
                         <div className="Product-Content-Container" style={{backgroundColor: "var(--details-color)"}}>
                             <img className="Product-Image" src={require(`../../data/picture/picture_products/${data.palletEquipment.pictures[7].picture}`)} 
@@ -142,6 +143,36 @@ const PalletEquipment = ({data}) => {
                             </div>
                         </div>
                 </div>
+                <div className="Product-Item-Container" key={data.palletEquipment.pictures[8].idGlobal}>
+                        <h5 className="Product-Item-Heading">{data.palletEquipment.pictures[8].header}</h5>
+                        <div className="Product-Content-Container" style={{backgroundColor: "var(--main-background-color)"}}>
+                            <img className="Product-Image" src={require(`../../data/picture/picture_products/${data.palletEquipment.pictures[8].picture}`)} 
+                            alt={data.palletEquipment.pictures[8].captionText} />
+                            <div className="Product-Description-Container">
+                                {data.palletEquipment.pictures[data.palletEquipment.pictures[8].idGlobal].parameters.map((localItem) => 
+                                    <p key={localItem.id} className="Product-Description">
+                                        <span>{localItem.parameterName}</span>
+                                        <span className="Product-Description-Value">{localItem.parameterValue}</span>
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+                </div>
+                <div className="Product-Item-Container" key={data.palletEquipment.pictures[9].idGlobal}>
+                        <h5 className="Product-Item-Heading">{data.palletEquipment.pictures[9].header}</h5>
+                        <div className="Product-Content-Container" style={{backgroundColor: "var(--details-color)"}}>
+                            <img className="Product-Image" src={require(`../../data/picture/picture_products/${data.palletEquipment.pictures[9].picture}`)} 
+                            alt={data.palletEquipment.pictures[9].captionText} />
+                            <div className="Product-Description-Container">
+                                {data.palletEquipment.pictures[data.palletEquipment.pictures[9].idGlobal].parameters.map((localItem) => 
+                                    <p key={localItem.id} className="Product-Description">
+                                        <span>{localItem.parameterName}</span>
+                                        <span className="Product-Description-Value">{localItem.parameterValue}</span>
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+                </div> 
             {/* CHANGE (MAP) */}
             </article>
         </section>

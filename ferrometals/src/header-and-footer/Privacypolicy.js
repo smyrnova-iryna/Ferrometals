@@ -3,7 +3,7 @@
 const PrivacyPolicy = ({data}) => {
     return (
         <section>
-            <div className="Privacy-policy-container">{data.privacyPolicy}</div>
+            <div className="Standart-Section Privacy-policy-container">{data.privacyPolicy}</div>
         </section>
     )
 }

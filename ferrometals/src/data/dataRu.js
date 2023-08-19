@@ -1485,7 +1485,7 @@ const dataRu = {
                         },
                         {idGlobal: 4, 
                         header: 'Станок карусельного типа для нарезки бобышек (колодок), которые используются в конструировании деревянных поддонов', 
-                        picture: 'measuring_and_transportation_system.png', 
+                        picture: 'carousel_type_machine_for_cutting_bosses_(blocks)_which_are_used_in_the_design_of_wooden_pallets.png', 
                         captionText: 'Станок карусельного типа для нарезки бобышек (колодок), которые используются в конструировании деревянных поддонов',
                         parameters: 
                                 [{id: 0,
@@ -1506,7 +1506,7 @@ const dataRu = {
                         },
                         {idGlobal: 5, 
                         header: 'Автоматический станок для сбивки деревянных бобышек (колодок) с доской для поддонов',
-                        picture: 'chip_and_bark_conveyor.png',
+                        picture: 'automatic_machine_for_knocking_wooden_bosses_(blocks)_with_a_board_for_pallets.png',
                         captionText: 'Автоматический станок для сбивки деревянных бобышек (колодок) с доской для поддонов',
                         parameters: 
                                 [{id: 0,
@@ -1527,7 +1527,7 @@ const dataRu = {
                         },
                         {idGlobal: 6, 
                         header: 'Универсальный кондуктор для сбивки поддонов', 
-                        picture: 'the_automatic_centering_device.png',
+                        picture: 'universal_conductor_for_knocking_pallets.png',
                         captionText: 'Универсальный кондуктор для сбивки поддонов',
                         parameters: 
                                 [{id: 0,
@@ -1569,7 +1569,7 @@ const dataRu = {
                         },
                         {idGlobal: 7, 
                         header: 'Станок для обрезки углов деревянных поддонов', 
-                        picture: 'rollway_drive_with_screw_discharge.png',
+                        picture: 'corner_trimming_machine_for_wooden_pallets.png',
                         captionText: 'Станок для обрезки углов деревянных поддонов',
                         parameters: 
                                 [{id: 0,
@@ -1601,9 +1601,9 @@ const dataRu = {
                                 parameterValue: '2.5'}]
                         },
                         {idGlobal: 8, 
-                        header: 'Станок для обрезки углов деревянных поддонов',
-                        picture: 'the_belt_conveyor.png',
-                        captionText: 'Станок для обрезки углов деревянных поддонов',
+                        header: 'Corner trimming machine for wooden pallets',
+                        picture: 'corner_trimming_machine_for_wooden_pallets2.png',
+                        captionText: 'Corner trimming machine for wooden pallets',
                         parameters: 
                                 [{id: 0,
                                 parameterName: 'Размеры обрабатываемых поддонов',
@@ -1629,7 +1629,7 @@ const dataRu = {
                         }, 
                         {idGlobal: 9, 
                         header: 'Устройство для переворота деревянных поддонов', 
-                        picture: 'machine_for_cross_section_milling_SCMM125.png', 
+                        picture: 'wooden_pallet_turner.png', 
                         captionText: 'Устройство для переворота деревянных поддонов',
                         parameters: 
                                 [{id: 0,

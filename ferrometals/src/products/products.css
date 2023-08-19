@@ -122,6 +122,7 @@
     margin: 0 10% 5% 10%;
     padding: 5% 0;
     border: 10px ridge var(--details-color);
+    min-width: 80vw;
 }
 
 .Product-Item-Container {
