@@ -41,7 +41,7 @@ const EquipmentForWasteProcessing = ({data}) => {
                 <img className="Product-Options-Image" alt={data.equipmentForWasteProcessing.mainHeader}
                 src={require(`../../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[0].picture}`)}></img>
                 {/* <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.equipmentForWasteProcessing.path}`)}  */}
-                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerCoatingLines.path}`)} //Замінити
+                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} //Замінити
                         download={data.booklets.equipmentForWasteProcessing.title}>{data.booklets.title}</a>
             </div>
 

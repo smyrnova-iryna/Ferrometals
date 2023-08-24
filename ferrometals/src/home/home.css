@@ -218,7 +218,8 @@
 }
 
 .About-Picture {
-   max-width: 30%;
+   height: 17vw;
+   width: 25vw
 }
 
 .About-Container {
@@ -399,6 +400,16 @@
 
 /* ABOUT ADAPTIVE PART/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+@media screen and (max-width: 1700px) {
+    .About-Photo-Container, .About-Picture-Container {
+        /* padding: 7%; */
+        padding-left: 0;
+        padding-right: 0;
+        /* min-width: 700px */
+    }
+}
+
+
 @media screen and (max-width: 1240px) {
     .Options-Main-Container, .Bottom-Block-Part {
         flex-direction: column;
@@ -423,6 +434,7 @@
     .About-Product-Options-Container {
         min-height: 230px;
         max-width: 48%;
+        min-width: 260px;
     } 
 }
 
@@ -473,7 +485,8 @@
             padding-bottom: 15%;
         }
         .About-Photo-Container, .About-Picture-Container {
-            padding: 7%;
+            /* padding: 7%; */
+            padding: 20px;
         }
     }
 
@@ -481,13 +494,19 @@
         .About-Text-Container {
             font-size: 60%;
         }
+        .About-Photo-Main-Container {
+            padding: 20px 0;
+        }
         .About-Photo-Container, .About-Picture-Container {
             flex-direction: column;
             align-items: center;
-            gap: 10px
+            gap: 40px;
+                  
         }
         .About-Picture {
-            min-width: 30vw;
+            /* min-width: 30vw; */
+            height: 180px;
+            width: 260px
         }
         .About-Photo-Main-Container {
             display: flex;

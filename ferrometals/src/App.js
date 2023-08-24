@@ -7,7 +7,7 @@ import TransportingAndNearMachineEquipmentAndMachinesForWoodworking from
 './products/transporting_and_near_machine_equipment_and_machines_for_woodworking/Transporting_and_near_machine_equipment_and_machines_for_woodworking';
 import EquipmentForWasteProcessing from './products/equipment_for_waste_processing/Equipment_for_waste_processing';
 import RoundWoodAccountingScanner from './products/round_wood_accounting_scanner/Round_wood_accounting_scanner';
-import PolymerCoatingLines from './products/polymer_coating_lines/Polymer_coating_lines';
+import PolymerPaintingLines from './products/polymer_painting_lines/Polymer_painting_lines';
 import PalletEquipment from './products/pallet_equipment/Pallet_equipment';
 import Gallery from './gallery/Gallery';
 import VideoGallery from './gallery/video/VideoGallery';
@@ -102,7 +102,7 @@ const linkScroll = () => {
         element={<TransportingAndNearMachineEquipmentAndMachinesForWoodworking data={data} />} />
         <Route path={data.menuPaths.equipmentForWasteProcessing} element={<EquipmentForWasteProcessing data={data} />} />
         <Route path={data.menuPaths.roundWoodAccountingScanner} element={<RoundWoodAccountingScanner data={data} />} />
-        <Route path={data.menuPaths.polymerCoatingLines} element={<PolymerCoatingLines data={data} />} />
+        <Route path={data.menuPaths.polymerPaintingLines} element={<PolymerPaintingLines data={data} />} />
         <Route path={data.menuPaths.palletEquipment} element={<PalletEquipment data={data} />} />
         <Route path={data.menuPaths.gallery} element={<Gallery data={data} linkScroll={linkScroll} />} />
         <Route path={data.menuPaths.video} element={<VideoGallery data={data} />} />

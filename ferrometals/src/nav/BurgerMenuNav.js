@@ -36,8 +36,8 @@ const BurgerMenuNav = ({data, changeHeaderBackground, navigateToTheTop, linkScro
                         onClick={linkScroll}>{data.menuItems.equipmentForWasteProcessing}</Link>
                         <Link className='Dropdown-link Burger-Menu-Dropdown-link' to={data.menuPaths.roundWoodAccountingScanner} 
                         onClick={linkScroll}>{data.menuItems.roundWoodAccountingScanner}</Link>
-                        <Link className='Dropdown-link Burger-Menu-Dropdown-link' to={data.menuPaths.polymerCoatingLines} onClick={linkScroll}>
-                        {data.menuItems.polymerCoatingLines}</Link>
+                        <Link className='Dropdown-link Burger-Menu-Dropdown-link' to={data.menuPaths.polymerPaintingLines} onClick={linkScroll}>
+                        {data.menuItems.polymerPaintingLines}</Link>
                         <Link className='Dropdown-link Burger-Menu-Dropdown-link' to={data.menuPaths.palletEquipment} onClick={linkScroll}>
                         {data.menuItems.palletEquipment}</Link>
                 <Link className='Nav-menu-item Burger-Menu-link' to={data.menuPaths.catalog} onClick={linkScroll}>{data.menuItems.catalog}</Link>

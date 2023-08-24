@@ -32,11 +32,11 @@ const Products = ({data, linkScroll}) => {
         <button className="Main-Products-Inner-Button">{data.roundWoodAccountingScanner.mainHeader}<ArrowForwardIosIcon />
         </button>
       </Link>
-      <Link className="Main-Products-Inner-Link" to={data.menuPaths.polymerCoatingLines} 
+      <Link className="Main-Products-Inner-Link" to={data.menuPaths.polymerPaintingLines} 
       onClick={linkScroll}>
-        <img className="Main-Products-Inner-Image" alt={data.polymerCoatingLines.mainHeader}
-        src={require(`../data/picture/picture_products/${data.polymerCoatingLines.pictures[0].picture}`)}></img>
-        <button className="Main-Products-Inner-Button">{data.polymerCoatingLines.mainHeader}<ArrowForwardIosIcon />
+        <img className="Main-Products-Inner-Image" alt={data.polymerPaintingLines.mainHeader}
+        src={require(`../data/picture/picture_products/${data.polymerPaintingLines.pictures[0].picture}`)}></img>
+        <button className="Main-Products-Inner-Button">{data.polymerPaintingLines.mainHeader}<ArrowForwardIosIcon />
         </button>
       </Link>
       {/* <Link className="Main-Products-Inner-Link" to={data.menuPaths.palletEquipment} 

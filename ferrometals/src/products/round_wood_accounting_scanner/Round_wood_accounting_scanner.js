@@ -51,7 +51,7 @@ const RoundWoodAccountingScanner = ({data}) => {
                 <img className="Product-Options-Image" alt={data.roundWoodAccountingScanner.mainHeader}
                 src={require(`../../data/picture/picture_products/${data.roundWoodAccountingScanner.pictures[0].picture}`)}></img>
                 {/* <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.roundWoodAccountingScanner.path}`)}  */}
-                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerCoatingLines.path}`)} //Замінити
+                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} //Замінити
                 download={data.booklets.roundWoodAccountingScanner.title}>{data.booklets.title}</a>
             </div>
             {/* <div className="About-Text-Container">

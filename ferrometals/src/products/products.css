@@ -257,6 +257,24 @@
     margin-left: 5vh;
 }
 
+.Painting-Lines-Main-Text {
+    margin-left: 5%;
+}
+
+.Painting-Lines-List {
+    margin-left: 1%;
+}
+
+.Painting-Lines-Photo-Container, .Painting-Lines-Photo-Main-Container {
+    /* background-color: palegoldenrod; */
+    background: none;
+}
+
+.Painting-Lines-Photo-Container, .Painting-Lines-Photo-Main-Container {
+    padding: 0;
+    margin: 0;
+}
+
 .Pulse-Icon{
     -webkit-animation: pulse 1.2s ease-in;
     -moz-animation: pulse 1.2s ease-in;
@@ -513,6 +531,9 @@
     }
     .Product-First-Info-Container {
         flex-direction: column;
+    }
+    .Painting-Lines-Main-Text {
+        margin-left: 0;
     }
 }
 

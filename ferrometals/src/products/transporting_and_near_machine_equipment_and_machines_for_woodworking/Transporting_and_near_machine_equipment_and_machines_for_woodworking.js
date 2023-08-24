@@ -141,7 +141,7 @@ const TransportingAndNearMachineEquipmentAndMachinesForWoodworking = ({data}) =>
                 <img className="Product-Options-Image" alt={data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.mainHeader}
                 src={require(`../../data/picture/picture_products/${data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[0].picture}`)}></img>
                 {/* <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.path}`)}  */}
-                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerCoatingLines.path}`)} 
+                <a className="About-Product-Options-Button Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} 
                 download={data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.title}>{data.booklets.title}</a>
             </div>
             {/* <div className="About-Text-Container">
