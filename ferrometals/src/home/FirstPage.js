@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const FirstPage = ({data, handleToggle, navigateToTheTop, currentViewportHeight, currentViewportWidthIsLarger, 
 currentViewportWidth}) => {
     return (
-        <article className='First-Page-Main-Container' style={{height: currentViewportHeight}}>
+        <article className='First-Page-Main-Container' style={{minHeight: currentViewportHeight, backgroundColor: "red"}}>
             <div className='First-Page-Picture-Container' style={{height: `${currentViewportHeight*0.8}px` ,marginLeft: `${377.27272727273 / 746 * currentViewportHeight - 
             377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`, width: 
             `${currentViewportWidth - (377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * 
