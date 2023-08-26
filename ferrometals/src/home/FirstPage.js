@@ -5,11 +5,12 @@ const FirstPage = ({data, handleToggle, navigateToTheTop, currentViewportHeight,
 currentViewportWidth}) => {
     return (
         <article className='First-Page-Main-Container' style={{minHeight: '100vh'}}>
-            <div className='First-Page-Picture-Container' style={{marginLeft: `${377.27272727273 / 746 * currentViewportHeight - 
+            <div className='First-Page-Picture-Container' style={{height: '100vh' ,marginLeft: `${377.27272727273 / 746 * currentViewportHeight - 
             377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`, width: 
             `${currentViewportWidth - (377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * 
-            currentViewportHeight * Number(currentViewportWidthIsLarger) / 2)}px`, height: `${currentViewportHeight*0.8}px`}}>
+            currentViewportHeight * Number(currentViewportWidthIsLarger) / 2)}px`}}>
             </div>
+            {/* height: `${currentViewportHeight*0.8}px` */}
             <div className='First-Page-Button-Container'>
                     <button onClick={handleToggle} style={{zIndex: "82"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
