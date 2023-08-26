@@ -12,7 +12,8 @@
 }
 
 .First-Page-Main-Container {
-    min-height: 100vh;
+    height: 100vh;
+    /* max-height: max-content; */
     
 }
 
