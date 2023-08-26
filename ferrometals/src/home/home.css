@@ -11,11 +11,10 @@
     height: 800px;
 }
 
-.First-Page-Main-Container {
-    height: 100vh;
-    /* max-height: max-content; */
+/* .First-Page-Main-Container {
+    min-height: 100vh;
     
-}
+} */
 
 .First-Page-Button-Container-Adaptive {
     display: none;
