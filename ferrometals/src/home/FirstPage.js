@@ -106,14 +106,14 @@ currentViewportWidth}) => {
                     onClick={navigateToTheTop}>{data.home.firstPage.link}
                     </Link>
             </div>  */}
-            <div className='First-Page-Button-Container-Adaptive'>
+            {/* <div className='First-Page-Button-Container-Adaptive'>
                     <button onClick={handleToggle} style={{zIndex: "102"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
                     <Link to={data.menuPaths.catalog} style={{zIndex: "102"}} className='FirstPage-Title-Link' 
                     onClick={navigateToTheTop}>{data.home.firstPage.link}
                     </Link>
-            </div> 
+            </div>  */}
         </article>
     )
 }

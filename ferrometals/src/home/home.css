@@ -17,7 +17,7 @@
 } */
 
 .First-Page-Button-Container-Adaptive {
-    display: none;
+    display: none!important;
 }
 
 .First-Page-Picture-Container {
