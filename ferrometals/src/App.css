@@ -735,16 +735,17 @@ body {
         }
 
         .First-Page-Logo-Extra-Container {
-            width: 100%!important;
+            width: 100vw!important;
             height: 100vh!important;
-            background: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%);
+            background: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%), url(./img/background_image.png);
+            background-size: cover;
             padding: 25% 11% 0 0;
         }
 
         .First-Page-Main-Container {
-            min-height: none;
-            height: 100vh;
-            
+            max-height: 100vh!important;
+
+
         }
 
         .First-Page-Logo-Text {
@@ -820,9 +821,10 @@ body {
             min-height: 170px; 
         }
         .First-Page-Picture-Container {
-            width: 100% !important;
+            display: none!important;
+            /* width: 100% !important;
             height: 100vh !important;
-            margin: 0!important;
+            margin: 0!important; */
         }
        
         .Header-main-container, .Header-common-container, .Header-info-container {
