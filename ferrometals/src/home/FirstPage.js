@@ -12,7 +12,8 @@ currentViewportWidth}) => {
             currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2)}px`}}>
             </div>
             {/* height: `${currentViewportHeight*0.8}px` */}
-            <div className='First-Page-Button-Container' style={{height: `${currentViewportHeight*0.2}px`}}>
+            <div className='First-Page-Button-Container' style={{height: `${currentViewportHeight*0.2}px`, 
+            top: `${currentViewportHeight*0.8}px`}}>
                     <button onClick={handleToggle} style={{zIndex: "82"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
