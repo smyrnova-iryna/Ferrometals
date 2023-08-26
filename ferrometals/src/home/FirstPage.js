@@ -5,13 +5,13 @@ const FirstPage = ({data, handleToggle, navigateToTheTop, currentViewportHeight,
 currentViewportWidth}) => {
     return (
         <article className='First-Page-Main-Container' style={{minHeight: '100vh'}}>
-            <div className='First-Page-Picture-Container' style={{height: '100vh' ,marginLeft: `${377.27272727273 / 746 * currentViewportHeight - 
+            <div className='First-Page-Picture-Container' style={{height: `${currentViewportHeight*0.8}px` ,marginLeft: `${377.27272727273 / 746 * currentViewportHeight - 
             377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`, width: 
             `${currentViewportWidth - (377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * 
             currentViewportHeight * Number(currentViewportWidthIsLarger) / 2)}px`}}>
             </div>
             {/* height: `${currentViewportHeight*0.8}px` */}
-            <div className='First-Page-Button-Container'>
+            <div className='First-Page-Button-Container' style={{height: `${currentViewportHeight*0.2}px`}}>
                     <button onClick={handleToggle} style={{zIndex: "82"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
@@ -106,14 +106,14 @@ currentViewportWidth}) => {
                     onClick={navigateToTheTop}>{data.home.firstPage.link}
                     </Link>
             </div>  */}
-            {/* <div className='First-Page-Button-Container-Adaptive'>
+            <div className='First-Page-Button-Container-Adaptive'>
                     <button onClick={handleToggle} style={{zIndex: "102"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
                     <Link to={data.menuPaths.catalog} style={{zIndex: "102"}} className='FirstPage-Title-Link' 
                     onClick={navigateToTheTop}>{data.home.firstPage.link}
                     </Link>
-            </div>  */}
+            </div> 
         </article>
     )
 }
