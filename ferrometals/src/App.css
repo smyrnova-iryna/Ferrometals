@@ -743,7 +743,8 @@ body {
 
         .First-Page-Main-Container {
             min-height: none;
-            max-height: 100vh;
+            height: 100vh;
+            
         }
 
         .First-Page-Logo-Text {
