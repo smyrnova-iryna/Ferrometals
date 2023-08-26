@@ -521,6 +521,10 @@ body {
     margin-right: 4px;
 }
 
+.First-Page-Button-Block {
+    display: none;
+}
+
 /* @media(max-width: 420px) {
     .Header-upper-container {
         flex-direction: column;
@@ -724,6 +728,15 @@ body {
 /* Adaptive for mobile styles ////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
     @media screen and (max-aspect-ratio: 7.2/10.9), (max-width: 500px) {
+        /* .First-Page-Button-Block {
+            display: block;
+            position: absolute;
+            top: 100vh;
+            z-index: 2000;
+            height: 500px;
+            background-color: pink;
+        } */
+
         * {
             max-width: 100%;
             overflow-x: hidden;
@@ -737,16 +750,18 @@ body {
         .First-Page-Logo-Extra-Container {
             width: 100vw!important;
             height: 100vh!important;
+            position: unset;
             background: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%), url(./img/background_image.png);
             background-size: cover;
             padding: 25% 11% 0 0;
-        }
-
-        .First-Page-Main-Container {
-            max-height: 100vh!important;
-
 
         }
+
+
+        /* .First-Page-Main-Container {
+            min-height: 100vh!important;
+
+        } */
 
         .First-Page-Logo-Text {
             max-width: 200px!important;
@@ -768,6 +783,7 @@ body {
             background: linear-gradient(90deg, rgba(48,48,49,255) 30%, rgba(138,137,136,255) 90%);
         }
 
+        
         .First-Page-List {
             width: 100%;
             height: 100%;

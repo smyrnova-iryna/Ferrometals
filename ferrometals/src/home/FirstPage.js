@@ -97,11 +97,19 @@ currentViewportWidth}) => {
                     )}
                 </ul> 
             </div>
-            <div className='First-Page-Button-Container-Adaptive'>
-                    <button onClick={handleToggle} style={{zIndex: "82"}} className='FirstPage-Title-Button'>
+            {/* <div className='First-Page-Button-Block'>
+                    <button onClick={handleToggle} style={{zIndex: "102"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
-                    <Link to={data.menuPaths.catalog} style={{zIndex: "82"}} className='FirstPage-Title-Link' 
+                    <Link to={data.menuPaths.catalog} style={{zIndex: "102"}} className='FirstPage-Title-Link' 
+                    onClick={navigateToTheTop}>{data.home.firstPage.link}
+                    </Link>
+            </div>  */}
+            <div className='First-Page-Button-Container-Adaptive'>
+                    <button onClick={handleToggle} style={{zIndex: "102"}} className='FirstPage-Title-Button'>
+                    {data.home.firstPage.button}
+                    </button>
+                    <Link to={data.menuPaths.catalog} style={{zIndex: "102"}} className='FirstPage-Title-Link' 
                     onClick={navigateToTheTop}>{data.home.firstPage.link}
                     </Link>
             </div> 
