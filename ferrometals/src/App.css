@@ -727,7 +727,7 @@ body {
         * {
             max-width: 100%;
             overflow-x: hidden;
-            overflow-x: clip;
+            /* overflow-x: clip; */
         }
 
         *::-webkit-scrollbar {
@@ -736,13 +736,14 @@ body {
 
         .First-Page-Logo-Extra-Container {
             width: 100%!important;
-            height: 100%!important;
+            height: 100vh!important;
             background: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%);
             padding: 25% 11% 0 0;
         }
 
         .First-Page-Main-Container {
             min-height: none;
+            max-height: 100vh;
         }
 
         .First-Page-Logo-Text {
