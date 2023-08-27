@@ -73,6 +73,25 @@ currentViewportWidth}) => {
                 Sorry, your browser does not support inline SVG.
             </svg> 
             {/* "0,0 473.65627073656,0 649.900464499,308.42733908427 512.2096881221,550.76310550763 0,550.76310550763" */}
+            
+            
+            
+            
+            
+            
+            
+            
+            <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+            height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${495.68679495687 / 746 * 
+            currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
+                <ul className='First-Page-List'>
+                    {data.home.firstPage.info.map(el =>
+                            <li key={el} className='First-Page_List-Item'>
+                                 <p className='First-Page-List-Item-Text'>{el}</p> 
+                             </li>
+                    )}
+                </ul> 
+            </div>
             <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
             top: "0", right: "0", height: "100%", zIndex: "90"}}>
                 <linearGradient id="ThirdDecorElementGradient">
@@ -90,17 +109,6 @@ currentViewportWidth}) => {
                 Sorry, your browser does not support inline SVG.
             </svg> 
             {/* "0,523.22495023225 495.68679495687,523.22495023225 616.85467816855,749.03782349038 0,749.0378234903" */}
-            <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
-            height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${495.68679495687 / 746 * 
-            currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
-                <ul className='First-Page-List'>
-                    {data.home.firstPage.info.map(el =>
-                            <li key={el} className='First-Page_List-Item'>
-                                 <p className='First-Page-List-Item-Text'>{el}</p> 
-                             </li>
-                    )}
-                </ul> 
-            </div>
             {/* <div className='First-Page-Button-Block'>
                     <button onClick={handleToggle} style={{zIndex: "102"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
