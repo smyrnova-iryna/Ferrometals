@@ -88,13 +88,12 @@ currentViewportWidth}) => {
                 0,${749.0378234903 / 746 * currentViewportHeight}
                 `} /> */}
                 <polygon points={`
-                0,${749.0378234903 / 746 * currentViewportHeight}
                 0,${523.22495023225 / 746 * currentViewportHeight} 
                 ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
                 Number(currentViewportWidthIsLarger) / 2},${523.22495023225 / 746 * currentViewportHeight} 
                 ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                Number(currentViewportWidthIsLarger) / 2},${749.03782349038 / 746 * currentViewportHeight} 
-                
+                Number(currentViewportWidthIsLarger) / 2},${currentViewportHeight} 
+                0,${currentViewportHeight}
                 `} />
                 Sorry, your browser does not support inline SVG.
             </svg> 
