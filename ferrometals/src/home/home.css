@@ -123,7 +123,7 @@
     align-items: center;
     text-align: center;
     color: var(--main-background-color);
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .First-Page-Logo-Description {
