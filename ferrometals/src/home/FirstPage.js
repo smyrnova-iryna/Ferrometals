@@ -90,8 +90,13 @@ currentViewportWidth}) => {
                 Sorry, your browser does not support inline SVG.
             </svg>  */}
             {/* "0,523.22495023225 495.68679495687,523.22495023225 616.85467816855,749.03782349038 0,749.0378234903" */}
-            <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+            {/* <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
             height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${495.68679495687 / 746 * 
+            currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
+                <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
+            top: "0", right: "0", height: "100%", zIndex: "90"}}> */}
+            <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+            height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${616.85467816855 / 746 * 
             currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
                 <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
             top: "0", right: "0", height: "100%", zIndex: "90"}}>
@@ -100,16 +105,16 @@ currentViewportWidth}) => {
                     <stop offset="90%" stopColor="rgba(138,137,136,255)" />
                 </linearGradient>
                 <polygon points={`
-                0,0 
+                0,${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
                 ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                Number(currentViewportWidthIsLarger) / 2},${523.22495023225 / 746 * currentViewportHeight} 
+                Number(currentViewportWidthIsLarger) / 2},${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
                 ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                Number(currentViewportWidthIsLarger) / 2},${749.03782349038 / 746 * currentViewportHeight} 
-                0,${749.0378234903 / 746 * currentViewportHeight}
+                Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight} 
+                0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight}
                 `} />
                 Sorry, your browser does not support inline SVG.
             </svg> 
-                <ul className='First-Page-List'>
+                <ul className='First-Page-List' style={{zIndex: "95"}}>
                     {data.home.firstPage.info.map(el =>
                             <li key={el} className='First-Page_List-Item'>
                                  <p className='First-Page-List-Item-Text'>{el} {currentViewportHeight} {Number(currentViewportWidthIsLarger)}</p> 
