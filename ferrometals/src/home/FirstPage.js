@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 const FirstPage = ({data, handleToggle, navigateToTheTop, currentViewportHeight, currentViewportWidthIsLarger, 
 currentViewportWidth}) => {
     return (
-        <article className='First-Page-Main-Container' style={{minHeight: currentViewportHeight, backgroundColor: "red", 
-        padding: "0"}}>
+        <article className='First-Page-Main-Container' style={{minHeight: currentViewportHeight, padding: "0"}}>
             <div className='First-Page-Picture-Container' style={{height: `${currentViewportHeight*0.8}px`, marginLeft: 
             `${377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
             Number(currentViewportWidthIsLarger) / 2}px`, width: `${currentViewportWidth - (377.27272727273 / 746 * 
@@ -29,8 +28,10 @@ currentViewportWidth}) => {
                 </linearGradient>
                 <polygon points={`
                 0,0 
-                ${677.43861977438 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2},0 
-                ${377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}, ${550.76310550763 / 746 * currentViewportHeight}
+                ${677.43861977438 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
+                Number(currentViewportWidthIsLarger) / 2},0 
+                ${377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
+                Number(currentViewportWidthIsLarger) / 2}, ${550.76310550763 / 746 * currentViewportHeight}
                 0,${550.76310550763 / 746 * currentViewportHeight}
                 `} />
                 Sorry, your browser does not support inline SVG.
@@ -89,7 +90,7 @@ currentViewportWidth}) => {
                 Sorry, your browser does not support inline SVG.
             </svg> 
             {/* "0,523.22495023225 495.68679495687,523.22495023225 616.85467816855,749.03782349038 0,749.0378234903" */}
-            <div className='First-Page-List-Container' style={{top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+            <div className='First-Page-List-Container' style={{backgroundColor: "red", top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
             height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${495.68679495687 / 746 * 
             currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
                 <ul className='First-Page-List'>
@@ -109,7 +110,7 @@ currentViewportWidth}) => {
                     </Link>
             </div>  */}
             <div className='First-Page-Button-Container-Adaptive'>
-                    <button onClick={handleToggle} style={{zIndex: "102"}} className='FirstPage-Title-Button'>
+                    <button onClick={handleToggle} style={{zIndex: "102", backgroundColor: "pink"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
                     <Link to={data.menuPaths.catalog} style={{zIndex: "102"}} className='FirstPage-Title-Link' 
