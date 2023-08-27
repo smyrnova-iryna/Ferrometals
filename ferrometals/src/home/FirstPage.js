@@ -73,7 +73,7 @@ currentViewportWidth}) => {
                 Sorry, your browser does not support inline SVG.
             </svg> 
             {/* "0,0 473.65627073656,0 649.900464499,308.42733908427 512.2096881221,550.76310550763 0,550.76310550763" */}
-            <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
+            <svg className='First-Page-Svg' viewbox='0 0 1000 1000' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
             top: "0", right: "0", height: "100%", zIndex: "90"}}>
                 <linearGradient id="ThirdDecorElementGradient">
                     <stop offset="30%" stopColor="rgba(48,48,49,255)" />
@@ -84,8 +84,8 @@ currentViewportWidth}) => {
                 ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
                 Number(currentViewportWidthIsLarger) / 2},${523.22495023225 / 746 * currentViewportHeight} 
                 ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                Number(currentViewportWidthIsLarger) / 2 + 100},${749.03782349038 / 746 * currentViewportHeight + 100} 
-                0,${749.0378234903 / 746 * currentViewportHeight + 100}
+                Number(currentViewportWidthIsLarger) / 2},${749.03782349038 / 746 * currentViewportHeight} 
+                0,${749.0378234903 / 746 * currentViewportHeight}
                 `} />
                 Sorry, your browser does not support inline SVG.
             </svg> 
