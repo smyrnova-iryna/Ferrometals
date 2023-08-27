@@ -13,10 +13,10 @@ currentViewportWidth}) => {
             {/* height: `${currentViewportHeight*0.8}px` */}
             <div className='First-Page-Button-Container' style={{height: `${currentViewportHeight*0.2}px`, 
             top: `${currentViewportHeight*0.8}px`}}>
-                    <button onClick={handleToggle} style={{zIndex: "82"}} className='FirstPage-Title-Button'>
+                    <button onClick={handleToggle} style={{zIndex: "95"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
-                    <Link to={data.menuPaths.catalog} style={{zIndex: "82"}} className='FirstPage-Title-Link' 
+                    <Link to={data.menuPaths.catalog} style={{zIndex: "95"}} className='FirstPage-Title-Link' 
                     onClick={navigateToTheTop}>{data.home.firstPage.link}
                     </Link>
             </div>   
@@ -90,12 +90,7 @@ currentViewportWidth}) => {
                 Sorry, your browser does not support inline SVG.
             </svg> 
             {/* "0,523.22495023225 495.68679495687,523.22495023225 616.85467816855,749.03782349038 0,749.0378234903" */}
-
-
-
-
-
-            {/* <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+            <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
             height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${495.68679495687 / 746 * 
             currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
                 <ul className='First-Page-List'>
@@ -105,14 +100,7 @@ currentViewportWidth}) => {
                              </li>
                     )}
                 </ul> 
-            </div> */}
-
-
-
-
-
-
-            
+            </div>
             {/* <div className='First-Page-Button-Block'>
                     <button onClick={handleToggle} style={{zIndex: "102"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
