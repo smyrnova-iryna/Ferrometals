@@ -109,8 +109,8 @@ currentViewportWidth}) => {
                 ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
                 Number(currentViewportWidthIsLarger) / 2},${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
                 ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight} 
-                0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight}
+                Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 2.3} 
+                0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 2.3}
                 `} />
                 Sorry, your browser does not support inline SVG.
             </svg> 
