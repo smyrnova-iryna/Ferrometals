@@ -427,6 +427,11 @@
     }
     .Product-Image {
         min-height: 200px;
+        margin-bottom: 20px;
+    }
+    .Polymer-Painting-Lines-Product-Image {
+       min-width: 200px;
+       min-height: 100px;
     }
     .Product-Double-Image {
         height: 200px;

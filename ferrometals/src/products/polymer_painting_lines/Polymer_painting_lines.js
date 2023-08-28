@@ -69,7 +69,7 @@ const PolymerPaintingLines = ({data}) => {
                 {data.polymerPaintingLines.pictures.map((item) => 
                     <div className="Product-Item-Container" key={item.idGlobal}>
                         <div className="Product-Content-Container" style={{backgroundColor: "var(--main-background-color)"}}>
-                            <img className="Product-Image" src={require(`../../data/picture/picture_products/${item.picture}`)} 
+                            <img className="Product-Image Polymer-Painting-Lines-Product-Image" src={require(`../../data/picture/picture_products/${item.picture}`)} 
                             alt={item.captionText} />
                             <div className="Product-Description-Container">
                                 {data.polymerPaintingLines.pictures[item.idGlobal].parameters.map((localItem) => 
