@@ -760,9 +760,9 @@ body {
             /* overflow-x: clip; */
         }
 
-        *::-webkit-scrollbar {
+        /* *::-webkit-scrollbar {
             display: none;
-        }
+        } */
 
         .First-Page-Logo-Extra-Container {
             width: 100vw!important;
@@ -1161,3 +1161,16 @@ body {
     }
 }
 
+@media screen and (max-height: 460px) { 
+    .Burger-Menu-link, .Burger-Menu-Dropdown-link {
+        color: blueviolet;
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-height: 330px) { 
+    .Burger-Menu-link, .Burger-Menu-Dropdown-link {
+        color: blueviolet;
+        font-size: 50%;
+    }
+}
