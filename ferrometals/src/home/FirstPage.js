@@ -123,10 +123,10 @@ currentViewportWidth}) => {
                 </ul> 
             </div>
             <div className='First-Page-Button-Container-Adaptive'>
-                    <button onClick={handleToggle} style={{zIndex: "102", backgroundColor: "pink"}} className='FirstPage-Title-Button'>
+                    <button onClick={handleToggle} style={{zIndex: "95", backgroundColor: "pink"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
                     </button>
-                    <Link to={data.menuPaths.catalog} style={{zIndex: "102"}} className='FirstPage-Title-Link' 
+                    <Link to={data.menuPaths.catalog} style={{zIndex: "95"}} className='FirstPage-Title-Link' 
                     onClick={navigateToTheTop}>{data.home.firstPage.link}
                     </Link>
             </div> 
