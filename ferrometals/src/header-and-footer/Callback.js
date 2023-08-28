@@ -7,7 +7,7 @@ import "../products/products.css";
 import CallbackButton from './CallbackButton';
 import emailjs from '@emailjs/browser';
 
-export default function Callback ({data, open, handleClose, handleToggle, classname, iconUrl}) {
+export default function Callback ({data, open, handleClose, handleToggle, classname, iconUrl, textClass}) {
 
     const [nameValue, setNameValue] = useState("");
 
@@ -63,7 +63,7 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
 
   return (
     <div>
-      <CallbackButton data={data} handleToggle={handleToggle} classname={classname} iconUrl={iconUrl} />
+      <CallbackButton data={data} handleToggle={handleToggle} classname={classname} iconUrl={iconUrl} textClass={textClass} />
       <Backdrop
         sx={{ color: '#fff', zIndex: "100" }}
         open={open} 

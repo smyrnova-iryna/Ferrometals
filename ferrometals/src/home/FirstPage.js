@@ -11,7 +11,7 @@ currentViewportWidth}) => {
             currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2)}px`}}>
             </div>
             {/* height: `${currentViewportHeight*0.8}px` */}
-            <div className='First-Page-Button-Container' style={{height: `${currentViewportHeight*0.2}px`, 
+            <div className='First-Page-Button-Container' style={{height: `${currentViewportHeight - currentViewportHeight*0.8 }px`, 
             top: `${currentViewportHeight*0.8}px`}}>
                     <button onClick={handleToggle} style={{zIndex: "95"}} className='FirstPage-Title-Button'>
                     {data.home.firstPage.button}
@@ -109,15 +109,15 @@ currentViewportWidth}) => {
                 ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
                 Number(currentViewportWidthIsLarger) / 2},${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
                 ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 2.3} 
-                0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 2.3}
+                Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 1.3} 
+                0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 1.3}
                 `} />
                 Sorry, your browser does not support inline SVG.
             </svg> 
                 <ul className='First-Page-List' style={{zIndex: "95"}}>
                     {data.home.firstPage.info.map(el =>
                             <li key={el} className='First-Page_List-Item'>
-                                 <p className='First-Page-List-Item-Text'>{el} {currentViewportHeight} {Number(currentViewportWidthIsLarger)}</p> 
+                                 <p className='First-Page-List-Item-Text'>{el}</p> 
                              </li>
                     )}
                 </ul> 

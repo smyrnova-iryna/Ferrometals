@@ -30,7 +30,7 @@ const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
 
     return (
         // className={`App-Footer-Background ${currentFooterBackground}`}
-        <footer className={`App-footer ${currentFooterColor}`}>
+        <footer className={`App-footer ${currentFooterColor}`}  >
             {/* <div className={`App-footer ${currentFooterColor}`}> */}
             <img src={require('../img/logotype.png')} alt="Ferrometals LLC logotype" className="Footer-Nameplate"></img>
             <div className='Footer-Container'>

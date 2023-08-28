@@ -80,7 +80,7 @@ const Header = ({data, navigateToTheTop, linkScroll, changeLanguage, open, handl
                                     <a className="Header-contacts-link" href={fullPhoneNumber}>
                                         <img className='Header-Icon' alt="Icon" src={require("../img/header_phone_icon.png")}>
                                         </img>
-                                        {data.header.phoneNumber}
+                                        <span className="Header-contacts-link-text">{data.header.phoneNumber}</span>
                                     </a>
                                 </p>
                             </div>
@@ -90,7 +90,7 @@ const Header = ({data, navigateToTheTop, linkScroll, changeLanguage, open, handl
                                         <img className='Header-Icon Header-Mail-Icon' alt="Icon" 
                                         src={require("../img/header_email_icon.png")}>
                                         </img>
-                                        {data.header.email}
+                                        <span className="Header-contacts-link-text">{data.header.email}</span>
                                     </a>
                                 </p>
                             </div>
@@ -98,7 +98,7 @@ const Header = ({data, navigateToTheTop, linkScroll, changeLanguage, open, handl
                                 {/* <img alt="Icon" className='Header-Callback-Icon Pulse-Icon' src={require(`../img/header_callback_icon.png`)}>
                                 </img> */}
                                 <Callback data={data} open={open} handleClose={handleClose} handleToggle={handleToggle} 
-                                classname="Callback-button" iconUrl={`header_callback_icon.png`}/>
+                                classname="Callback-button" iconUrl={`header_callback_icon.png`} textClass="Callback-adaptive-text"/>
                             </div>
                     </div>
                     <div className='Header-common-container'>
