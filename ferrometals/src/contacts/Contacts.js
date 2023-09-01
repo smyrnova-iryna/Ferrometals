@@ -99,15 +99,15 @@ const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, cu
 
     
     return (
-        <article className='Contacts-Main-Container'>
-                <div className='First-Page-Picture-Container' style={{height: `${currentViewportHeight*0.8}px`, marginLeft: 
-                `${377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                Number(currentViewportWidthIsLarger) / 2}px`, width: `${currentViewportWidth - (377.27272727273 / 746 * 
-                currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2)}px`}}>
-                </div>
-                <div className='First-Page-Button-Container Contacts-Adaptive-Button-Container' 
-                style={{height: `${currentViewportHeight - currentViewportHeight*0.8 }px`, top: `${currentViewportHeight*0.8}px`}}>
-                </div>
+        <article className='First-Page-Main-Container' style={{minHeight: currentViewportHeight, padding: "0"}}>
+            <div className='First-Page-Picture-Container' style={{height: `${currentViewportHeight*0.8}px`, marginLeft: 
+            `${377.27272727273 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
+            Number(currentViewportWidthIsLarger) / 2}px`, width: `${currentViewportWidth - (377.27272727273 / 746 * 
+            currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2)}px`}}>
+            </div>
+            <div className='First-Page-Button-Container Contacts-Adaptive-Button-Container' 
+            style={{height: `${currentViewportHeight - currentViewportHeight*0.8 }px`, top: `${currentViewportHeight*0.8}px`}}>
+            </div>
 
 
                 {/* <div className='Contacts-feedback-form-adaptive-button-container' style={{top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
