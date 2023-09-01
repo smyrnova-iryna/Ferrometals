@@ -1144,7 +1144,7 @@ body {
 
 @media screen and (max-height: 820px) {   
     .Top-Scroll-Container {
-        top: 800vh; 
+        top: 80vh; 
         /* left: 90vw; */
     }
 }
