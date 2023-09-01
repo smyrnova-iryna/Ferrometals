@@ -195,7 +195,7 @@ const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, cu
                 `} />
                 Sorry, your browser does not support inline SVG.
             </svg>
-            <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", top: "0", right: "0", height: "100%"}}>
+            {/* <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", top: "0", right: "0", height: "100%"}}>
                 <linearGradient id="ThirdDecorElementGradient">
                 <stop offset="30%" stopColor="rgba(48,48,49,255)" />
                 <stop offset="90%" stopColor="rgba(138,137,136,255)" />
@@ -207,7 +207,34 @@ const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, cu
                 0,${749.0378234903 / 746 * currentViewportHeight}
                 `} />
                 Sorry, your browser does not support inline SVG.
-            </svg>
+            </svg> */}
+
+
+<div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+            height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${616.85467816855 / 746 * 
+            currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
+                <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
+                top: "0", right: "0", height: "100%", zIndex: "90"}}>
+                    <linearGradient id="ThirdDecorElementGradient">
+                        <stop offset="30%" stopColor="rgba(48,48,49,255)" />
+                        <stop offset="90%" stopColor="rgba(138,137,136,255)" />
+                    </linearGradient>
+                    <polygon points={`
+                    0,${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
+                    ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
+                    Number(currentViewportWidthIsLarger) / 2},${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
+                    ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
+                    Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight 
+                    - 1.3} 
+                    0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 1.3}
+                    `} />
+                    Sorry, your browser does not support inline SVG.
+                </svg> 
+               
+            </div>
+
+
+
             <div className="Contacts-feedback-form-main-container">
             <div className="Contacts-feedback-form-container">
                 <h4 className="Contacts-container-heading">{data.contacts.feedback.heading}</h4>
