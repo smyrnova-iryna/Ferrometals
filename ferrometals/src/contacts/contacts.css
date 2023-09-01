@@ -139,6 +139,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     width: 70%;
 }
 
 .Contacts-feedback-form-adaptive-button {
@@ -252,14 +253,14 @@
 
 @media screen and (max-height: 700px) {
     .Contacts-feedback-form-main-container {
-        background-color: palevioletred;
         display: none;
     }
     .Contacts-feedback-form-adaptive-button-container {
         visibility: visible;
-         position: absolute;
+         /* position: absolute; */
          bottom: 0;
          z-index: 90;
+         
     }
     .Visible-Feedback-Form {
         visibility: visible;
@@ -306,7 +307,6 @@
 }
 @media screen and (max-aspect-ratio: 14.17/7.77) {
     .Contacts-feedback-form-main-container {
-        background-color: red;
         max-width: 40vw;
         max-height: 30vw;
         right: 20px!important;
@@ -315,18 +315,16 @@
     @media screen and (min-height: 882px) and (max-width: 1231px) {
         .Contacts-item, .Contacts-text-container {
             font-size: 130%;
-            color: red;
             padding-top: 5%;
         }
 
         .Contacts-inner-container-heading {
-            color: aqua;
             padding-top: 5%;
         }
 
         .Contacts-feedback-form-adaptive-button-container {
             visibility: visible;
-             position: absolute;
+             /* position: absolute; */
              bottom: 0;
              z-index: 90;
         }
@@ -349,7 +347,7 @@
         }
         .Contacts-feedback-form-adaptive-button-container {
            visibility: visible;
-            position: absolute;
+            /* position: absolute; */
             z-index: 90;
         }
         .Visible-Feedback-Form {

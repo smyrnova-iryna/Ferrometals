@@ -108,11 +108,15 @@ const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, cu
                 <div className='First-Page-Button-Container Contacts-Adaptive-Button-Container' 
                 style={{height: `${currentViewportHeight - currentViewportHeight*0.8 }px`, top: `${currentViewportHeight*0.8}px`}}>
                 </div>
-                <div className='Contacts-feedback-form-adaptive-button-container' style={{top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+
+
+                {/* <div className='Contacts-feedback-form-adaptive-button-container' style={{top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
             height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${495.68679495687 / 746 * 
             currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
                     <button className='Contacts-feedback-form-adaptive-button' onClick={setFeedbackFormVisibility}>{data.contacts.feedback.adaptiveButtonText}</button>                
-                </div>
+                </div> */}
+
+
                 {/* <div className={`${adaptiveFeedbackFormClass} Adaptive-Contacts-feedback-form-outer-container`}>
                     <div>
                         <div className={`${adaptiveFeedbackFormClass} Adaptive-Contacts-feedback-form-background`}>
@@ -210,27 +214,29 @@ const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, cu
             </svg> */}
 
 
-<div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
-            height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${616.85467816855 / 746 * 
-            currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
-                <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
-                top: "0", right: "0", height: "100%", zIndex: "90"}}>
-                    <linearGradient id="ThirdDecorElementGradient">
-                        <stop offset="30%" stopColor="rgba(48,48,49,255)" />
-                        <stop offset="90%" stopColor="rgba(138,137,136,255)" />
-                    </linearGradient>
-                    <polygon points={`
-                    0,${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
-                    ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                    Number(currentViewportWidthIsLarger) / 2},${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
-                    ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
-                    Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight 
-                    - 1.3} 
-                    0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 1.3}
-                    `} />
-                    Sorry, your browser does not support inline SVG.
-                </svg> 
-               
+        <div className='First-Page-List-Container' style={{ top: `${523.22495023225 / 746 * currentViewportHeight}px`, 
+                    height: `${(749.0378234903 - 523.22495023225) / 746 * currentViewportHeight}px`, width: `${616.85467816855 / 746 * 
+                    currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * Number(currentViewportWidthIsLarger) / 2}px`}}>
+                        <svg className='First-Page-Svg' style={{fill:"url(#ThirdDecorElementGradient)", position: "absolute", width: "100%", 
+                        top: "0", right: "0", height: "100%", zIndex: "90"}}>
+                            <linearGradient id="ThirdDecorElementGradient">
+                                <stop offset="30%" stopColor="rgba(48,48,49,255)" />
+                                <stop offset="90%" stopColor="rgba(138,137,136,255)" />
+                            </linearGradient>
+                            <polygon points={`
+                            0,${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
+                            ${495.68679495687 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
+                            Number(currentViewportWidthIsLarger) / 2},${(523.22495023225 - 523.22495023225) / 746 * currentViewportHeight} 
+                            ${616.85467816855 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight * 
+                            Number(currentViewportWidthIsLarger) / 2},${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight 
+                            - 1.3} 
+                            0,${(749.03782349038  - 523.22495023225) / 746 * currentViewportHeight - 1.3}
+                            `} />
+                            Sorry, your browser does not support inline SVG.
+                        </svg> 
+                        <div className='Contacts-feedback-form-adaptive-button-container' >
+                                <button className='Contacts-feedback-form-adaptive-button' onClick={setFeedbackFormVisibility}>{data.contacts.feedback.adaptiveButtonText}</button>                
+                        </div>
             </div>
 
 
