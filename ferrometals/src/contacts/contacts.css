@@ -1,10 +1,11 @@
 .Contacts-Main-Container {
     height: 100vh;
-    background-image: url(../img/background_image.png);
+}
+
+/* background-image: url(../img/background_image.png);
     background-position-x: right;
     background-size: cover;
-    background-position-y: -65px;
-}
+    background-position-y: -65px; */
 
 .Contacts-Inner-Container {
     display: flex;
@@ -151,6 +152,7 @@
 .Invisible-Feedback-Form {
     /* display: none; */
     visibility: hidden;
+    height: 0;
 }
 
 .Adaptive-Contacts-feedback-form-outer-container {

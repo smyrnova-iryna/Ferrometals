@@ -924,9 +924,6 @@ body {
           width: 100%;
           margin: 0;
         }
-        .Footer-Icon {
-            /* min-width: 20px; */
-        }
         .Callback-button-container {
             min-width: max-content;   
     }
