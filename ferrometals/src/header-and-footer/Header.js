@@ -53,7 +53,7 @@ const Header = ({data, navigateToTheTop, linkScroll, changeLanguage, open, handl
 
     useEffect(() => {
         const handleScroll = event => {
-            if(window.location.pathname !== "/") {
+            if(window.location.pathname !== "/" && window.location.pathname !== "/contacts") {
                 setLogoVisibility("")
             } else {
                 setLogoVisibility("First-Page-Header-Logo")
