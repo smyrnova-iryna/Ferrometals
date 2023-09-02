@@ -816,13 +816,13 @@ body {
 
         }
 
-       
+        .Contacts-Inner-Container {
+            max-width: 75vw!important;
+            max-height: 100vh!important;
+            position: unset;
+            padding-top: 0!important;
+        }
 
-
-        /* .First-Page-Main-Container {
-            min-height: 100vh!important;
-
-        } */
 
         .First-Page-Logo-Text {
             max-width: 200px!important;
