@@ -696,6 +696,9 @@ body {
             .Header-contacts-link-text {
                 display: none;
             }
+            .Callback-adaptive-text {
+                display: none;
+            }
         }
     /* Кінець пропозиції */
     }
