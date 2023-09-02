@@ -1176,3 +1176,11 @@ body {
         font-size: 50%;
     }
 }
+
+/* Пропозиція */
+@media screen and (orientation: landscape), (max-width: 768px) {
+    .App-header {
+        padding: 0;
+        max-height: 48px;
+    }    
+}
