@@ -698,14 +698,8 @@ body {
                 align-items: center;
                 gap: 5px;
                } */
-               .Header-contacts-container {
-                /* width: 100%; */
-                width: max-content;
-                gap: 1%;   
-                margin: 0;
-                flex-direction: row-reverse;
-            }
-            /* .First-Page-Button-Container-Adaptive {
+               
+            .First-Page-Button-Container-Adaptive {
                 display: block;
                 height: 30vh;
                 width: 100%;
@@ -715,8 +709,15 @@ body {
                 justify-content: space-evenly;
                 align-items: center;
                 cursor: pointer;
-            } */
+            }
             /* ??? */
+            .Header-contacts-container {
+                /* width: 100%; */
+                width: max-content;
+                gap: 1%;   
+                margin: 0;
+                flex-direction: row-reverse;
+            }
             .App-header {
                 padding: 0;
                 max-height: 48px;
