@@ -690,7 +690,7 @@ body {
                 padding: 0;
                 max-height: 48px;
             }    
-            .First-Page-Header-Logo, Header-logo {
+            .Header-logo-container {
                 visibility: hidden;
             }
         }
