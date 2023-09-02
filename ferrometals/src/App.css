@@ -700,7 +700,6 @@ body {
                }
             /* ??? */
             .Header-contacts-container {
-                /* width: 100%; */
                 width: max-content;
                 gap: 1%;   
                 margin: 0;
