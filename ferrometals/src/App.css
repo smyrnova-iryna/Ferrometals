@@ -1194,36 +1194,30 @@ body {
 
     } */
 
-   
 
 
-    /* .First-Page-Main-Container {
-        min-height: 100vh!important;
-
+    /* .First-Page-Logo-Text {
+        max-width: 200px!important;
     } */
 
-    .First-Page-Logo-Text {
-        max-width: 200px!important;
-    }
-
-    .First-Page-Logo-Description {
+    /* .First-Page-Logo-Description {
         height: 30vh!important;;
         width: 90vw;
         font-size: 110%;
         padding-top: 5%;
         
-    }
+    } */
 
-    .First-Page-List-Container  {
+    /* .First-Page-List-Container  {
         width: 100vw!important;
         height: 40vh!important;
         position: unset;
         padding: 10% 5%;
         background: linear-gradient(90deg, rgba(48,48,49,255) 30%, rgba(138,137,136,255) 90%);
-    }
+    } */
 
     
-    .First-Page-List {
+    /* .First-Page-List {
         width: 100%;
         height: 100%;
         font-size: 90%;
@@ -1233,16 +1227,16 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-    }
+    } */
 
-    .First-Page_List-Item {
+    /* .First-Page_List-Item {
         padding-top: 10px;
-    }
+    } */
 
-    .First-Page-List-Item-Text {
+    /* .First-Page-List-Item-Text {
         margin-left: 20px;
         margin-top: -15px;
-    }
+    } */
 
     .First-Page-Button-Container {
         display: none;
@@ -1264,34 +1258,23 @@ body {
         width: 45vw!important;
     }
 
-    .First-Page-Svg, .Header-logo {
+    /* .First-Page-Svg, .Header-logo {
         visibility: hidden;
-    }
-
-    /* .Top-Scroll-Container {
-        visibility: hidden;
-        top: 0
     } */
     
-    .First-Page-Picture-Container {
+    /* .First-Page-Picture-Container {
         display: none!important;
-        /* width: 100% !important;
-        height: 100vh !important;
-        margin: 0!important; */
-    }
+    } */
 
     .Header-info-container {
         margin: 0;
         padding: 0;
-        /* min-width: 180px;
-        min-height: 100px; */
     } 
     .Header-main-container {
         padding: 6px 0 0 0;
     }
     /* ////////////////////////////////////////////////////////////////////color */
     .Header-contacts-container {
-        /* width: 100%; */
         width: max-content;
         gap: 1%;   
         margin: 0;
@@ -1303,13 +1286,13 @@ body {
         width: 30px;
     }
 
-    .Header-main-container {
+    /* .Header-main-container {
      width: 100%;
      flex-direction: row;
      justify-content: flex-end;
      align-items: center;
      gap: 5px;
-    }
+    } */
     .Header-info-container {
         height: 50px;
         width: 100%;
@@ -1323,10 +1306,7 @@ body {
     .Header-contacts-link-text {
         display: none;
     }
-    /* .Header-contacts-link {
-        min-width: 180px;
-        min-height: 60px;
-    } */
+    
     .Callback-button {
         display: flex;
         align-items: center;
@@ -1348,12 +1328,7 @@ body {
         min-width: max-content;   
 }
 
-.Footer-Info-Adaptive {
-    width: 100%;
-}
-
 .Contacts-Inner-Container {
-    /* background-color: pink; */
     width: 100vw!important;
     height: 70vh!important;
     padding: 110px 0 0 0;
@@ -1363,27 +1338,23 @@ body {
 } 
 
 .Contacts-Items-Container {
-    /* background-color: violet; */
     min-height: 80px;
     margin-left: 5px;
 
 }
 
 .Contacts-item {
-    /* background-color: burlywood; */
     max-width: 240px;
     font-size: 150%;
 }
 
 .Contacts-inner-container-heading {
-    /* background-color: aquamarine; */
     margin-left: 8px;
     font-size: 160%;
     font-weight: 700;
 }
 
 .Contacts-inner-container-text {
-    /* background-color: blueviolet; */
     font-size: 150%;
     min-height: 80px;
     margin-left: 5px;
@@ -1397,15 +1368,11 @@ body {
     width: 100%!important;
     height: 30vh!important;
 }
-
-.Contacts-Main-Container {
-    background-image: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%), url(./img/background_image.png);
-}
-    
-@media screen and (max-width: 300px) {
+/* ??? */
+/* @media screen and (max-width: 300px) {
     .Footer-Info-Adaptive {
         font-size: 70%;
-    }
+    } */
 }
 
 }
