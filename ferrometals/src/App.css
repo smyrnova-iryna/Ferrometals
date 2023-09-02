@@ -684,6 +684,14 @@ body {
             display: flex;
             align-items: center;
         }
+        /* Пропозиція */
+        @media screen and (orientation: landscape) and (max-width: 1080px) {
+            .App-header {
+                padding: 0;
+                max-height: 48px;
+            }    
+        }
+    /* Кінець пропозиції */
     }
 
     @media only screen and (min-width: 1290px) {
@@ -981,7 +989,7 @@ body {
     .Contacts-Main-Container {
         background-image: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%), url(./img/background_image.png);
     }
-        
+
     @media screen and (max-width: 300px) {
         .Footer-Info-Adaptive {
             font-size: 70%;
@@ -1175,198 +1183,4 @@ body {
     .Burger-Menu-link, .Burger-Menu-Dropdown-link {
         font-size: 50%;
     }
-}
-
-/* Пропозиція */
-@media screen and (orientation: landscape) and (max-width: 1080px) {
-
-    /* * {
-        max-width: 100%;
-    }
-
-    .First-Page-Logo-Extra-Container {
-        width: 100vw!important;
-        height: 100vh!important;
-        position: unset;
-        background: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%), url(./img/background_image.png);
-        background-size: cover;
-        padding: 25% 11% 0 0;
-
-    } */
-
-
-
-    /* .First-Page-Logo-Text {
-        max-width: 200px!important;
-    } */
-
-    /* .First-Page-Logo-Description {
-        height: 30vh!important;;
-        width: 90vw;
-        font-size: 110%;
-        padding-top: 5%;
-        
-    } */
-
-    /* .First-Page-List-Container  {
-        width: 100vw!important;
-        height: 40vh!important;
-        position: unset;
-        padding: 10% 5%;
-        background: linear-gradient(90deg, rgba(48,48,49,255) 30%, rgba(138,137,136,255) 90%);
-    } */
-
-    
-    /* .First-Page-List {
-        width: 100%;
-        height: 100%;
-        font-size: 90%;
-        line-height: 1;
-        list-style-position: inside;
-        list-style-type: disc;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    } */
-
-    /* .First-Page_List-Item {
-        padding-top: 10px;
-    } */
-
-    /* .First-Page-List-Item-Text {
-        margin-left: 20px;
-        margin-top: -15px;
-    } */
-
-    .First-Page-Button-Container {
-        display: none;
-    }
-
-    .First-Page-Button-Container-Adaptive {
-        display: block;
-        height: 30vh;
-        width: 100%;
-        background: linear-gradient(90deg, rgba(20,172,147,255) 46%, rgba(13,94,114,255) 90%);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .FirstPage-Title-Button, .FirstPage-Title-Link {
-        width: 45vw!important;
-    }
-
-    /* .First-Page-Svg, .Header-logo {
-        visibility: hidden;
-    } */
-    
-    /* .First-Page-Picture-Container {
-        display: none!important;
-    } */
-
-    .Header-info-container {
-        margin: 0;
-        padding: 0;
-    } 
-    .Header-main-container {
-        padding: 6px 0 0 0;
-    }
-    /* ////////////////////////////////////////////////////////////////////color */
-    .Header-contacts-container {
-        width: max-content;
-        gap: 1%;   
-        margin: 0;
-        flex-direction: row-reverse;
-    }
-
-    .navBurgerMenuContainer {
-        margin-left: 7px;
-        width: 30px;
-    }
-
-    /* .Header-main-container {
-     width: 100%;
-     flex-direction: row;
-     justify-content: flex-end;
-     align-items: center;
-     gap: 5px;
-    } */
-    .Header-info-container {
-        height: 50px;
-        width: 100%;
-    }
-    .App-header {
-        padding: 0;
-        max-height: 48px;
-    }
-
-
-    .Header-contacts-link-text {
-        display: none;
-    }
-    
-    .Callback-button {
-        display: flex;
-        align-items: center;
-    }
-    .Callback-adaptive-text {
-        display: none;
-    }
-    .Header-common-container {
-        min-height: 30px;
-    }
-    .Callback-container {
-        width: 90%;
-    }
-    .Callback-submit-button {
-      width: 100%;
-      margin: 0;
-    }
-    .Callback-button-container {
-        min-width: max-content;   
-}
-
-.Contacts-Inner-Container {
-    width: 100vw!important;
-    height: 70vh!important;
-    padding: 110px 0 0 0;
-    margin: 0;
-    color: var(--main-background-color)
-    
-} 
-
-.Contacts-Items-Container {
-    min-height: 80px;
-    margin-left: 5px;
-
-}
-
-.Contacts-item {
-    max-width: 240px;
-    font-size: 150%;
-}
-
-.Contacts-inner-container-heading {
-    margin-left: 8px;
-    font-size: 160%;
-    font-weight: 700;
-}
-
-.Contacts-inner-container-text {
-    font-size: 150%;
-    min-height: 80px;
-    margin-left: 5px;
-    margin-right: 15px;
-    width: 240px;
-}
-
-
-.Contacts-feedback-form-adaptive-button-container {
-    background: linear-gradient(90deg, rgba(48,48,49,255) 30%, rgba(138,137,136,255) 90%);
-    width: 100%!important;
-    height: 30vh!important;
-}
-
 }
