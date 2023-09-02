@@ -1180,7 +1180,7 @@ body {
 /* Пропозиція */
 @media screen and (orientation: landscape) and (max-width: 1080px) {
 
-    * {
+    /* * {
         max-width: 100%;
     }
 
@@ -1192,7 +1192,7 @@ body {
         background-size: cover;
         padding: 25% 11% 0 0;
 
-    }
+    } */
 
    
 
