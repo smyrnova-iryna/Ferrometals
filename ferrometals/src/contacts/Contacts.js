@@ -2,6 +2,7 @@ import { useState, useRef  } from "react";
 import "./contacts.css";
 // import CloseIcon from '@mui/icons-material/Close';
 import emailjs from '@emailjs/browser';
+import ContactsBackdrop from "./ContactsBackdrop.js"
 
 const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, currentViewportWidth}) => {
     
@@ -144,6 +145,9 @@ const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, cu
                     <button className='Contacts-feedback-form-adaptive-button' onClick={setFeedbackFormVisibility}>{data.contacts.feedback.adaptiveButtonText}</button>                
                 </div> */}
 
+                   
+
+
 
                 {/* <div className={`${adaptiveFeedbackFormClass} Adaptive-Contacts-feedback-form-outer-container`}>
                     <div>
@@ -240,7 +244,13 @@ const Contacts = ({data, currentViewportHeight, currentViewportWidthIsLarger, cu
                             Sorry, your browser does not support inline SVG.
                         </svg> 
                         <div className='Contacts-feedback-form-adaptive-button-container' >
-                                <button className='Contacts-feedback-form-adaptive-button' onClick={setFeedbackFormVisibility}>{data.contacts.feedback.adaptiveButtonText}</button>                
+                                <ContactsBackdrop data={data} emailValue={emailValue} phoneNumberValue={phoneNumberValue}
+                                phoneNumberSymbols={phoneNumberSymbols} phoneNumberValidation={phoneNumberValidation} nameValue={nameValue}
+                                textOnlyValidation={textOnlyValidation} textOnlyForbiddenSymbols={textOnlyForbiddenSymbols} form={form}
+                                setFeedbackFormVisibility={setFeedbackFormVisibility} adaptiveFeedbackFormClass={adaptiveFeedbackFormClass}
+                                setEmailInputValue={setEmailInputValue} subjectValue={subjectValue} setSubjectInputValue={setSubjectInputValue}
+                                messageValue={messageValue} setMessageInputValue={setMessageInputValue} sendEmail={sendEmail}
+                                currentFormMessage={currentFormMessage}/>
                         </div>
             </div>
 

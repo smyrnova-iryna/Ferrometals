@@ -143,8 +143,9 @@
 }
 
 .Contacts-feedback-form-adaptive-button {
-    max-width: 90%;
-    min-width: 50%;
+    /* max-width: 90%;
+    min-width: 50%; */
+    width: 150px;
     height: 30%;
     font-weight: 700;
     font-size: 120%;
@@ -184,8 +185,38 @@
 
 .Adaptive-Contacts-feedback-form {
     padding-top: 10px;
-    min-height: 450px;
+    height: 450px;
+    background: linear-gradient(90deg, rgba(48,48,49,255) 30%, rgba(138,137,136,255) 90%);
 }
+
+
+@media screen and (max-height: 550px) {
+    .Adaptive-Contacts-feedback-form {
+        height: 230px;
+    }
+    .Contacts-feedback-form-input {
+        height: 20px;
+        font-size: 60%;
+    }
+    .Contacts-feedback-form-text-input {
+        height: 40px;
+        font-size: 60%;
+    }
+    .Adaptive-Contacts-feedback-form {
+        padding-top: 0;
+    } 
+    .Contacts-container-heading , .Contacts-container-description , .Contacts-feedback-form-bottom-text , .Contacts-feedback-form-extra-message, .Adaptive-Contacts-feedback-form-button {
+        font-size: 60%;
+    }
+    .Contacts-feedback-form-adaptive-close-button {
+        margin-top: 5px;
+    }
+    .Contacts-feedback-form-adaptive-button {
+        width: 90px;
+        font-size: 80%;
+    }
+}
+
 
 
 
