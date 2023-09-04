@@ -20,7 +20,6 @@ export default function ContactsBackdrop({emailValue, phoneNumberValue, phoneNum
       <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
-        onClick={handleClose}
       >
         {/* <CircularProgress color="inherit" /> */}
 
@@ -28,7 +27,7 @@ export default function ContactsBackdrop({emailValue, phoneNumberValue, phoneNum
                     {/* <div> */}
                         {/* <div className={`${adaptiveFeedbackFormClass} Adaptive-Contacts-feedback-form-background`}> */}
                             <div className="Contacts-feedback-form-container Adaptive-Contacts-feedback-form">
-                                <button className="Contacts-feedback-form-adaptive-close-button" onClick={handleClose}><CloseIcon/></button>
+                                <button className="Contacts-feedback-form-adaptive-close-button" onClick={handleClose} ><CloseIcon/></button>
                                 <h4 className="Contacts-container-heading">{data.contacts.feedback.heading}</h4>
                                 <p className="Contacts-container-description">{data.contacts.feedback.description}</p>
                                 <form className="Contacts-feedback-form-input-container" ref={form}>
