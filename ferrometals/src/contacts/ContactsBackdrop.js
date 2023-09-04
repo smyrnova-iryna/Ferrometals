@@ -32,16 +32,16 @@ export default function ContactsBackdrop({emailValue, phoneNumberValue, phoneNum
                                 <p className="Contacts-container-description">{data.contacts.feedback.description}</p>
                                 <form className="Contacts-feedback-form-input-container" ref={form}>
                                     <div className="Contacts-feedback-form-input-container-without-text-form-input">
-                                        <input  name="user_name" onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} className="Contacts-feedback-form-input" placeholder={data.contacts.feedback.nameInputText}></input>
-                                        <input name="user_phone_number" onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} value={phoneNumberValue} className="Contacts-feedback-form-input" placeholder={data.contacts.feedback.phoneInputText}></input>
+                                        <input style={{backgroundColor: "white"}}  name="user_name" onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} className="Contacts-feedback-form-input" placeholder={data.contacts.feedback.nameInputText}></input>
+                                        <input style={{backgroundColor: "white"}} name="user_phone_number" onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} value={phoneNumberValue} className="Contacts-feedback-form-input" placeholder={data.contacts.feedback.phoneInputText}></input>
                                     </div>
                                     <div className="Contacts-feedback-form-input-container-without-text-form-input">
-                                        <input value={emailValue} onChange={event => {setEmailInputValue(event.target.value)}} name="user_email" 
+                                        <input style={{backgroundColor: "white"}} value={emailValue} onChange={event => {setEmailInputValue(event.target.value)}} name="user_email" 
                                         className="Contacts-feedback-form-input" placeholder={data.contacts.feedback.emailInputText}></input>
-                                        <input value={subjectValue} onChange={event => {setSubjectInputValue(event.target.value)}} name="user_subject" 
+                                        <input style={{backgroundColor: "white"}} value={subjectValue} onChange={event => {setSubjectInputValue(event.target.value)}} name="user_subject" 
                                         className="Contacts-feedback-form-input" placeholder={data.contacts.feedback.subjectInputText}></input>
                                     </div>
-                                    <textarea value={messageValue} onChange={event => {setMessageInputValue(event.target.value)}} name="user_message" className="Contacts-feedback-form-text-input" placeholder={data.contacts.feedback.messageInputText}></textarea>
+                                    <textarea style={{backgroundColor: "white"}} value={messageValue} onChange={event => {setMessageInputValue(event.target.value)}} name="user_message" className="Contacts-feedback-form-text-input" placeholder={data.contacts.feedback.messageInputText}></textarea>
                                 </form>
                                 <p className="Contacts-feedback-form-bottom-text">{data.contacts.feedback.bottomText}</p>
                                 <button className="Contacts-feedback-form-button Adaptive-Contacts-feedback-form-button" onClick={sendEmail}>{data.contacts.feedback.buttonText}</button>
