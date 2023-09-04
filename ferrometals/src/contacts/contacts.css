@@ -202,6 +202,7 @@
     .Contacts-feedback-form-input {
         height: 20px;
         font-size: 60%;
+        max-width: 100px;
     }
     .Contacts-feedback-form-text-input {
         height: 40px;
@@ -404,7 +405,7 @@
     }
 
     .Contacts-feedback-form-input {
-        max-width: 80px;
+        max-width: 110px;
     }
     /* .Contacts-container-description, .Contacts-feedback-form-bottom-text, .Contacts-container-heading {
         margin-bottom: 17px;
