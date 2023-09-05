@@ -4,6 +4,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background-image: url(../img/single_gear_background.png);
     background-size: cover;
@@ -31,12 +32,20 @@
 .Main-Products-Inner-Link {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    height: 100%; 
+    width: 450px;
+    height: 350px;
+    /* width: 25%;
+    height: 100%;  */
     align-items: center;
-    justify-content: space-around; 
+    /* justify-content: space-around;  */
+    justify-content: space-between;
     text-decoration: none;
     color: var(--main-background-color);
+    padding: 0 20px 20px 20px ;
+}
+
+.Main-Products-Painting-Lines-Inner-Image {
+
 }
 
 .Main-Products-Inner-Link:hover {
@@ -48,7 +57,8 @@
     /* height: 50%;
     width: 80%; */
     margin-bottom: 3%;
-    max-height: 35vh;
+    max-width: 350px;
+    /* max-height: 35vh; */
 }
 
 .Main-Products-Inner-Button {
@@ -355,7 +365,7 @@
         min-height: 120px;
     }
     .Main-Products-Inner-Image {
-        max-width: 20vw;
+        max-width: 200px;
     }
 }
 
@@ -363,15 +373,17 @@
     .Main-Products-Inner-Container {
         flex-direction: column;
         align-items: center;
-        gap: 70px;
+        gap: 95px;
         padding-top: 0;
     }
     .Main-Products-Inner-Link {
-        width: 85vw;
-        min-height: 300px;
+        /* width: 85vw;
+        min-height: 300px; */
+        width: 300px;
+        height: 300px;
     }
     .Main-Products-Inner-Image {
-        min-width: 70vw;
+        min-width: 200px;
     }
     .Main-Products-Title {
         font-size: 200%;

@@ -34,7 +34,7 @@ const Products = ({data, linkScroll}) => {
       </Link>
       <Link className="Main-Products-Inner-Link" to={data.menuPaths.polymerPaintingLines} 
       onClick={linkScroll}>
-        <img className="Main-Products-Inner-Image" alt={data.polymerPaintingLines.mainHeader}
+        <img className="Main-Products-Inner-Image Main-Products-Painting-Lines-Inner-Image" alt={data.polymerPaintingLines.mainHeader}
         src={require(`../data/picture/picture_products/${data.polymerPaintingLines.pictures[0].picture}`)}></img>
         <button className="Main-Products-Inner-Button">{data.polymerPaintingLines.mainHeader}<ArrowForwardIosIcon />
         </button>
