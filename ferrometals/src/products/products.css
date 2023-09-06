@@ -193,6 +193,10 @@
     font-weight: 400;
 }
 
+.Product-Second-Info-Container {
+    justify-content: flex-start;
+}
+
 .Pellets-Images-Container {
     display: flex;
     flex-direction: column;
@@ -236,7 +240,12 @@
 } */
 
 .Scaner-Image {
-    width: 30%;
+    /* width: 30%; */
+    width: 300px
+}
+
+.PolymerPaintingLines-Second-Image {
+    width: 250px;
 }
 
 .Scaner-Text {

@@ -11,15 +11,18 @@ const PolymerPaintingLines = ({data}) => {
                     alt={data.polymerPaintingLines.mainPicture.captionText} />
                     <p className="Scaner-Text Painting-Lines-Main-Text">{data.polymerPaintingLines.mainText}</p>
                 </div>
-                {data.polymerPaintingLines.internalBlocksText.map((item) => 
-                    <div className="Scaner-Decorated-Left-Text-Container">
-                        <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item}>{item.header}</p>
-                        <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item}>{item.subHeader}</p>
-                        {data.polymerPaintingLines.internalBlocksText[item.id].blockText.map((item) => 
-                            <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.id}>
-                                <span className="About-List-Item-Marker">&#10004; </span>{item}
-                            </p>)}
-                    </div>)}
+                <div className="Scaner-Decorated-Left-Text-Container">
+                    {data.polymerPaintingLines.internalBlocksText.map((item) => 
+                        <div style={{marginTop: "30px"}}>
+                            <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.header}>{item.header}</p>
+                            <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.subHeader}>{item.subHeader}</p>
+                            {data.polymerPaintingLines.internalBlocksText[item.id].blockText.map((item) => 
+                                <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.id}>
+                                    <span className="About-List-Item-Marker">&#10004; </span>{item}
+                                </p>)}
+                        </div>)}
+                </div>
+                
                 {/* <div className="Scaner-Decorated-Left-Text-Container">
                     <p className="Scaner-Decorated-Left-Text">{data.polymerPaintingLines.internalTitleText}</p> <br/>
                     <p className="Scaner-Decorated-Left-Text">{data.polymerPaintingLines.internalBlocksText[0].header}</p>
@@ -45,18 +48,20 @@ const PolymerPaintingLines = ({data}) => {
                             <span className="About-List-Item-Marker">&#10004; </span>{item}
                         </p>)}
                 </div> */}
-                <div className="Product-First-Info-Container">
-                    <img className="Scaner-Image" 
+                <div className="Product-First-Info-Container Product-Second-Info-Container">
+                    <img className="Scaner-Image PolymerPaintingLines-Second-Image" 
                     src={require(`../../data/picture/picture_products/${data.polymerPaintingLines.finishPicture.picture}`)} 
                     alt={data.polymerPaintingLines.finishPicture.captionText} />
-                    <p className="Scaner-Decorated-Left-Text Painting-Lines-Main-Text">
-                        {data.polymerPaintingLines.finishText.header}
-                    </p>
-                    <p className="Scaner-Decorated-Left-Text Painting-Lines-Main-Text">
-                        {data.polymerPaintingLines.finishText.subHeader}
-                    </p>
-                    {data.polymerPaintingLines.finishText.blockText.map((item) => 
-                        <p className="Scaner-Decorated-Left-Text Painting-Lines-Main-Text" key={item}>{item}</p>)}
+                    <div>
+                        <p className="Scaner-Decorated-Left-Text Painting-Lines-Main-Text">
+                            {data.polymerPaintingLines.finishText.header}
+                        </p>
+                        <p className="Scaner-Decorated-Left-Text Painting-Lines-Main-Text">
+                            {data.polymerPaintingLines.finishText.subHeader}
+                        </p>
+                        {data.polymerPaintingLines.finishText.blockText.map((item) => 
+                            <p className="Scaner-Decorated-Left-Text Painting-Lines-Main-Text" key={item}>{item}</p>)}
+                    </div>
                 </div>
             </article>
             <article className="Product-Inner-Container">
