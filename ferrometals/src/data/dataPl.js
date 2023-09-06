@@ -396,12 +396,13 @@ const dataPl = {
                    `części zamienne i eksploatacyjne;`,
                    `części według istniejącego analogu z odwrotną metodą projektowania.`
                    ],
-        pictures: 
-                 ['picture_about.png', 'picture_about2.jpg', 'picture_about3.jpg'],
+        // pictures: 
+        //          ['picture_about.png', 'picture_about2.jpg', 'picture_about3.jpg'],
         photos: [
-                 ['photo_about.jpg', 'photo_about2.jpg', 'photo_about3.jpg'], 
-                 ['photo_about4.jpg', 'photo_about5.jpg', 'photo_about6.jpg'], 
-                 ['photo_about7.jpg', 'photo_about8.jpg', 'photo_about9.jpg']],
+                ['photo_about.jpg', 'photo_about2.jpg', 'photo_about3.jpg'], 
+                ['photo_about4.jpg', 'photo_about5.jpg', 'photo_about6.jpg'], 
+                ['photo_about7.jpg', 'photo_about8.jpg', 'photo_about9.jpg'],
+                ['photo_about10.png', 'photo_about11.png', 'photo_about12.png']],
         altText: "Оборудование",
         },
   products: {title: "Products"},
@@ -1140,15 +1141,19 @@ const dataPl = {
                                         accumulation on the surface of the hangers;`,
                                         `modular demountable design allowing changes and additions to the configuration as needed to 
                                         adapt to workpiece dimensions or process cycle, as well as easy installation.`]
-                                },
-                                {id: 3,
-                                header: `Additional options:`,
-                                subHeader: ``,
-                                blockText:
-                                        [`Mechanized conveying system based on an electrically driven ring hanging multi-row conveyor.`,
-                                        `Forced air-cooling section with separate transfer line and exhaust ventilation.`]
                                 }
                                 ],
+                finishPicture: 
+                        {picture: 'polymer_painting_lines2.png',
+                        captionText: 'Polymer painting lines'},
+                finishText: {id: 0,
+                            header: `Additional options:`,
+                            subHeader: ``,
+                            blockText:
+                            [`Mechanized conveying system based on an electrically driven ring hanging multi-row 
+                            conveyor.`,
+                            `Forced air-cooling section with separate transfer line and exhaust ventilation.`]
+                            },
                 pictures: 
                         [{idGlobal: 0, 
                         header: '', 
@@ -1623,7 +1628,28 @@ const dataPl = {
                         captionText: 'Pallet board stacker elements'},
                         {id: 10, 
                         photo: 'pallet_board_stacker_elements8.jpg', 
-                        captionText: 'Pallet board stacker elements'}
+                        captionText: 'Pallet board stacker elements'},
+                        {id: 11, 
+                        photo: 'pallet_equipment.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 12, 
+                        photo: 'pallet_equipment2.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 13, 
+                        photo: 'pallet_equipment3.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 14, 
+                        photo: 'pallet_equipment4.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 15, 
+                        photo: 'pallet_equipment5.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 16, 
+                        photo: 'pallet_equipment6.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 17, 
+                        photo: 'pallet_equipment7.png', 
+                        captionText: 'Pallet equipment'}
                         ]
                 },
     videoGallery:

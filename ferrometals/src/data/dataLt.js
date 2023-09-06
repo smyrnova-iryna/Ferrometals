@@ -108,12 +108,13 @@ const dataLt = {
                     `non-standard technological equipment for various industries;`,
                     `spare and wear parts of technological equipment;`, 
                     `parts according to the existing analogue with reverse design method.`],
-          pictures: 
-                    ['picture_about.png', 'picture_about2.jpg', 'picture_about3.jpg'],
+        //   pictures: 
+        //             ['picture_about.png', 'picture_about2.jpg', 'picture_about3.jpg'],
           photos: [
                   ['photo_about.jpg', 'photo_about2.jpg', 'photo_about3.jpg'], 
                   ['photo_about4.jpg', 'photo_about5.jpg', 'photo_about6.jpg'], 
-                  ['photo_about7.jpg', 'photo_about8.jpg', 'photo_about9.jpg']],
+                  ['photo_about7.jpg', 'photo_about8.jpg', 'photo_about9.jpg'],
+                  ['photo_about10.png', 'photo_about11.png', 'photo_about12.png']],
           altText: "Equipment",
           }, 
     products: {title: "Products"},
@@ -851,17 +852,20 @@ const dataLt = {
                                         `modulinė išardoma konstrukcija užtikriną lengvą montavimą bei leidžianti prireikus keisti 
                                         arba papildyti konstrukciją, kad būtų galima prisitaikyti prie ruošinių matmenų ar proceso 
                                         ciklo pokyčių.`]
-                                },
-                                {id: 3,
-                                header: `Papildomos opcijos:`,
-                                subHeader: ``,
-                                blockText:
-                                        [`Mechanizuota transportavimo sistema, pagrįsta elektra varomu žiediniu pakabinamu kelių eilių 
-                                        konvejeriu.`,
-                                        `Priverstinis ruošinių aušinimas oru su atskira transportavimo linija ir ištraukiamąja 
-                                        ventiliacija.`]
                                 }
                                 ],
+                finishPicture: 
+                        {picture: 'polymer_painting_lines2.png',
+                        captionText: 'Polimerinės dažymo linijos'},
+                finishText: {id: 0,
+                            header: `Papildomos opcijos:`,
+                            subHeader: ``,
+                            blockText:
+                                    [`Mechanizuota transportavimo sistema, pagrįsta elektra varomu žiediniu pakabinamu kelių 
+                                    eilių konvejeriu.`,
+                                    `Priverstinis ruošinių aušinimas oru su atskira transportavimo linija ir ištraukiamąja 
+                                    ventiliacija.`]
+                            },
                 pictures: 
                         [{idGlobal: 0, 
                         header: '', 
@@ -1336,7 +1340,28 @@ const dataLt = {
                         captionText: 'Pallet board stacker elements'},
                         {id: 10, 
                         photo: 'pallet_board_stacker_elements8.jpg', 
-                        captionText: 'Pallet board stacker elements'}
+                        captionText: 'Pallet board stacker elements'},
+                        {id: 11, 
+                        photo: 'pallet_equipment.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 12, 
+                        photo: 'pallet_equipment2.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 13, 
+                        photo: 'pallet_equipment3.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 14, 
+                        photo: 'pallet_equipment4.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 15, 
+                        photo: 'pallet_equipment5.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 16, 
+                        photo: 'pallet_equipment6.png', 
+                        captionText: 'Pallet equipment'},
+                        {id: 17, 
+                        photo: 'pallet_equipment7.png', 
+                        captionText: 'Pallet equipment'}
                         ]
                 },
     videoGallery:

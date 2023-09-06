@@ -40,17 +40,22 @@ const About = ({data, linkScroll}) => {
                 </div>
             </div>
             <div className="About-Photo-Main-Container">
-                <div className="About-Picture-Container">
-                    {/* <img className="About-Decoration" src={require(`../../img/ferrometals_decor.png`)} alt={data.about.altText}></img> */}
+                {/* <div className="About-Picture-Container">
                     <img className="About-Picture" src={require(`../../data/picture/picture_about/${data.about.pictures[1]}`)} 
                     alt={data.about.altText}></img>
-                    <img className="About-Picture Detailed-Picture" src={require(`../../data/picture/picture_about/${data.about.pictures[0]}`)} 
-                    alt={data.about.altText}></img>
+                    <img className="About-Picture Detailed-Picture" 
+                    src={require(`../../data/picture/picture_about/${data.about.pictures[0]}`)} alt={data.about.altText}></img>
                     <img className="About-Picture" src={require(`../../data/picture/picture_about/${data.about.pictures[2]}`)} 
                     alt={data.about.altText}></img>
-                </div>
+                </div> */}
                 <div className="About-Photo-Container Extra-Photo-Container">
                         {data.about.photos[2].map((item) => 
+                                    <img key={item} className="About-Picture" src={require(`../../data/photo/photo_about/${item}`)} 
+                                    alt={data.about.altText}></img>
+                                )}
+                </div>
+                <div className="About-Photo-Container Extra-Photo-Container">
+                        {data.about.photos[3].map((item) => 
                                     <img key={item} className="About-Picture" src={require(`../../data/photo/photo_about/${item}`)} 
                                     alt={data.about.altText}></img>
                                 )}
@@ -65,7 +70,8 @@ const About = ({data, linkScroll}) => {
                         src={require(`../../data/picture/picture_products/${data.transportingAndNearMachineEquipmentAndMachinesForWoodworking.pictures[0].picture}`)}></img>
                         <div className="About-Product-Options-Inner-Container">
                             {/* <a className="About-Product-Options-Button" href={require(`../../booklets/${data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.path}`)} */}
-                            <a className="About-Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} //Замінити
+                            <a className="About-Product-Options-Button" 
+                            href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} //Замінити
                             download={data.booklets.transportingAndNearMachineEquipmentAndMachinesForWoodworking.title}>{data.booklets.title}</a>
                             <Link className="About-Product-Options-Button" to={data.menuPaths.transportingAndNearMachineEquipmentAndMachinesForWoodworking} onClick={linkScroll}>{data.booklets.details}<ArrowForwardIosIcon className="About-Product-Arrow-Icon"/></Link>
                         </div>
@@ -76,7 +82,8 @@ const About = ({data, linkScroll}) => {
                         src={require(`../../data/picture/picture_products/${data.equipmentForWasteProcessing.pictures[0].picture}`)}></img>
                         <div className="About-Product-Options-Inner-Container">
                             {/* <a className="About-Product-Options-Button" href={require(`../../booklets/${data.booklets.equipmentForWasteProcessing.path}`)}  */}
-                            <a className="About-Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} //Замінити
+                            <a className="About-Product-Options-Button" 
+                            href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} //Замінити
                             download={data.booklets.equipmentForWasteProcessing.title}>{data.booklets.title}</a>
                             <Link className="About-Product-Options-Button" to={data.menuPaths.equipmentForWasteProcessing} onClick={linkScroll}>{data.booklets.details}<ArrowForwardIosIcon className="About-Product-Arrow-Icon" /></Link>
                         </div>
@@ -89,7 +96,8 @@ const About = ({data, linkScroll}) => {
                         src={require(`../../data/picture/picture_products/${data.roundWoodAccountingScanner.pictures[0].picture}`)}></img>
                         <div className="About-Product-Options-Inner-Container">
                             {/* <a className="About-Product-Options-Button" href={require(`../../booklets/${data.booklets.roundWoodAccountingScanner.path}`)}  */}
-                            <a className="About-Product-Options-Button" href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} // Замінити
+                            <a className="About-Product-Options-Button" 
+                            href={require(`../../booklets/${data.booklets.polymerPaintingLines.path}`)} // Замінити
                             download={data.booklets.roundWoodAccountingScanner.title}>{data.booklets.title}</a>
                             <Link className="About-Product-Options-Button" to={data.menuPaths.roundWoodAccountingScanner} onClick={linkScroll}>{data.booklets.details}<ArrowForwardIosIcon className="About-Product-Arrow-Icon"/></Link>
                         </div>

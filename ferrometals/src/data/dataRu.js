@@ -570,12 +570,13 @@ const dataRu = {
                      `нестандартное технологическое оборудование для различных отраслей промышленности;`,
                      `запасные и быстроизнашивающиеся детали технологического оборудования;`, 
                      `детали по существующему аналогу методом обратного дизайна.`],
-          pictures: 
-                   ['picture_about.png', 'picture_about2.jpg', 'picture_about3.jpg'],
+        //   pictures: 
+        //            ['picture_about.png', 'picture_about2.jpg', 'picture_about3.jpg'],
           photos: [
-                   ['photo_about.jpg', 'photo_about2.jpg', 'photo_about3.jpg'], 
-                   ['photo_about4.jpg', 'photo_about5.jpg', 'photo_about6.jpg'], 
-                   ['photo_about7.jpg', 'photo_about8.jpg', 'photo_about9.jpg']],
+                  ['photo_about.jpg', 'photo_about2.jpg', 'photo_about3.jpg'], 
+                  ['photo_about4.jpg', 'photo_about5.jpg', 'photo_about6.jpg'], 
+                  ['photo_about7.jpg', 'photo_about8.jpg', 'photo_about9.jpg'],
+                  ['photo_about10.png', 'photo_about11.png', 'photo_about12.png']],
           altText: "Оборудование",
           },
     products: {title: "Продукция"},
@@ -1314,16 +1315,19 @@ const dataRu = {
                                         необходимости адаптации к изменениям габаритов заготовок или технологического цикла, а также 
                                         обеспечивающая удобство монтажа.`]
                                 },
-                                {id: 3,
-                                header: `Дополнительные опции:`,
-                                subHeader: ``,
-                                blockText:
-                                        [`Механизированная транспортная система на основе кольцевого подвесного многорядного 
-                                        транспортера с электроприводом.`,
-                                        `Участок принудительного воздушного охлаждения заготовок с отдельной транспортной веткой и 
-                                        системой вытяжной вентиляции.`]
-                                }
                                 ],
+                finishPicture: 
+                        {picture: 'polymer_painting_lines2.png',
+                        captionText: 'Линии полимерного покрытия'},
+                finishText: {id: 0,
+                            header: `Дополнительные опции:`,
+                            subHeader: ``,
+                            blockText:
+                                    [`Механизированная транспортная система на основе кольцевого подвесного многорядного 
+                                    транспортера с электроприводом.`,
+                                    `Участок принудительного воздушного охлаждения заготовок с отдельной транспортной веткой и 
+                                    системой вытяжной вентиляции.`]
+                             },
                 pictures: 
                         [{idGlobal: 0, 
                         header: '', 
@@ -1797,7 +1801,28 @@ const dataRu = {
                         captionText: 'Элементы укладчика паллетных досок'},
                         {id: 10, 
                         photo: 'pallet_board_stacker_elements8.jpg', 
-                        captionText: 'Элементы укладчика паллетных досок'}
+                        captionText: 'Элементы укладчика паллетных досок'},
+                        {id: 11, 
+                        photo: 'pallet_equipment.png', 
+                        captionText: 'Паллетное оборудование'},
+                        {id: 12, 
+                        photo: 'pallet_equipment2.png', 
+                        captionText: 'Паллетное оборудование'},
+                        {id: 13, 
+                        photo: 'pallet_equipment3.png', 
+                        captionText: 'Паллетное оборудование'},
+                        {id: 14, 
+                        photo: 'pallet_equipment4.png', 
+                        captionText: 'Паллетное оборудование'},
+                        {id: 15, 
+                        photo: 'pallet_equipment5.png', 
+                        captionText: 'Паллетное оборудование'},
+                        {id: 16, 
+                        photo: 'pallet_equipment6.png', 
+                        captionText: 'Паллетное оборудование'},
+                        {id: 17, 
+                        photo: 'pallet_equipment7.png', 
+                        captionText: 'Паллетное оборудование'}
                         ]
                 },
     videoGallery:
