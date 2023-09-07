@@ -121,6 +121,7 @@
     font-size: 250%;
     font-weight: 700;
     color: var(--details-color);
+    text-align: center;
 }
 
 .Product-Content-Container {
@@ -139,16 +140,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%
 }
 
 .Product-Item-Heading {
     font-size: 200%;
     font-weight: 600;
     margin-bottom: 5vh;
-    align-self: flex-start;
-    margin-left: 12%;
     color: var(--main-background-color);
 }
+
+
 
 .Product-Image {
     width: 30%;

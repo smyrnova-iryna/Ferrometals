@@ -14,8 +14,12 @@ const PolymerPaintingLines = ({data}) => {
                 <div className="Scaner-Decorated-Left-Text-Container">
                     {data.polymerPaintingLines.internalBlocksText.map((item) => 
                         <div style={{marginTop: "30px"}}>
-                            <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.header}>{item.header}</p>
-                            <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.subHeader}>{item.subHeader}</p>
+                            <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.header}>
+                                {item.header}
+                            </p>
+                            <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.subHeader}>
+                                {item.subHeader}
+                            </p>
                             {data.polymerPaintingLines.internalBlocksText[item.id].blockText.map((item) => 
                                 <p className="Scaner-Decorated-Left-Text Painting-Lines-List" key={item.id}>
                                     <span className="About-List-Item-Marker">&#10004; </span>{item}

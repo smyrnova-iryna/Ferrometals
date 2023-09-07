@@ -75,7 +75,7 @@ const Footer = ({data, handleToggle, navigateToTheTop, linkScroll}) => {
                         textTransform: "none", textAlign: "left", padding: "0", color:"rgba(20,172,147,255)", 
                         borderColor:"rgba(20,172,147,255)", 
                         ':hover': {borderColor:"rgba(20,172,147,255)", color: "var(--main-background-color)"}}}>
-                        {data.footer.siteDeveloper[0]}<br/>{data.footer.siteDeveloper[1]}</Button>
+                        <a style={{textDecoration: "none"}} href='https://www.linkedin.com/in/iryna-smyrnova-74461a261/'>{data.footer.siteDeveloper[0]}<br/>{data.footer.siteDeveloper[1]}</a></Button>
                     </div>
                 </div>
             </div>

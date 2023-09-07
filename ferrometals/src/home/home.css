@@ -271,11 +271,6 @@
     margin-right: -15vh;
 }
 
-
-.Extra-Photo-Container {
-    padding-top: 0;
-}
-
 .About-Inner-Text {
     border-left: 7px solid var(--details-color);
     padding-left: 5%;
@@ -406,6 +401,9 @@
         padding-left: 0;
         padding-right: 0;
         /* min-width: 700px */
+    }
+    .Extra-Photo-Container {
+        margin-top: 0;
     }
 }
 

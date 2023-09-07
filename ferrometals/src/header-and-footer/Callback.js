@@ -75,8 +75,8 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
         <p className='Callback-heading'>{data.header.callback.header}</p>
         <p className='Callback-text'>{data.header.callback.message}</p>
         <form className='Callback-textfield-container' ref={form}>
-          <input name="user_name" className='Callback-textfield' onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} placeholder={data.header.callback.nameText}></input>
-          <input name="user_phone_number" className='Callback-textfield' onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} value={phoneNumberValue} placeholder={data.header.callback.phoneText}></input>
+          <input style={{backgroundColor: "white"}} name="user_name" className='Callback-textfield' onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} placeholder={data.header.callback.nameText}></input>
+          <input style={{backgroundColor: "white"}} name="user_phone_number" className='Callback-textfield' onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} value={phoneNumberValue} placeholder={data.header.callback.phoneText}></input>
         </form>
         <button className='Callback-inner-button Callback-submit-button'  onClick={sendCallbackEmail}><span>{data.header.callback.buttonText}</span>
         <ArrowForwardIosIcon className='Callback-inner-button-icon' /> </button>
