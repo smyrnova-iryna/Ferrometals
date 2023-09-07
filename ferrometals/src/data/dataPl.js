@@ -1741,7 +1741,7 @@ const dataPl = {
     returnMessage: "Return Home",
     footer: {copyright: '© 2023, UAB "FerroMetals"', 
             privacyPolicy: "Privacy policy", 
-            siteDeveloper: ["Site developer: ", "Iryna Smyrnova"],  
+            siteDeveloper: ["Deweloper strony internetowej: ", "Iryna Smyrnova"],  
             address: `Laisvės pr. 60-1107,
 LT-05120 Vilnius, Lithuania`},
             privacyPolicy: `    PRIVACY POLICY

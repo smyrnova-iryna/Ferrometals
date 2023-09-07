@@ -1052,7 +1052,7 @@ const dataEn = {
                                 parameterValue: 'plastic'},
                                 {id: 25,
                                 parameterName: 'Ports for connection',
-                                parameterValue: 'USB, RJ45, GX12, GX16, GX20'},
+                                prameterValue: 'USB, RJ45, GX12, GX16, GX20'},
                                 {id: 26,
                                 parameterName: 'Operating temperature range, С',
                                 parameterValue: '-40 - +50'}]
