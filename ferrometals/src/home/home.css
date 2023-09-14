@@ -331,6 +331,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+   
+
     /* border-right: 3px solid var(--details-color); */
 }
 
@@ -433,6 +435,7 @@
         min-height: 230px;
         max-width: 48%;
         min-width: 260px;
+        font-size: 80%;
     } 
 }
 
@@ -444,6 +447,7 @@
     }  
     .About-Product-Options-Container {
         min-width: 60vw;
+        
     }
     /* .Single-Product-Option {
         margin-left: 0;
