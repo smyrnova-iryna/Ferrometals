@@ -1028,6 +1028,13 @@ textarea {
         background-image: linear-gradient( to right, rgba(13,173,147,0.6) 30%, rgba(0,69,100,0.6) 90%), url(./img/background_image.png);
     }
 
+    .Product-Options-Container {
+        height: 250px;
+       } 
+       .Product-Options-Image {
+        width: 40vw;
+       }
+
     @media screen and (max-width: 300px) {
         .Footer-Info-Adaptive {
             font-size: 70%;
