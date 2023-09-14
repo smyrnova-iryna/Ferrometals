@@ -1222,6 +1222,13 @@ textarea {
     .Burger-Menu-link, .Burger-Menu-Dropdown-link {
         font-size: 70%;
     }
+    .Callback-textfield, .Callback-submit-button {
+        height: 30px;
+        font-size: 70%;
+    }
+    .Callback-text {
+        font-size: 70%;
+    }
 }
 
 @media screen and (max-height: 330px) { 
