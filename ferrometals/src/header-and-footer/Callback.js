@@ -89,10 +89,10 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
           <input style={{backgroundColor: "white"}} name="user_phone_number" type="text" id="user_phone_number" 
           className='Callback-textfield' onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} 
           value={phoneNumberValue} placeholder={data.header.callback.phoneText}></input>
+          <button className='Callback-inner-button Callback-submit-button' value="Submit" type="submit">
+            <span>{data.header.callback.buttonText}</span><ArrowForwardIosIcon className='Callback-inner-button-icon' /> 
+          </button>
         </form>
-        <button className='Callback-inner-button Callback-submit-button' value="Submit" type="submit">
-          <span>{data.header.callback.buttonText}</span><ArrowForwardIosIcon className='Callback-inner-button-icon' /> 
-        </button>
         <p className='Callback-text'>{data.header.callback.dataMessage}</p>
        </div>
       </Backdrop>
