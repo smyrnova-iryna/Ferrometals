@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
+// import { useRef } from 'react';
 import Backdrop from '@mui/material/Backdrop';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "../products/products.css";
 import CallbackButton from './CallbackButton';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 export default function Callback ({data, open, handleClose, handleToggle, classname, iconUrl, textClass}) {
 
@@ -34,27 +35,27 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
             }
     }
 
-    const resetCallbackForm = () => {
-      setNameValue("");
-      setPhoneNumberValue("");
-    }
+    // const resetCallbackForm = () => {
+    //   setNameValue("");
+    //   setPhoneNumberValue("");
+    // }
 
-    const form = useRef();
+    // const form = useRef();
 
-    const sendCallbackEmail = (e) => {
-      e.preventDefault();
-      if (nameValue !== "" && phoneNumberValue !== "") {
-          emailjs.sendForm('service_j50xckc', 'template_kxioadp', form.current, 'eXu1yPCc0paCDwe5f')
-          .then((result) => {
-            console.log(result.text);
-            handleClose();
-          }, (error) => {
-              console.log(error.text);
-              handleClose();
-          });
-          resetCallbackForm();
-      }
-  };
+  //   const sendCallbackEmail = (e) => {
+  //     e.preventDefault();
+  //     if (nameValue !== "" && phoneNumberValue !== "") {
+  //         emailjs.sendForm('service_j50xckc', 'template_kxioadp', form.current, 'eXu1yPCc0paCDwe5f')
+  //         .then((result) => {
+  //           console.log(result.text);
+  //           handleClose();
+  //         }, (error) => {
+  //             console.log(error.text);
+  //             handleClose();
+  //         });
+  //         resetCallbackForm();
+  //     }
+  // };
 
   // const handleCallbackSubmit = () => {
   //   sendCallbackEmail(); 
@@ -74,12 +75,24 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
         </div>
         <p className='Callback-heading'>{data.header.callback.header}</p>
         <p className='Callback-text'>{data.header.callback.message}</p>
-        <form className='Callback-textfield-container' ref={form}>
+        {/* <form className='Callback-textfield-container' ref={form}>
           <input style={{backgroundColor: "white"}} name="user_name" className='Callback-textfield' onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} placeholder={data.header.callback.nameText}></input>
           <input style={{backgroundColor: "white"}} name="user_phone_number" className='Callback-textfield' onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} value={phoneNumberValue} placeholder={data.header.callback.phoneText}></input>
         </form>
         <button className='Callback-inner-button Callback-submit-button'  onClick={sendCallbackEmail}><span>{data.header.callback.buttonText}</span>
-        <ArrowForwardIosIcon className='Callback-inner-button-icon' /> </button>
+        <ArrowForwardIosIcon className='Callback-inner-button-icon' /> </button> */}
+        <form className='Callback-textfield-container' id="contactform" action="https://formsubmit.io/send/iraowl1234@gmail.com" 
+        method="POST">
+          <input style={{backgroundColor: "white"}} name="user_name" type="text" id="user_name" className='Callback-textfield' 
+          onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} 
+          placeholder={data.header.callback.nameText}></input>
+          <input style={{backgroundColor: "white"}} name="user_phone_number" type="text" id="user_phone_number" 
+          className='Callback-textfield' onChange={event => {phoneNumberValidation(event.target.value, phoneNumberSymbols)}} 
+          value={phoneNumberValue} placeholder={data.header.callback.phoneText}></input>
+        </form>
+        <button className='Callback-inner-button Callback-submit-button' value="Submit" type="submit">
+          <span>{data.header.callback.buttonText}</span><ArrowForwardIosIcon className='Callback-inner-button-icon' /> 
+        </button>
         <p className='Callback-text'>{data.header.callback.dataMessage}</p>
        </div>
       </Backdrop>
