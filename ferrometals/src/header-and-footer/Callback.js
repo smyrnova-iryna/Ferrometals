@@ -81,7 +81,7 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
         </form>
         <button className='Callback-inner-button Callback-submit-button'  onClick={sendCallbackEmail}><span>{data.header.callback.buttonText}</span>
         <ArrowForwardIosIcon className='Callback-inner-button-icon' /> </button> */}
-        <form className='Callback-textfield-container' id="contactform" action="https://formsubmit.io/send/iraowl1234@gmail.com" 
+        <form className='Callback-textfield-container' id="contactform" action="https://formsubmit.io/send/iryna.smyrnova12@gmail.com" 
         method="POST">
           <input style={{backgroundColor: "white"}} name="user_name" type="text" id="user_name" className='Callback-textfield' 
           onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} 
