@@ -83,7 +83,7 @@ export default function Callback ({data, open, handleClose, handleToggle, classn
         <ArrowForwardIosIcon className='Callback-inner-button-icon' /> </button> */}
         <form className='Callback-textfield-container' 
         id="contactform" action="https://formsubmit.io/send/eac64596-98d2-4f48-a08d-515ae0ce4dbb" method="POST">
-          <input name="_redirect" type="hidden" id="name" value="https://https://ferrometals-demo.netlify.app"></input>
+          <input name="_redirect" type="hidden" id="name" value="https://https:/ferrometals-demo.netlify.app"></input>
           <input style={{backgroundColor: "white"}} name="user_name" type="text" id="user_name" className='Callback-textfield' 
           onChange={event => {textOnlyValidation(event.target.value, textOnlyForbiddenSymbols)}} value={nameValue} 
           placeholder={data.header.callback.nameText}></input>
