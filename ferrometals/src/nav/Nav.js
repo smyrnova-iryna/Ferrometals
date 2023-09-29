@@ -11,7 +11,7 @@ const Nav = ({data, changeHeaderBackground, navigateToTheTop, linkScroll}) => {
             <div className="w3-dropdown-hover">
                 <Link  to={data.menuPaths.products} className='Nav-menu-item Dropdown-links-container' 
                 onClick={linkScroll}>{data.menuItems.products}<ExpandMore/></Link>
-                <div className="w3-dropdown-content w3-bar-block w3-card-4 Dropdown-Links-Inner-Container">
+                <div className="w3-dropdown-content w3-bar-block w3-card-4 Dropdown-Links-Inner-Container Dropdown-Container-With-Paddings">
                     <Link className='Dropdown-link' to={data.menuPaths.transportingAndNearMachineEquipmentAndMachinesForWoodworking} 
                     onClick={linkScroll}>{data.menuItems.transportingAndNearMachineEquipmentAndMachinesForWoodworking}</Link> 
                     <br/>
@@ -31,7 +31,7 @@ const Nav = ({data, changeHeaderBackground, navigateToTheTop, linkScroll}) => {
             <div className="w3-dropdown-hover ">
                 <Link className='Nav-menu-item Dropdown-links-container' to={data.menuPaths.gallery} onClick={linkScroll}>
                     {data.menuItems.gallery}<ExpandMore/></Link>
-                <div className="w3-dropdown-content w3-bar-block w3-card-4 Small-Dropdown-Links-Inner-Container">
+                <div className="w3-dropdown-content w3-bar-block w3-card-4 Small-Dropdown-Links-Inner-Container Dropdown-Container-With-Paddings">
                     <Link className='Dropdown-link' to={data.menuPaths.photo} onClick={linkScroll}>{data.menuItems.photo}</Link> 
                     <br/>
                     <Link className='Dropdown-link' to={data.menuPaths.video} onClick={linkScroll}>{data.menuItems.video}</Link>

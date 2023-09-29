@@ -15,7 +15,7 @@
 .Main-Products-Title {
     margin-bottom: 5vh;
     font-size: 300%;
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
     color: var(--details-color);
     text-transform: uppercase;
 }
@@ -69,7 +69,7 @@
     justify-content: center;
     cursor: pointer;
     font-size: 120%;
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     font-family: var(--main-font);
     padding: 1.5% 2%;
     background: linear-gradient( to right, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
@@ -79,7 +79,7 @@
     -webkit-box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
     -moz-box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
     box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .Products-container {
@@ -119,7 +119,7 @@
 .Product-Heading {
     margin-bottom: 2vh;
     font-size: 250%;
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
     color: var(--details-color);
     text-align: center;
 }
@@ -145,7 +145,7 @@
 
 .Product-Item-Heading {
     font-size: 200%;
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     margin-bottom: 5vh;
     color: var(--main-background-color);
     text-align: center
@@ -176,11 +176,11 @@
     flex-direction: row;
     justify-content: space-between;
     font-size: 110%;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .Product-Description-Value {
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
 }
 
 /* SCAN */
@@ -193,7 +193,7 @@
     align-items: center;
     padding: 0 18vh;
     font-size: 130%;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .Product-Second-Info-Container {
@@ -259,7 +259,7 @@
     margin: 9vh 18vh;
     margin-left: 27vh;
     font-size: 130%;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
     text-align: justify;
 }
 
@@ -341,7 +341,7 @@
 }
 
 .Product-Options-Title {
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .Product-Options-Image {

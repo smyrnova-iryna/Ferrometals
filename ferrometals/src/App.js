@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useLayoutEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './home/Home';
 import Catalog from './catalog/Catalog';
@@ -53,7 +53,7 @@ function App() {
 const [currentViewportHeight, setCurrentViewportHeight] = useState(window.innerHeight);
 const [currentViewportWidth, setCurrentViewportWidth] = useState(window.innerWidth);
 const [currentViewportWidthIsLarger, setCurrentViewportWidthIsLarger] = useState(false);
-useEffect(() => {
+useLayoutEffect(() => {
   window.addEventListener('resize', (event) => {
     setCurrentViewportHeight(window.innerHeight);
     setCurrentViewportWidth(window.innerWidth);

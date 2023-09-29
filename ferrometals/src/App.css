@@ -30,7 +30,7 @@
     --third-details-color: #9b9c9d;
     --menu-hover-color: rgba(96, 182, 228, 0.852);
     --footer-dark-color: rgba(1,1,1,248);
-    --main-font: "Roboto", 'Open Sans', sans-serif;
+    --main-font: "Open Sans", sans-serif, 'Roboto', sans-serif;
     --main-font-size: 90%;
   } 
 
@@ -72,7 +72,7 @@ textarea {
     background: none;
     padding: 0 1% 1% 3%;
     font-size: 118%;
-    font-weight: bold;
+    /* font-weight: bold;  -----------------------------------------------Тут був жирний шрифт */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -196,6 +196,10 @@ textarea {
     text-decoration: underline;
 }
 
+.Dropdown-Container-With-Paddings {
+    padding: 15px;
+}
+
 .Header-nav-container {
     display: flex;
     flex-direction: row;
@@ -235,7 +239,7 @@ textarea {
     border: none;
     background-color: inherit;
     font-family: var(--main-font);
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     text-shadow: 4px 5px 4px rgba(0,0,0,0.68);
 }
   
@@ -305,13 +309,13 @@ textarea {
 
 .Callback-text {
     font-size: 120%;
-    font-weight: 300;
+    /* font-weight: 300;-----------------------------------------------Тут був нежирний шрифт */
     color: var(--footer-dark-color);
     text-shadow: none;
 }
 
 .Callback-heading {
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
     color: var(--footer-dark-color);
     text-shadow: none;
     font-size: 130%;
@@ -449,7 +453,7 @@ textarea {
 
 .Footer-Info, .Footer-Callback, .Footer-Copyright,  .Footer-Link {
     font-size: 90%;
-    font-weight: 500;
+    /* font-weight: 500;-----------------------------------------------Тут був жирний шрифт */
     text-decoration: none;
 }
 
@@ -459,7 +463,7 @@ textarea {
 
 .Footer-Link {
     color: var(--details-color); 
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     text-transform: uppercase;
     min-width: 100%;
 
@@ -495,7 +499,7 @@ textarea {
 
 .Footer-Callback {
     color: var(--details-color);
-    font-weight: 400; 
+    /* font-weight: 400; -----------------------------------------------Тут був жирний шрифт */
 }
 
 .Darken-Footer {
@@ -508,7 +512,7 @@ textarea {
     text-align: justify;
     padding: 10%;
     font-size: 110%;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
     background-image: url(./img/double_gears_background.jpg);
     background-size: 100%;
     background-repeat: repeat-y;
@@ -1005,7 +1009,7 @@ textarea {
         /* background-color: aquamarine; */
         margin-left: 8px;
         font-size: 160%;
-        font-weight: 700;
+        /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
     }
 
     .Contacts-inner-container-text {

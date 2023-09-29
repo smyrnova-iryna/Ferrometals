@@ -24,7 +24,7 @@
 .Contacts-inner-container-heading {
     text-align: left;
     font-size: 140%;
-    font-weight: 700; 
+    /* font-weight: 700; -----------------------------------------------Тут був жирний шрифт */
     width: max-content
 }
 
@@ -49,7 +49,7 @@
     text-align: left;
     width: 450px;
     font-size: 140%;
-    font-weight: 540;
+    /* font-weight: 540;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .Contacts-feedback-form-main-container {
@@ -64,7 +64,7 @@
     background: none;
     /* min-width: 47%; */
     font-size: 120%;
-    font-weight: 500;
+    /* font-weight: 500;-----------------------------------------------Тут був жирний шрифт */
     text-align: center;
     color: var(--main-background-color);
     width: 500px;
@@ -72,7 +72,7 @@
 
 .Contacts-container-heading {
     margin-bottom: 0;
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .Contacts-container-description {
@@ -149,7 +149,7 @@
     min-width: 50%; */
     width: 150px;
     height: 30%;
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
     font-size: 120%;
 }
 

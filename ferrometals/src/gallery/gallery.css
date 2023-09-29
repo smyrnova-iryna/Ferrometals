@@ -43,7 +43,7 @@
 .Video-Gallery-Heading, .Gallery-Title {
     margin-bottom: 5vh;
     font-size: 250%;
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
     color: var(--details-color);
 }
 
@@ -62,7 +62,7 @@
     background: linear-gradient( to left, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
     color: var(--main-background-color);
     font-size: 110%;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
     padding: 1%;
     text-align: center;
     border-bottom-left-radius: 10px;
@@ -150,7 +150,7 @@
     justify-content: center;
     cursor: pointer;
     font-size: 120%;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
     font-family: var(--main-font);
     padding: 1.5% 2%;
     background: linear-gradient( to right, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
@@ -168,7 +168,7 @@
 
 .Gallery-Title {
     font-size: 300%;
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
     color: var(--details-color);
     text-transform: uppercase;
 }

@@ -128,7 +128,7 @@
 
 .First-Page-Logo-Description {
     font-size: 150%;
-    font-weight: 800;
+    /* font-weight: 800;-----------------------------------------------Тут був жирний шрифт */
     /* padding: 15px 90px 0 90px; */
 }
 
@@ -143,7 +143,7 @@
 .First-Page_List-Item {
     color: var(--main-background-color);
     font-size: 135%;
-    font-weight: 800;
+    /* font-weight: 800;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .First-Page-List-Item-Text {
@@ -153,7 +153,7 @@
 .FirstPage-Description {
     /* text-shadow: 1px 1px 0 #444; */
     font-size: 200%;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
     /* text-align: justify; */
     color: var( --main-background-color);
     text-shadow: 
@@ -278,7 +278,7 @@
 
 .About-Inner-Text, .About-General-Text {
     font-size: 140%;
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     color: var(----main-dark-color);
     text-align: justify;
 }
@@ -288,7 +288,7 @@
 }
 
 .About-Title {
-    font-weight: 700;
+    /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .About-Extra-Text {
@@ -346,7 +346,7 @@
 
 .About-Product-Options-Title {
     font-size: 120%;
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     text-align: center;
 }
 
@@ -370,11 +370,11 @@
     -webkit-box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
     -moz-box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
     box-shadow: 9px 9px 10px 0px rgba(0,0,0,0.72);
-    font-weight: 600;
+    /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-weight: 400;
+    /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
 }
 
 .About-Product-Options-Button:hover {
