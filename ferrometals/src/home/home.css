@@ -287,9 +287,9 @@
     margin-top: 4vh;
 }
 
-.About-Title {
+/* .About-Title { */
     /* font-weight: 700;-----------------------------------------------Тут був жирний шрифт */
-}
+/* } */
 
 .About-Extra-Text {
     margin-top: 5vh;
@@ -345,7 +345,7 @@
 }
 
 .About-Product-Options-Title {
-    font-size: 120%;
+    font-size: 130%;
     /* font-weight: 600;-----------------------------------------------Тут був жирний шрифт */
     text-align: center;
 }

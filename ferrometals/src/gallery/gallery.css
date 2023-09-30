@@ -61,7 +61,7 @@
     height: 15%;
     background: linear-gradient( to left, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
     color: var(--main-background-color);
-    font-size: 110%;
+    font-size: 115%;
     /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
     padding: 1%;
     text-align: center;
@@ -220,7 +220,7 @@
 
 @media screen and (max-width: 880px) {
     .Video-Caption {
-        font-size: 80%;
+        font-size: 100%;
     }
 }
 

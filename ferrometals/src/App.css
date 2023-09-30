@@ -198,6 +198,19 @@ textarea {
 
 .Dropdown-Container-With-Paddings {
     padding: 15px;
+    /* height: 200px; */
+}
+
+.Dropdown-link-Margins {
+    /* background-color: pink; */
+    /* padding-top: 10px!important;
+    padding-bottom: 10px!important; */
+    line-height: 2.2em;
+    font-size: 110%;
+}
+
+.First-Dropdown-link {
+    line-height: normal;
 }
 
 .Header-nav-container {
@@ -221,7 +234,7 @@ textarea {
 }
 
 .Dropdown-Links-Inner-Container {
-    width: 54vh;
+    width: 400px;
 }
 
 .Small-Dropdown-Links-Inner-Container {
@@ -1058,7 +1071,7 @@ textarea {
     }
 
     .App-footer {
-        font-size: 130%;
+        font-size: 110%;
     }
 
 }
