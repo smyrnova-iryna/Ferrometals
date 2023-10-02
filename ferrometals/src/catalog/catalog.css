@@ -2,17 +2,21 @@
 .Catalog-container {
     margin-top: 10%;
     text-align: justify;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 120%;
     margin-bottom: 1%;
 }
 
+.Catalog-Image, .Catalog-Caption {
+    max-width: 40vw;
+}
+
 .Catalog-Caption {
     width: 100%;
-    height: 15%;
+    height: 17%;
     background: linear-gradient( to left, rgba(13,173,147,255) 30%, rgba(0,69,100,255) 90%);
     color: var(--main-background-color);
-    font-size: 115%;
+    font-size: 140%;
     /* font-weight: 400;-----------------------------------------------Тут був жирний шрифт */
     padding: 1%;
     text-align: center;
@@ -20,13 +24,43 @@
     border-top-right-radius: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
+    .Catalog-Caption {
+        height: 30%;
+    }
+}
+/* @media screen and (max-width: 1200px) {
     .Catalog-Caption {
         height: 25%;
     }
-}
-@media screen and (max-width: 800px) {
+} */
+@media screen and (max-width: 1000px) {
     .Catalog-Caption {
        font-size: 100%;
+    }
+    .Catalog-Image, .Catalog-Caption {
+        max-width: none;
+    }
+}
+@media screen and (max-width: 664px) {
+    .Catalog-Caption {
+       font-size: 90%;
+    }
+
+}
+@media screen and (max-width: 660px) {
+    .Catalog-Caption {
+       font-size: 120%;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .Catalog-Caption {
+       font-size: 100%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .Catalog-Caption {
+       font-size: 90%;
     }
 }

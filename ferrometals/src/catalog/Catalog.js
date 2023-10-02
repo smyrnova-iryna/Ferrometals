@@ -10,7 +10,7 @@ const Catalog = ({data}) => {
                 {data.catalog.photos.map((item) => 
                     <figure key={item.id} className="Video-Container">
                         <figcaption className="Catalog-Caption">{item.captionText}</figcaption>
-                        <img className="Video" src={require(`../data/photo/photo_catalog/${item.photo}`)} alt={item.captionText} />
+                        <img className="Video Catalog-Image" src={require(`../data/photo/photo_catalog/${item.photo}`)} alt={item.captionText} />
                     </figure>
                 )}
             </article>
