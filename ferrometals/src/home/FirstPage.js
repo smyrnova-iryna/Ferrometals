@@ -51,7 +51,7 @@ currentViewportWidth}) => {
                     alt="Logotype"></img>
                     <p className='First-Page-Logo-Description' style={{height: `${550.76310550763 / 746 * currentViewportHeight 
                     / 5}px`, width: `${473.65627073656 / 746 * currentViewportHeight - 377.27272727273 / 746 * currentViewportHeight 
-                    * Number(currentViewportWidthIsLarger) / 2 - 40}px`}}>{data.home.firstPage.description}</p>
+                    * Number(currentViewportWidthIsLarger) / 2 - 40}px, overflow: "hidden"`}}>{data.home.firstPage.description}</p>
                 </div>
             </div>
             <svg className='First-Page-Svg' style={{fill:"url(#SecondDecorElementGradient)", position: "absolute", width: "100%", 
