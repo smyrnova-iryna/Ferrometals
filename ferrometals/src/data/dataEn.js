@@ -79,8 +79,7 @@ const dataEn = {
     home: 
         {firstPage: 
                     {name: "Ferrometals", 
-                    description: `Design and manufacture of non-standart`,
-                    descriptionFinish: `technological equipment for various industries`,
+                    description: "Design and manufacture of non-standart technological equipment for various industries",
                     button: "Get consultation", 
                     link: "Catalog of projects", 
                     info: ["Woodworking lines;", "Transportation equipment and machines;",  
